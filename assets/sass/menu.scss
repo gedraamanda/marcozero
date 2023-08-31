@@ -130,6 +130,11 @@
   transition: 0.5s all ease;
   z-index: 9;
 
+  &.hiden{
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
   &.less {
     padding: 10px 0;
     top: calc(100vh - 48px);

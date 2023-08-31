@@ -338,6 +338,11 @@
 
         .imagem {
           flex: 0 0 530px;
+
+          img {
+            height: 300px;
+            object-fit: cover;
+          }
         }
       }
     }

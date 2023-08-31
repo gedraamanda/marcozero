@@ -70,34 +70,42 @@ $(window).scroll(function () {
 
     //sobe
     if(scrollY < lastScrollTop) {
-        if($('.menu-footer').length > 0 && $('.menu-footer').hasClass('less') && scrollY < 1000) {
+        if($('.menu-footer').length > 0 && $('.menu-footer').hasClass('less') && scrollY < 500) {
             $('.menu-footer').removeClass('less');
         }
 
         if(scrollY <= altura) {
             $('.menu-home').removeClass('active');
         }
+
+        if(!isVisible($(".marco-footer"),-700)) {
+            $('.menu-footer').removeClass('hiden');
+        }
     }
 
     //desce
     if(scrollY > lastScrollTop) {
-        if($('.menu-footer').length > 0 && isVisible($(".menu-footer")) && scrollY > 1000) {
+        if($('.menu-footer').length > 0 && isVisible($(".menu-footer"), 40) && scrollY > 500) {
             $('.menu-footer').addClass('less');
         }
 
         if(scrollY >= altura - 150) {
             $('.menu-home').addClass('active');
         }
+
+        if(isVisible($(".marco-footer"),-700)) {
+            $('.menu-footer').addClass('hiden');
+        }
     }
 
     lastScrollTop = scrollY;
 });
 
-function isVisible($el) {
+function isVisible($el, $mg) {
     var winTop = $(window).scrollTop();
     var winBottom = winTop + $(window).height();
     var elTop = $el.offset().top;
-    var elBottom = elTop + $el.height() + 40;
+    var elBottom = elTop + $el.height() + $mg;
     return ((elBottom<= winBottom) && (elTop >= winTop));
 }
 
