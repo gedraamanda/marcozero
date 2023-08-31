@@ -51,6 +51,14 @@ $(document).ready(function () {
     }
 
 
+    //menu hamburguer
+    $('.hamb').on('click', function () {
+        $('.menu-hide').addClass('open');
+    });
+
+    $('.close-menu').on('click', function () {
+        $('.menu-hide').removeClass('open');
+    });
 });
 
 

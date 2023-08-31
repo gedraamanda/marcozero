@@ -42,3 +42,43 @@
         </div>
 	</div>
 </div>
+
+<div class="menu-hide">
+    <a href="javascript:;" class="close-menu"></a>
+
+    <div class="d-flex flex-column menu-hide__principal">
+        <a href="#" class="m-0 text-uppercase">direitos humanos</a>
+        <a href="#" class="m-0 text-uppercase">direito à cidade</a>
+        <a href="#" class="m-0 text-uppercase">socioambiental</a>
+        <a href="#" class="m-0 text-uppercase">diversidade</a>
+        <a href="#" class="m-0 text-uppercase">institucional</a>
+    </div>
+
+    <div class="d-flex flex-column menu-hide__sub mb-4 mt-3">
+        <a href="#" class="m-0">Quem somos</a>
+        <a href="#" class="m-0">Missão e Visão</a>
+        <a href="#" class="m-0">Políticas de convivência</a>
+        <a href="#" class="m-0">Transparência</a>
+        <a href="#" class="m-0">História</a>
+        <a href="#" class="m-0">Expediente</a>
+        <a href="#" class="m-0">Doe</a>
+        <a href="#" class="m-0">Fale conosco</a>
+        <a href="#" class="m-0">Prêmios</a>
+        <a href="#" class="m-0">Parceiros</a>
+    </div>
+
+    <div class="mb-2">
+        <a href="#" class="apoie text-uppercase">APOIE</a>
+    </div>
+
+    <div class="mb-4">
+        <a href="#" class="apoie news text-uppercase">assine nossa newsletter</a>
+    </div>
+
+    <div class="social d-flex align-items-center">
+        <a href="" class="facebook"></a>
+        <a href="" class="instagram"></a>
+        <a href="" class="twitter"></a>
+        <a href="" class="youtube-m"></a>
+    </div>
+</div>

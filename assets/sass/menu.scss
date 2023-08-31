@@ -63,6 +63,8 @@
   }
 
   .hamb {
+    cursor: pointer;
+
     span {
       width: 35px;
       height: 2px;
@@ -135,5 +137,75 @@
     a {
       margin-right: 12px;
     }
+  }
+}
+
+.menu-hide {
+  position: fixed;
+  width: 440px;
+  margin: 0;
+  padding-left: 40px;
+  padding-top: 20px;
+  right: 0px;
+
+  background: $verdeFlor;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  height: 100vh;
+  top: 0;
+  z-index: 99;
+
+  &.open {
+    transform: none;
+  }
+
+  .close-menu {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='29' height='28' fill='none'%3E%3Cpath fill='%23000' d='M2.312 28c3.966-3.867 7.932-7.727 11.898-11.586.078-.076.149-.175.235-.29.125.115.212.19.29.267C18.71 20.258 22.691 24.125 26.657 28l2.155-1.953c-3.958-3.851-8.01-7.795-11.976-11.647a3.536 3.536 0 0 0-.29-.244c.11-.114.188-.19.266-.267L29 2.03 26.93 0l-.046.046a8756.482 8756.482 0 0 1-12.149 11.822c-.078.076-.165.153-.274.252-.102-.115-.173-.206-.251-.29C10.197 7.932 6.098 3.943 2.093.046L0 2.052C4.052 5.995 8.104 9.93 12.156 13.874c.079.076.157.16.298.305-.11.076-.22.13-.305.206C8.128 18.305 4.162 22.157.14 26.07L2.312 28Z'/%3E%3C/svg%3E");
+    width: 29px;
+    height: 28px;
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+
+  &__principal {
+    a {
+      font-family: $resBold;
+      font-size: 28px;
+    }
+  }
+
+  &__sub {
+    border-left: 2px solid #000;
+    padding-left: 20px;
+
+    a {
+      font-family: $resReg;
+      font-size: 16px;
+      line-height: 1;
+      margin-bottom: 10px!important;
+
+      &:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+
+  .apoie {
+    background: #000;
+    color: $verdeFlor;
+  }
+  
+  .news {
+    background: #fff;
+    color: #000;
+    font-size: 18px;
   }
 }
