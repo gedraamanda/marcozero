@@ -1,5 +1,67 @@
 <?php wp_footer(); ?>
 
+<div class="marco-footer py-4">
+    <div class="container">
+        <div class="d-flex">
+            <div class="logo d-flex align-items-center">
+                <a href="#"><i></i></a>
+                <h3 class="m-0">MARCO<span>ZERO</span></h3>
+            </div>
+
+            <div class="menu-cat d-flex align-items-center">
+                <a href="#" class="text-uppercase me-5"><span class="opacity-0"></span>direitos humanos</a>
+                <a href="#" class="text-uppercase me-5"><span class="me-3"></span>socioambiental</a>
+                <a href="#" class="text-uppercase me-5"><span class="me-3"></span>direito à cidade</a>
+                <a href="#" class="text-uppercase"><span class="me-3"></span>diversidade</a>
+            </div>
+        </div>
+
+        <div class="d-flex mt-2">
+            <div class="menu-lista ms-auto">
+                <div class="d-flex">
+                    <div class="d-flex flex-column me-4">
+                        <a href="">Quem somos</a>
+                        <a href="">Missão e visão</a>
+                        <a href="">Política de convivência</a>
+                        <a href="">Transparência</a>
+                        <a href="">História</a>
+                    </div>
+
+                    <div class=" d-flex flex-column">
+                        <a href="">Expediente</a>
+                        <a href="">Fale conosco</a>
+                        <a href="">Prêmio</a>
+                        <a href="">Parceiros</a>
+                        <a href="" class="azul">Apoie</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex align-items-end">
+            <div class="ajor text-center">
+                <span>ASSOCIADO</span>
+
+                <a href="#" class="mx-auto"></a>
+            </div>
+
+            <div class="apoio text-center">
+                <span>APOIO INSTITUCIONAL</span>
+
+                <a href="#" class="mx-auto"></a>
+            </div>
+
+            <p class="m-0">Esta obra está licenciado com uma licença creative commons atribuição sem derivações 3.0 Brasil</p>
+
+            <div class="social d-flex align-items-center">
+                <a href="" class="facebook"></a>
+                <a href="" class="instagram"></a>
+                <a href="" class="twitter"></a>
+                <a href="" class="youtube-m"></a>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

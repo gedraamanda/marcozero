@@ -3,12 +3,12 @@
 /**
  * Imports
  */
-const gulp          = require('gulp');
-const sass          = require('gulp-sass');
-const sourcemaps    = require('gulp-sourcemaps');
-const concat        = require('gulp-concat');
-const uglify        = require('gulp-uglify-es').default;
-const rename		= require('gulp-rename');
+const gulp = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
+const sourcemaps = require('gulp-sourcemaps');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify-es').default;
+const rename = require('gulp-rename');
 const cleanCSS = require('gulp-clean-css');
 
 /**
