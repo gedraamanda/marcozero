@@ -32,33 +32,6 @@
 
 	</section>
 
-    <div class="menu-default py-3">
-        <div class="container">
-            <div class="d-flex justify-content-between">
-                <div class="logo d-flex align-items-center">
-                    <a href="#"><i></i></a>
-                    <h1 class="m-0">MARCO<span>ZERO</span></h1>
-                </div>
-
-                <div class="menu-cat d-flex align-items-center ms-0">
-                    <a href="#" class="text-uppercase me-3"><span class="opacity-0"></span>direitos humanos</a>
-                    <a href="#" class="text-uppercase me-3"><span class="me-2"></span>socioambiental</a>
-                    <a href="#" class="text-uppercase me-3"><span class="me-2"></span>direito à cidade</a>
-                    <a href="#" class="text-uppercase"><span class="me-2"></span>diversidade</a>
-                </div>
-
-                <div class="menu-hamburguer d-flex align-items-center">
-                    <a href="#" class="lupa me-3"></a>
-
-                    <div class="hamb d-flex flex-column">
-                        <span class="mb-2"></span>
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <section class="slider pb-5">
         <div class="container position-relative">
             <div class="slider-control slider-control-homeslide d-flex" aria-label="Carousel Navigation" tabindex="0">
