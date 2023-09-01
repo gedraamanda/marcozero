@@ -194,17 +194,21 @@
         height: 24px;
         display: block;
         position: absolute;
-        right: 0;
+        right: -20px;
         top: 0;
       }
+    }
+
+    &:last-child {
+      padding-left: 36px;
     }
   }
 
   .busca-abre {
     background: $laranja;
     position: absolute;
-    left: 50%;
-    width: calc(50%);
+    left: calc(50% + 12px);
+    width: calc(50% - 12px);
     display: none;
     z-index: 2;
 

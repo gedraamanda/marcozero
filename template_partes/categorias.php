@@ -7,7 +7,7 @@
 				<div class="busca-abre"></div>
 			</div>
 
-			<div class="item ps-4">
+			<div class="item">
 				<a href="#" class="nome open-formato">FORMATOS <i></i></a>
             </div>
 		</div>
