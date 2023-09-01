@@ -1,4 +1,4 @@
-<div class="barra-busca py-2">
+<div class="barra-busca py-2" style="--cat-color: #FF5E30;">
 	<div class="container">
 		<div class="row row-cols-2">
 			<div class="item">
