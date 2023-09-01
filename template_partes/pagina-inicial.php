@@ -139,7 +139,7 @@
 
     </section>
 
-    <div class="menu-footer w-100">
+    <div class="menu-footer menu-footer-home w-100">
         <div class="container">
             <div class="d-flex justify-content-between">
                 <a href="#" class="apoie">ASSINE NOSSA NEWSLETTER</a>

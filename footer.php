@@ -1,5 +1,29 @@
 <?php wp_footer(); ?>
 
+<?php if(!is_home()) { ?>
+    <div class="menu-footer menu-footer-default w-100 less hiden">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <a href="#" class="apoie">ASSINE NOSSA NEWSLETTER</a>
+
+                <p class="m-0"><a href="#" class="apoie">APOIE</a> O JORNALISMO INDEPENDENTE</p>
+
+                <div class="d-flex align-items-center">
+                    <p class="m-0 me-3">VISITE NOSSAS REDES SOCIAIS</p>
+
+                    <div class="social d-flex align-items-center">
+                        <a href="" class="facebook"></a>
+                        <a href="" class="instagram"></a>
+                        <a href="" class="twitter"></a>
+                        <a href="" class="youtube-m"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<?php } ?>
+
 <div class="marco-footer py-4">
     <div class="container">
         <div class="d-flex">
