@@ -1,0 +1,14 @@
+.marco-result{
+  h1 {
+    font-family: $resBold;
+    font-size: 57px;
+  }
+
+  &__destaque {
+    .linha-fina {
+      font-family: $resReg;
+      font-size: 21px;
+      line-height: 125%;
+    }
+  }
+}

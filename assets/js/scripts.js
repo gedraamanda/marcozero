@@ -59,6 +59,12 @@ $(document).ready(function () {
     $('.close-menu').on('click', function () {
         $('.menu-hide').removeClass('open');
     });
+
+    //abre formatos
+    $( ".open-formato" ).on('click',function() {
+        $('.abre-formato').slideToggle();
+        $(this).toggleClass('open');
+    });
 });
 
 
