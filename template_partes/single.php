@@ -76,6 +76,16 @@ $abertura = $_GET['abre'];
 
                         <p>A iniciativa de fomento à agricultura comunitária teve início em julho de 2022 e é fruto da emenda parlamentar do deputado federal Túlio Gadelha (Rede), aprovada por meio do Termo de Fomento do Ministério da Agricultura, Pecuária e Abastecimento. O projeto também tem apoio da organização Misereor.</p>
 
+                        <div class="marco-galeria position-relative">
+                            <div class="mx-5">
+                                <div class="galeria-sl">
+                                    <div class="sl">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <p>De acordo com a assessora técnica do Centro Sabiá, Simone Arimatéia, o projeto possibilitou a criação de espaços agricultáveis dentro da cidade. “Locais que eram de confinamento de lixo ou áreas de aterro ganharam vida e começaram a produzir alimentos. Em um ano de projeto a ação implantou diversas hortas comunitárias e realizou o acompanhamento em lugares onde não se pensou que era possível produzir comida com qualidade”, disse a assessora.</p>
 
                         <h3>MULHERES SÃO PROTAGONISTAS</h3>
