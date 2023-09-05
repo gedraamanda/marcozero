@@ -60,6 +60,33 @@ $abertura = $_GET['abre'];
                 </div>
             </div>
         </header>
+    <?php } elseif(isset($abertura) && $abertura === 'texto') { ?>
+        <header style="--cat-color: #EBEB01;" class="header-texto">
+            <div class="container">
+                <div class="row">
+                    <div class="col-5 mx-auto">
+                        <div class="texto text-center">
+                            <h1 class="tituloGrande m-0 text-uppercase mb-3 mx-auto">trf 5 decide se biologa negra serareintegrada ao servico publico</h1>
+
+                            <p class="m-0 linha-fina linhaFinaPd mx-auto">a dificuldade de parir em uma cidade do interior de Pernambuco</p>
+
+                            <div class="detalhe d-flex aling-items-center mt-2 justify-content-center">
+                                <a href="#" class="assina text-uppercase">marcozero conteúdo</a>
+                                <span class="mx-3">/</span>
+                                <span class="data">09/06/2023</span>
+                            </div>
+
+                            <div class="tags d-flex mt-5 justify-content-center">
+                                <a href="#" class="btn text-uppercase me-2">socioambiental</a>
+                                <a href="#" class="btn text-uppercase me-2">energia</a>
+                                <a href="#" class="btn text-uppercase">agroecologia</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
     <?php } else { ?>
         <header style="--cat-color: #F3B2CA;" class="py-5">
             <div class="container">
@@ -228,7 +255,7 @@ $abertura = $_GET['abre'];
                                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/side1.png" alt="">
                                 </a>
 
-                                <a href="#" class="titulo">Menos moralismo e mais cuidado com as pessoas é o foco da política de drogas do governo Lula</a>
+                                <a href="#" class="titulo mt-2">Menos moralismo e mais cuidado com as pessoas é o foco da política de drogas do governo Lula</a>
 
                                 <div class="detalhe d-flex aling-items-center mt-2">
                                     <a href="#" class="assina text-uppercase">marcozero conteúdo</a>
@@ -246,7 +273,7 @@ $abertura = $_GET['abre'];
                                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/side2.png" alt="">
                                 </a>
 
-                                <a href="#" class="titulo">Menos moralismo e mais cuidado com as pessoas é o foco da política de drogas do governo Lula</a>
+                                <a href="#" class="titulo mt-2">Menos moralismo e mais cuidado com as pessoas é o foco da política de drogas do governo Lula</a>
 
                                 <div class="detalhe d-flex aling-items-center mt-2">
                                     <a href="#" class="assina text-uppercase">marcozero conteúdo</a>
@@ -264,7 +291,7 @@ $abertura = $_GET['abre'];
                                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/side3.png" alt="">
                                 </a>
 
-                                <a href="#" class="titulo">Menos moralismo e mais cuidado com as pessoas é o foco da política de drogas do governo Lula</a>
+                                <a href="#" class="titulo mt-2">Menos moralismo e mais cuidado com as pessoas é o foco da política de drogas do governo Lula</a>
 
                                 <div class="detalhe d-flex aling-items-center mt-2">
                                     <a href="#" class="assina text-uppercase">marcozero conteúdo</a>
