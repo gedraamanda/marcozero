@@ -299,11 +299,13 @@
 }
 
 .legenda-credito {
-  p{
-    font-family: $tris;
-    font-size: 14px;
-    font-weight: $regular;
-    line-height: 155%;
+  line-height: 1;
+
+  p {
+    font-family: $tris !important;
+    font-size: 14px !important;
+    font-weight: $regular !important;
+    line-height: 155% !important;
   }
 
   span {
@@ -317,6 +319,7 @@
     width: auto;
     height: 385px;
     transition: all .4s ease-in-out;
+    cursor: pointer;
 
     &.plus {
       transform: scale(1.5);
@@ -353,3 +356,17 @@
   }
 }
 
+.grid-imagens {
+  .coluna-1 {
+    flex: 0 0 calc(60% - 28px);
+    margin-right: 28px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .coluna-2 {
+    flex: 0 0 40%;
+  }
+}

@@ -183,6 +183,99 @@ $abertura = $_GET['abre'];
 
                         <p>Chama a atenção a forte presença feminina no encontro da agricultura urbana responsável pela criação das hortas comunitárias e quintais produtivos. A iniciativa do Centro Sabiá é composta por uma maioria de mulheres, que representam mais de 80% dos beneficiários do projeto, sendo 36% de mulheres negras.</p>
 
+                        <div class="grid-imagens my-5">
+                            <div class="d-flex">
+                                <div class="coluna-1">
+                                    <div class="d-flex flex-column">
+                                        <div class="mb-3">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/home3.png" alt="" class="mw-100">
+                                        </div>
+
+                                        <div>
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/ent2.png" alt="" class="mw-100">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="coluna-2">
+                                    <div class="d-flex flex-column">
+                                        <div class="mb-3">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod2.png" alt="" class="mw-100">
+                                        </div>
+
+                                        <div>
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/ent1.png" alt="" class="mw-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="legenda-credito mt-2">
+                                <p class="m-0">Bombeiros resgataram corpo de um homem de 45 anos às 13:30min.</p>
+                                <span>Foto © acervo pessoal</span>
+                            </div>
+                        </div>
+
+                        <div class="grid-imagens my-5">
+                            <div class="d-flex">
+                                <div class="coluna-1">
+                                    <div class="d-flex flex-column">
+                                        <div class="mb-3">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/ent1.png" alt="" class="mw-100">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="coluna-2">
+                                    <div class="d-flex flex-column">
+                                        <div class="mb-3">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod2.png" alt="" class="mw-100">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/home3.png" alt="" class="mw-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="legenda-credito mt-2">
+                                <p class="m-0">Bombeiros resgataram corpo de um homem de 45 anos às 13:30min.</p>
+                                <span>Foto © acervo pessoal</span>
+                            </div>
+                        </div>
+
+                        <div class="grid-imagens my-5">
+                            <div class="d-flex">
+                                <div class="coluna-1">
+                                    <div class="d-flex flex-column">
+                                        <div class="mb-3">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/ent1.png" alt="" class="mw-100">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="coluna-2">
+                                    <div class="d-flex flex-column">
+                                        <div class="mb-3">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod2.png" alt="" class="mw-100">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/home3.png" alt="" class="mw-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="legenda-credito mt-2">
+                                <p class="m-0">Bombeiros resgataram corpo de um homem de 45 anos às 13:30min.</p>
+                                <span>Foto © acervo pessoal</span>
+                            </div>
+                        </div>
+
                         <p>“Nesses territórios onde estamos atuando o perfil majoritariamente encontrado é de mulheres. Mulheres mais velhas, maduras e algumas já idosas. Muitas delas são mulheres pretas, periféricas e em situação de vulnerabilidade social. Pessoas que já passaram pelo mercado de trabalho, mas que perderam o emprego e não conseguiram mais voltar ou pessoas que nunca nem estiveram no mercado de trabalho. Essas condições faz com que essas mulheres procurem espaços de acolhimento para conseguir tocar suas vidas e se envolvam em ações como essa, que proporcionam uma independência para elas produzirem o próprio alimento e de suas famílias”, declarou Simone Arimatéia.</p>
 
                         <p>A agricultora Dianira Lima, moradora da Vila Independência, no bairro Vasco da Gama, zona norte do Recife, é uma das beneficiárias do projeto e integrante da horta comunitária “Resistir é preciso”.</p>

@@ -24,7 +24,7 @@
     </div>
 <?php } ?>
 
-<div class="marco-footer py-4 d-none">
+<div class="marco-footer py-4">
     <div class="container">
         <div class="d-flex">
             <div class="logo d-flex align-items-center">
