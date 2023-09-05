@@ -53,6 +53,11 @@
     font-family: $resReg;
     font-size: 12px;
   }
+
+  &.less {
+    font-size: 18px;
+    padding: 0px 10px;
+  }
 }
 
 .cat {
@@ -233,6 +238,41 @@
       }
     }
 
+  }
+}
+
+.tags {
+  span {
+    font-family: $resReg;
+    font-size: 14px;
+    letter-spacing: 0.28px;
+  }
+}
+
+.mais-recentes {
+  width: 265px;
+  margin-top: 50%;
+
+  .mais-titulo {
+    font-family: $resReg;
+    font-size: 14px;
+    letter-spacing: 0.28px;
+    border-bottom: 1px solid #000;
+    display: block;
+  }
+
+  &__post {
+    img {
+      width: 160px;
+      height: auto;
+    }
+
+    .titulo {
+      font-family: $resMed;
+      font-size: 16px;
+      line-height: 105%;
+      display: block;
+    }
   }
 }
 

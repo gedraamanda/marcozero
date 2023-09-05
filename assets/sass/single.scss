@@ -1,0 +1,99 @@
+.marco-single {
+  header {
+    height: calc(100vh - 67px);
+    background: var(--cat-color);
+
+    .texto {
+      h1 {
+        width: 85%;
+      }
+
+      .linha-fina {
+        width: 70%;
+      }
+    }
+
+    .imagem {
+      position: relative;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+
+      &:before {
+        content: '';
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #000;
+      }
+    }
+  }
+
+  &__conteudo {
+    .texto {
+      h3 {
+        font-family: $resBold;
+        font-size: 20px;
+        line-height: 125%;
+        margin-top: 30px;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+
+      p {
+        font-family: $tris;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 150%;
+
+        a {
+          font-weight: $bold;
+          text-decoration: underline;
+          text-underline-offset: 3px;
+        }
+      }
+    }
+  }
+}
+
+.relacionadas {
+  background: $azul;
+  
+  &.sugestao {
+    background: #fff;
+    
+    h3 {
+      color: #000;
+    }
+  }
+
+  h3 {
+    font-family: $resBold;
+    font-size: 26px;
+    color: #fff;
+  }
+
+  .int {
+    margin-left: -30px !important;
+    margin-right: -30px !important;
+  }
+
+  &__post {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .titulo {
+      font-family: $resMed;
+      font-size: 21px;
+      line-height: 125%;
+      display: block;
+      width: 80%;
+    }
+  }
+}
