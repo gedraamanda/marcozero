@@ -7,7 +7,7 @@ $abertura = $_GET['abre'];
         <header style="--cat-color: #1E69FA;" class="py-5 header-foto">
             <div class="container h-100 position-relative">
                 <div class="row h-100 ">
-                    <div class="col-10 mx-auto">
+                    <div class="col-10 mx-auto h-100">
                         <div class="imagem mx-5">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/single-foto.png" alt="" class="w-100">
                         </div>
