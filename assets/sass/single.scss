@@ -1,6 +1,6 @@
 .marco-single {
   header {
-    max-height: calc(100vh - 67px);;
+    max-height: calc(100vh - 67px);
     background: var(--cat-color);
 
     .texto {
@@ -20,6 +20,7 @@
       img {
         height: 100%;
         object-fit: cover;
+        max-height: calc(100vh - 163px);
       }
 
       &:before {

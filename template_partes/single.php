@@ -34,8 +34,8 @@ $abertura = $_GET['abre'];
         </header>
     <?php } else { ?>
         <header style="--cat-color: #F3B2CA;" class="py-5">
-            <div class="container h-100">
-                <div class="row row-cols-2 h-100">
+            <div class="container">
+                <div class="row row-cols-2">
                     <div class="texto px-5 align-self-end">
                         <h1 class="tituloGrande m-0 text-uppercase mb-3">hortas comunitArias e quintais produtivos</h1>
 
@@ -54,8 +54,8 @@ $abertura = $_GET['abre'];
                         </div>
                     </div>
 
-                    <div class="imagem ps-5">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/single1.png" alt="" class="w-100">
+                    <div class="imagem ps-5 text-center">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/single1.png" alt="" class="">
                     </div>
                 </div>
             </div>
