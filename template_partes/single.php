@@ -259,9 +259,6 @@ $abertura = $_GET['abre'];
 
                                 <div class="coluna-2">
                                     <div class="d-flex flex-column">
-                                        <div class="mb-3">
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod2.png" alt="" class="mw-100">
-                                        </div>
 
                                         <div class="mb-3">
                                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/home3.png" alt="" class="mw-100">
