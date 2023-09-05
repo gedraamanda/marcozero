@@ -36,6 +36,10 @@
       .imagem {
         height: 100%;
         object-fit: cover;
+
+        &:before {
+          display: none;
+        }
       }
 
       .texto {
@@ -90,7 +94,7 @@
     .wp-block-image {
       transform: translateX(-3rem);
       width: calc(100% + 3rem);
-      
+
       .legenda-credito {
         p{
           font-family: $tris;
