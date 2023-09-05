@@ -180,6 +180,11 @@ $abertura = $_GET['abre'];
 
                         <p>Marleide Monteiro, moradora do bairro de Passarinho, no Recife, também integra o projeto e afirma que, graças à iniciativa, é uma agricultora em formação: “Eu me sinto, sim, uma agricultora porque mesmo em um espaço pequeno, um quintal, através das minhas mãos e do aprendizado com outras mulheres, eu também criei uma horta na minha comunidade e isso é maravilhoso”.</p>
 
+                        <div class="apoio my-5 pt-2">
+                            <p>Esta reportagem foi produzida com apoio do <a href="">Report for the World</a>, uma iniciativa do
+                                <a href="">The GroundTruth Project</a>.</p>
+                        </div>
+
                         <div class="tags d-flex mt-4 align-items-center">
                             <span class="me-2">TAGS</span>
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>

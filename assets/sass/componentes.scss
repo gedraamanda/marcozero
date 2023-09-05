@@ -316,6 +316,12 @@
   img {
     width: auto;
     height: 385px;
+    transition: all .4s ease-in-out;
+
+    &.plus {
+      transform: scale(1.5);
+      transform-origin: bottom left;
+    }
   }
 
   .slider-control-galeria {

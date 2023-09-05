@@ -90,6 +90,10 @@ $(document).ready(function () {
         $('.abre-formato').slideToggle();
         $(this).toggleClass('open');
     });
+
+    $('.sl').on('click', function (){
+        $(this).find('img').toggleClass('plus');
+    })
 });
 
 
