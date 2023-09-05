@@ -43,12 +43,16 @@
             </div>
         </div>
     </div>
-<?php } ?>
+<?php }
 
 
-<div class="menu-default py-3 <?php echo is_home() ? 'menu-home' : '' ?>">
+$abertura = $_GET['abre'];
+?>
+
+
+<div class="menu-default <?php echo is_home() ? 'menu-home' : '' ?> <?php echo isset($abertura) && $abertura === 'foto' ? 'menu-borda' : '' ?>">
     <div class="container">
-        <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-between py-3 int">
             <div class="logo d-flex align-items-center">
                 <a href="#"><i></i></a>
                 <h1 class="m-0">MARCO<span>ZERO</span></h1>

@@ -1,31 +1,67 @@
+<?php
+$abertura = $_GET['abre'];
+?>
+
 <div class="marco-single">
-	<header style="--cat-color: #F3B2CA;" class="py-5">
-		<div class="container h-100">
-			<div class="row row-cols-2 h-100">
-				<div class="texto px-5 align-self-end">
-					<h1 class="tituloGrande m-0 text-uppercase mb-3">hortas comunitArias e quintais produtivos</h1>
-
-					<p class="m-0 linha-fina linhaFinaPd">Projeto cria hortas e quintais produtivos em terrenos baldios do Grande Recife</p>
-
-					<div class="detalhe d-flex aling-items-center mt-2">
-						<a href="#" class="assina text-uppercase">marcozero conteúdo</a>
-						<span class="mx-3">/</span>
-						<span class="data">09/06/2023</span>
-					</div>
-
-					<div class="tags d-flex mt-5">
-						<a href="#" class="btn text-uppercase me-2">socioambiental</a>
-						<a href="#" class="btn text-uppercase me-2">energia</a>
-						<a href="#" class="btn text-uppercase">agroecologia</a>
-					</div>
-				</div>
-
-                <div class="imagem ps-5">
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/single1.png" alt="" class="w-100">
+    <?php if(isset($abertura) && $abertura === 'foto') { ?>
+        <header style="--cat-color: #1E69FA;" class="py-5 header-foto">
+            <div class="container h-100 position-relative">
+                <div class="row h-100 ">
+                    <div class="col-10 mx-auto">
+                        <div class="imagem mx-5">
+                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/single-foto.png" alt="" class="w-100">
+                        </div>
+                    </div>
                 </div>
-			</div>
-		</div>
-	</header>
+
+                <div class="texto ms-5">
+                    <h1 class="m-0 text-uppercase mb-3">Desnutricao ja mata mais pessoas idosas do que criancas em Pernambuco</h1>
+
+                    <p class="m-0 linha-fina linhaFinaPd">“É muito ruim olhar para os quatro cantos e não ver o que comer”</p>
+
+                    <div class="detalhe d-flex aling-items-center mt-2">
+                        <a href="#" class="assina text-uppercase">Por adriana amâncio</a>
+                        <span class="mx-3">/</span>
+                        <span class="data">09/06/2023</span>
+                    </div>
+
+                    <div class="tags d-flex mt-4">
+                        <a href="#" class="btn text-uppercase me-2">energia</a>
+                        <a href="#" class="btn text-uppercase">agroecologia</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <?php } else { ?>
+        <header style="--cat-color: #F3B2CA;" class="py-5">
+            <div class="container h-100">
+                <div class="row row-cols-2 h-100">
+                    <div class="texto px-5 align-self-end">
+                        <h1 class="tituloGrande m-0 text-uppercase mb-3">hortas comunitArias e quintais produtivos</h1>
+
+                        <p class="m-0 linha-fina linhaFinaPd">Projeto cria hortas e quintais produtivos em terrenos baldios do Grande Recife</p>
+
+                        <div class="detalhe d-flex aling-items-center mt-2">
+                            <a href="#" class="assina text-uppercase">marcozero conteúdo</a>
+                            <span class="mx-3">/</span>
+                            <span class="data">09/06/2023</span>
+                        </div>
+
+                        <div class="tags d-flex mt-5">
+                            <a href="#" class="btn text-uppercase me-2">socioambiental</a>
+                            <a href="#" class="btn text-uppercase me-2">energia</a>
+                            <a href="#" class="btn text-uppercase">agroecologia</a>
+                        </div>
+                    </div>
+
+                    <div class="imagem ps-5">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/single1.png" alt="" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </header>
+    <?php } ?>
+
 
     <div class="marco-single__conteudo mt-5">
         <div class="container">
@@ -49,6 +85,22 @@
                         <p>“Nesses territórios onde estamos atuando o perfil majoritariamente encontrado é de mulheres. Mulheres mais velhas, maduras e algumas já idosas. Muitas delas são mulheres pretas, periféricas e em situação de vulnerabilidade social. Pessoas que já passaram pelo mercado de trabalho, mas que perderam o emprego e não conseguiram mais voltar ou pessoas que nunca nem estiveram no mercado de trabalho. Essas condições faz com que essas mulheres procurem espaços de acolhimento para conseguir tocar suas vidas e se envolvam em ações como essa, que proporcionam uma independência para elas produzirem o próprio alimento e de suas famílias”, declarou Simone Arimatéia.</p>
 
                         <p>A agricultora Dianira Lima, moradora da Vila Independência, no bairro Vasco da Gama, zona norte do Recife, é uma das beneficiárias do projeto e integrante da horta comunitária “Resistir é preciso”.</p>
+
+                        <div class="citacao ms-auto my-5">
+                            <p class="m-0">“Essa semana, por sorte, veio um senhor e deu fuba e uns tres pacotes de macarrao”</p>
+                        </div>
+
+                        <figure class="wp-block-image my-5">
+                            <picture>
+                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/content1.png" alt="" class="w-100">
+                            </picture>
+
+                            <figcaption class="legenda-credito mx-5">
+                               <p class="m-0">Comida só dura até o meio do mês na casa de dona Zilma.</p>
+                                <span class="text-uppercase">Foto © Arnaldo Sete.Projeto Colabora</span>
+                            </figcaption>
+
+                        </figure>
 
                         <p>“Quando recebi o convite para participar da horta comunitária urbana foi um grande desafio, mas também uma oportunidade de adquirir muito conhecimento. E está valendo muito a pena porque lidar com a terra, aprender a plantar, a colher, cuidar e preparar a horta é de grande importância e nos proporciona a colheita da alimentação orgânica e saudável”, declarou Dianira.</p>
 

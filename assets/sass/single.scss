@@ -31,6 +31,33 @@
         background: #000;
       }
     }
+
+    &.header-foto {
+      .imagem {
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .texto {
+        position: absolute;
+        border-top: 4px solid #000;
+        bottom: 0;
+        background: $azul;
+        width: 300px;
+        padding-top: 15px;
+
+        h1 {
+          font-family: $resBold;
+          font-size: 18px;
+          line-height: 120%;
+          width: 90%;
+        }
+
+        .linha-fina {
+          width: 83%;
+        }
+      }
+    }
   }
 
   &__conteudo {
@@ -56,6 +83,25 @@
           font-weight: $bold;
           text-decoration: underline;
           text-underline-offset: 3px;
+        }
+      }
+    }
+
+    .wp-block-image {
+      transform: translateX(-3rem);
+      width: calc(100% + 3rem);
+      
+      .legenda-credito {
+        p{
+          font-family: $tris;
+          font-size: 14px;
+          font-weight: $regular;
+          line-height: 155%;
+        }
+
+        span {
+          font-family: $resReg;
+          font-size: 11px;
         }
       }
     }

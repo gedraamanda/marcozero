@@ -79,6 +79,12 @@
   top: 0;
   z-index: 99;
 
+  &.menu-borda {
+    .int {
+      border-bottom: 1px solid #fff;
+    }
+  }
+
   &.menu-home {
     position: fixed;
     transform: translate(0, -100%);

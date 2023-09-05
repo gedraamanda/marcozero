@@ -276,3 +276,25 @@
   }
 }
 
+.citacao {
+  width: 80%;
+
+  p {
+    font-family: $resBold !important;
+    font-size: 24px !important;
+    line-height: 130% !important;
+    position: relative;
+
+    &:before {
+      content: "";
+      width: 6px;
+      height: 70%;
+      display: inline-block;
+      background: #000;
+      position: absolute;
+      top: 20%;
+      transform: translateX(-25px);
+    }
+  }
+}
+
