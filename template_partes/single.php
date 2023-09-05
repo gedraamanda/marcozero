@@ -32,6 +32,34 @@ $abertura = $_GET['abre'];
                 </div>
             </div>
         </header>
+    <?php } elseif(isset($abertura) && $abertura === 'horizontal') { ?>
+        <header style="--cat-color: #7BDDDD;" class="py-5">
+            <div class="container">
+                <div class="row row-cols-2">
+                    <div class="texto px-5 align-self-end">
+                        <h1 class="tituloGrande m-0 text-uppercase mb-3">trf 5 decide se biologa negra serareintegrada ao servico publico</h1>
+
+                        <p class="m-0 linha-fina linhaFinaPd">a dificuldade de parir em uma cidade do interior de Pernambuco</p>
+
+                        <div class="detalhe d-flex aling-items-center mt-2">
+                            <a href="#" class="assina text-uppercase">marcozero conteúdo</a>
+                            <span class="mx-3">/</span>
+                            <span class="data">09/06/2023</span>
+                        </div>
+
+                        <div class="tags d-flex mt-5">
+                            <a href="#" class="btn text-uppercase me-2">socioambiental</a>
+                            <a href="#" class="btn text-uppercase me-2">energia</a>
+                            <a href="#" class="btn text-uppercase">agroecologia</a>
+                        </div>
+                    </div>
+
+                    <div class="imagem ps-5 text-center">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/home3.png" alt="" class="">
+                    </div>
+                </div>
+            </div>
+        </header>
     <?php } else { ?>
         <header style="--cat-color: #F3B2CA;" class="py-5">
             <div class="container">
