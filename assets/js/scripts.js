@@ -50,6 +50,31 @@ $(document).ready(function () {
         });
     }
 
+    //galeria posts
+    const galeriaMarco = () => {
+        const productCatsSlider = document.querySelectorAll('.marco-galeria'); // container above slider
+        productCatsSlider.forEach(sliderWrapper => {
+            const slider = sliderWrapper.querySelector('.galeria-sl'); // container with slider
+            const controlsContainerD = sliderWrapper.querySelector('.slider-control-galeria');
+
+
+            const sliderGaleria = tns({
+                container: slider,
+                mode : 'gallery',
+                loop: false,
+                mouseDrag: true,
+                nav: false,
+                controlsContainer: controlsContainerD,
+            });
+
+
+        });
+    };
+
+    if($('.marco-galeria').length > 0) {
+        galeriaMarco();
+    }
+
 
     //menu hamburguer
     $('.hamb').on('click', function () {

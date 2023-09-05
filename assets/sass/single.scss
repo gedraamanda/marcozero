@@ -99,20 +99,6 @@
     .wp-block-image {
       transform: translateX(-3rem);
       width: calc(100% + 3rem);
-
-      .legenda-credito {
-        p{
-          font-family: $tris;
-          font-size: 14px;
-          font-weight: $regular;
-          line-height: 155%;
-        }
-
-        span {
-          font-family: $resReg;
-          font-size: 11px;
-        }
-      }
     }
   }
 }

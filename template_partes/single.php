@@ -104,11 +104,47 @@ $abertura = $_GET['abre'];
 
                         <p>A iniciativa de fomento à agricultura comunitária teve início em julho de 2022 e é fruto da emenda parlamentar do deputado federal Túlio Gadelha (Rede), aprovada por meio do Termo de Fomento do Ministério da Agricultura, Pecuária e Abastecimento. O projeto também tem apoio da organização Misereor.</p>
 
-                        <div class="marco-galeria position-relative">
+                        <div class="marco-galeria position-relative my-5">
+                            <div class="slider-control-galeria d-flex" aria-label="Carousel Navigation" tabindex="0">
+                                <a class="prev" data-controls="prev" aria-controls="customize" tabindex="-1"></a>
+
+                                <a class="next ms-auto" data-controls="next" aria-controls="customize" tabindex="-1"></a>
+                            </div>
+
                             <div class="mx-5">
                                 <div class="galeria-sl">
                                     <div class="sl">
+                                        <div class="text-center">
+                                            <picture>
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/home2.png" alt="" class="mw-100">
+                                            </picture>
+                                        </div>
 
+
+                                        <figcaption class="legenda-credito mx-5 mt-2">
+                                            <p class="m-0">Comida só dura até o meio do mês na casa de dona Zilma.</p>
+                                            <span class="text-uppercase">Foto © Arnaldo Sete.Projeto Colabora</span>
+                                        </figcaption>
+                                    </div>
+
+                                    <div class="sl">
+                                        <div class="text-center">
+                                            <picture>
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/home3.png" alt="" class="mw-100">
+                                            </picture>
+                                        </div>
+                                    </div>
+
+                                    <div class="sl">
+                                        <div class="text-center">
+                                            <picture>
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/ent1.png" alt="" class="mw-100">
+                                            </picture>
+                                        </div>
+
+                                        <figcaption class="legenda-credito mx-5 mt-2">
+                                            <p class="m-0">Pastor Henrique Vieira</p>
+                                        </figcaption>
                                     </div>
                                 </div>
                             </div>
