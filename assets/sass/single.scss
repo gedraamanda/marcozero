@@ -71,6 +71,29 @@
     &.header-texto {
       padding: 90px 0;
     }
+
+  }
+
+  .marco-videos {
+    header {
+      .texto {
+        border-color: #000;
+        color: #000;
+
+        a, h1 {
+          color: #000;
+        }
+        
+        .tags {
+          a {
+            &:hover {
+              background: #000;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
   }
 
   &__conteudo {

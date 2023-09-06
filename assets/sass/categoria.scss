@@ -46,8 +46,9 @@
 //home de videos
 .marco-videos {
   header {
-    background: #000;
+    background: var(--bg-color) !important;
     padding: 40px 0;
+    max-height: initial !important;
 
     .wrapper {
       width: 870px;

@@ -1,5 +1,5 @@
 <div class="marco-videos">
-    <header>
+    <header style="--bg-color: #000;">
         <div class="container">
             <div class="row">
                 <div class="col-10 mx-auto">
