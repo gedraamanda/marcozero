@@ -8,6 +8,8 @@ if ( is_home() ) {
 
 	if($categoria->slug == 'webstories') {
 		get_template_part( 'template_partes/webstories' );
+	} elseif($categoria->slug == 'videos') {
+		get_template_part( 'template_partes/videos' );
 	} else {
 		get_template_part( 'template_partes/categorias' );
 	}
