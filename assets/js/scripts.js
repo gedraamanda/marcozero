@@ -94,6 +94,9 @@ $(document).ready(function () {
     $('.sl').on('click', function (){
         $(this).find('img').toggleClass('plus');
     })
+
+    //icone de explicacao colocar azul
+    $('strong:contains("<+>")').css('color', '#1E69FA');
 });
 
 

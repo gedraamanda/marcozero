@@ -297,6 +297,52 @@ $abertura = $_GET['abre'];
 
                         <p>Marleide Monteiro, moradora do bairro de Passarinho, no Recife, também integra o projeto e afirma que, graças à iniciativa, é uma agricultora em formação: “Eu me sinto, sim, uma agricultora porque mesmo em um espaço pequeno, um quintal, através das minhas mãos e do aprendizado com outras mulheres, eu também criei uma horta na minha comunidade e isso é maravilhoso”.</p>
 
+
+                        <div class="lista mx-5 px-5 py-4 my-5" style="--cat-color: #EBEB01;">
+                            <span class="titulo text-uppercase mb-3 d-block">tres cuidados para quem aposta</span>
+
+                            <div class="lista__item">
+                                <p class="m-0"><span>1. </span>É preciso saber que existe essa gangorra, entre perder e ganhar e é preciso saber lidar com isso.</p>
+                            </div>
+
+                            <div class="lista__item">
+                                <p class="m-0"><span>2. </span>Manter uma coerência durante esse processo: quanto você vai gastar no jogo? Esse dinheiro fará diferença?</p>
+                            </div>
+
+                            <div class="lista__item">
+                                <p class="m-0"><span>3. </span>Ter em mente o momento de parar. “A hora de parar é quando você viu que perdeu, que você só tinha aquele dinheiro extra, que se você for apostar mais uma vez pode acabar se comprometendo, acho que essa é a hora.”</p>
+                            </div>
+                        </div>
+
+                        <div class="informacao mx-5 px-5 py-4 my-5" style="--cat-color: #7BDDDD;">
+                            <span class="titulo text-uppercase mb-3 d-block">box informações complementares</span>
+
+                            <p>Box de informação complementar Os moradores que fazem apostas nos aplicativos entendem ser grave o escândalo de manipulação nos jogos de futebol, mas veem naturalidade no problema. Nos últimos meses, investigações mostraram que jogadores receberam quantias em dinheiro para ganhar cartão amarelo e vermelho durante as partidas, além de outras irregularidades.</p>
+                            <p>As suspeitas sempre existiram em campeonatos de divisões inferiores, mas chegaram a elite do futebol brasileiro.</p>
+                            <p>Para Matheus, do Grajaú, não foi uma surpresa. “Sempre teve um jogador que recebia um pouco menos, principalmente em campeonatos de pequena expressão”, avalia.</p>
+                            <p>Para ele, torneios como a Série C do Campeonato Brasileiro, em que os jogadores têm salários menores, são um prato cheio para esses agenciadores. “Numa aposta ele pode quadruplicar o valor do salário.” No caso de Lucas, de Diadema, ele critica a atitude dos jogadores e diz que a ética deveria falar mais alto. “Por eu levar o esporte muito a sério, eu não aceitaria esse tipo de acordo”, diz Lucas.</p>
+                        </div>
+
+                        <h3>ENTENDA O CASO</h3>
+
+                        <p>Para entender porque, diferente do que tem ocorrido no fim da vida, na primeira infância a desnutrição já não <strong><+></strong> é uma ameaça tão presente, é preciso olhar para a história recente do Brasil. A nutricionista e doutoranda em Saúde Pública.</p>
+
+                        <div class="box-explicacao mx-5 px-4 py-3 my-3" style="--cat-color: #1E69FA;">
+                            <span class="titulo"><+></span>
+
+                            <div class="int mx-auto">
+                                <p>Os moradores que fazem apostas nos aplicativos entendem ser grave o escândalo de manipulação nos jogos de futebol, mas veem naturalidade no problema. Nos últimos meses, investigações mostraram que jogadores receberam quantias em dinheiro para ganhar cartão amarelo e vermelho durante as partidas, além de outras irregularidades.s</p>
+                            </div>
+                        </div>
+
+                        <p>Para entender porque, diferente do que tem ocorrido no fim da vida, na primeira infância a desnutrição já não é uma ameaça tão presente, é preciso olhar para a história recente do Brasil. A nutricionista e doutoranda em Saúde Pública.</p>
+
+                        <div class="infos mx-5 px-5 py-4 my-5">
+                            <span class="titulo text-uppercase mb-2 d-block">resposta da secretaria de segurança</span>
+
+                            <p>Os moradores que fazem apostas nos aplicativos entendem ser grave o escândalo de manipulação nos jogos de futebol, mas veem naturalidade no problema. Nos últimos meses, investigações mostraram que jogadores receberam quantias em dinheiro para ganhar cartão amarelo e vermelho durante as partidas, além de outras irregularidades.</p>
+                        </div>
+
                         <div class="apoio my-5 pt-2">
                             <p>Esta reportagem foi produzida com apoio do <a href="">Report for the World</a>, uma iniciativa do
                                 <a href="">The GroundTruth Project</a>.</p>

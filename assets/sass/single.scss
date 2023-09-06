@@ -97,6 +97,10 @@
           text-decoration: underline;
           text-underline-offset: 3px;
         }
+
+        strong, b {
+          font-weight: $bold;
+        }
       }
     }
 
@@ -133,7 +137,7 @@
 
   h3 {
     font-family: $resBold;
-    font-size: 26px;
+    font-size: 22px;
     color: #fff;
   }
 
@@ -148,7 +152,7 @@
 
     .titulo {
       font-family: $resMed;
-      font-size: 21px;
+      font-size: 18px;
       line-height: 125%;
       display: block;
       width: 80%;
