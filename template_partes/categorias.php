@@ -78,9 +78,9 @@
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/list1.png" alt="" class="w-100">
                         </a>
 
-                        <a href="#" class="titulo mt-2">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
+                        <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-3">
+                        <div class="tags d-flex mt-4">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -94,9 +94,9 @@
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/list2.png" alt="" class="w-100">
                         </a>
 
-                        <a href="#" class="titulo mt-2">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
+                        <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-3">
+                        <div class="tags d-flex mt-4">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -110,9 +110,9 @@
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/list3.png" alt="" class="w-100">
                         </a>
 
-                        <a href="#" class="titulo mt-2">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
+                        <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-3">
+                        <div class="tags d-flex mt-4">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -126,9 +126,9 @@
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/list4.png" alt="" class="w-100">
                         </a>
 
-                        <a href="#" class="titulo mt-2">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
+                        <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-3">
+                        <div class="tags d-flex mt-4">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -142,9 +142,9 @@
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/list5.png" alt="" class="w-100">
                         </a>
 
-                        <a href="#" class="titulo mt-2">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
+                        <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-3">
+                        <div class="tags d-flex mt-4">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -158,9 +158,9 @@
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/list6.png" alt="" class="w-100">
                         </a>
 
-                        <a href="#" class="titulo mt-2">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
+                        <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-3">
+                        <div class="tags d-flex mt-4">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -174,9 +174,9 @@
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/list1.png" alt="" class="w-100">
                         </a>
 
-                        <a href="#" class="titulo mt-2">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
+                        <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-3">
+                        <div class="tags d-flex mt-4">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -190,9 +190,9 @@
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/list2.png" alt="" class="w-100">
                         </a>
 
-                        <a href="#" class="titulo mt-2">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
+                        <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-3">
+                        <div class="tags d-flex mt-4">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -206,9 +206,9 @@
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/list3.png" alt="" class="w-100">
                         </a>
 
-                        <a href="#" class="titulo mt-2">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
+                        <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-3">
+                        <div class="tags d-flex mt-4">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -222,9 +222,9 @@
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/list4.png" alt="" class="w-100">
                         </a>
 
-                        <a href="#" class="titulo mt-2">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
+                        <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-3">
+                        <div class="tags d-flex mt-4">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -238,9 +238,9 @@
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/list5.png" alt="" class="w-100">
                         </a>
 
-                        <a href="#" class="titulo mt-2">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
+                        <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-3">
+                        <div class="tags d-flex mt-4">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -254,9 +254,9 @@
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/list6.png" alt="" class="w-100">
                         </a>
 
-                        <a href="#" class="titulo mt-2">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
+                        <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-3">
+                        <div class="tags d-flex mt-4">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -270,9 +270,9 @@
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/list1.png" alt="" class="w-100">
                         </a>
 
-                        <a href="#" class="titulo mt-2">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
+                        <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-3">
+                        <div class="tags d-flex mt-4">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -286,9 +286,9 @@
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/list2.png" alt="" class="w-100">
                         </a>
 
-                        <a href="#" class="titulo mt-2">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
+                        <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-3">
+                        <div class="tags d-flex mt-4">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -302,9 +302,9 @@
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/list3.png" alt="" class="w-100">
                         </a>
 
-                        <a href="#" class="titulo mt-2">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
+                        <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-3">
+                        <div class="tags d-flex mt-4">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -318,9 +318,9 @@
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/list4.png" alt="" class="w-100">
                         </a>
 
-                        <a href="#" class="titulo mt-2">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
+                        <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-3">
+                        <div class="tags d-flex mt-4">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -334,9 +334,9 @@
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/list5.png" alt="" class="w-100">
                         </a>
 
-                        <a href="#" class="titulo mt-2">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
+                        <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-3">
+                        <div class="tags d-flex mt-4">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -350,9 +350,9 @@
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/list6.png" alt="" class="w-100">
                         </a>
 
-                        <a href="#" class="titulo mt-2">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
+                        <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-3">
+                        <div class="tags d-flex mt-4">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -366,9 +366,9 @@
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/list1.png" alt="" class="w-100">
                         </a>
 
-                        <a href="#" class="titulo mt-2">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
+                        <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-3">
+                        <div class="tags d-flex mt-4">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -382,9 +382,9 @@
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/list2.png" alt="" class="w-100">
                         </a>
 
-                        <a href="#" class="titulo mt-2">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
+                        <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-3">
+                        <div class="tags d-flex mt-4">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -398,9 +398,9 @@
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/list3.png" alt="" class="w-100">
                         </a>
 
-                        <a href="#" class="titulo mt-2">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
+                        <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-3">
+                        <div class="tags d-flex mt-4">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -414,9 +414,9 @@
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/list4.png" alt="" class="w-100">
                         </a>
 
-                        <a href="#" class="titulo mt-2">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
+                        <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-3">
+                        <div class="tags d-flex mt-4">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -430,9 +430,9 @@
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/list5.png" alt="" class="w-100">
                         </a>
 
-                        <a href="#" class="titulo mt-2">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
+                        <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-3">
+                        <div class="tags d-flex mt-4">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -446,9 +446,9 @@
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/list6.png" alt="" class="w-100">
                         </a>
 
-                        <a href="#" class="titulo mt-2">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
+                        <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-3">
+                        <div class="tags d-flex mt-4">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
