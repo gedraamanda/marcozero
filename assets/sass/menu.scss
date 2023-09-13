@@ -78,6 +78,12 @@
   position: sticky;
   top: 0;
   z-index: 99;
+  transition: transform 0.5s;
+  transform: none;
+
+  &.esconde {
+    transform: translate(0, -100%);
+  }
 
   &.menu-borda {
     .int {
