@@ -187,7 +187,7 @@ $abertura = $_GET['abre'];
 
                                         <figcaption class="legenda-credito mx-5 mt-2">
                                             <p class="m-0">Comida só dura até o meio do mês na casa de dona Zilma.</p>
-                                            <span class="text-uppercase">Foto © Arnaldo Sete.Projeto Colabora</span>
+                                            <span>Foto © Arnaldo Sete.Projeto Colabora</span>
                                         </figcaption>
                                     </div>
 
@@ -325,7 +325,7 @@ $abertura = $_GET['abre'];
 
                             <figcaption class="legenda-credito mx-5">
                                <p class="m-0">Comida só dura até o meio do mês na casa de dona Zilma.</p>
-                                <span class="text-uppercase">Foto © Arnaldo Sete.Projeto Colabora</span>
+                                <span>Foto © Arnaldo Sete.Projeto Colabora</span>
                             </figcaption>
 
                         </figure>
@@ -484,7 +484,7 @@ $abertura = $_GET['abre'];
         </div>
     </div>
 
-    <div class="relacionadas mt-5 py-4">
+    <div class="relacionadas py-4">
         <div class="container">
             <div class="mx-5">
                 <h3 class="m-0 text-uppercase">publicações relacionadas</h3>
@@ -496,7 +496,7 @@ $abertura = $_GET['abre'];
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/rel1.png" alt="" class="w-100">
                             </a>
 
-                            <a href="#" class="titulo mt-2">Eleição do Conselho de Moradores de Brasília Teimosa vira caso de polícia e vai parar na Justiça</a>
+                            <a href="#" class="titulo mt-3">Eleição do Conselho de Moradores de Brasília Teimosa vira caso de polícia e vai parar na Justiça</a>
 
                             <div class="tags d-flex mt-4">
                                 <a href="#" class="btn text-uppercase me-2">socioambiental</a>
@@ -511,7 +511,7 @@ $abertura = $_GET['abre'];
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/rel2.png" alt="" class="w-100">
                             </a>
 
-                            <a href="#" class="titulo mt-2">Eleição do Conselho de Moradores de Brasília Teimosa vira caso de polícia e vai parar na Justiça</a>
+                            <a href="#" class="titulo mt-3">Eleição do Conselho de Moradores de Brasília Teimosa vira caso de polícia e vai parar na Justiça</a>
 
                             <div class="tags d-flex mt-4">
                                 <a href="#" class="btn text-uppercase me-2">socioambiental</a>
@@ -526,7 +526,7 @@ $abertura = $_GET['abre'];
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/rel3.png" alt="" class="w-100">
                             </a>
 
-                            <a href="#" class="titulo mt-2">Eleição do Conselho de Moradores de Brasília Teimosa vira caso de polícia e vai parar na Justiça</a>
+                            <a href="#" class="titulo mt-3">Eleição do Conselho de Moradores de Brasília Teimosa vira caso de polícia e vai parar na Justiça</a>
 
                             <div class="tags d-flex mt-4">
                                 <a href="#" class="btn text-uppercase me-2">socioambiental</a>
@@ -552,7 +552,7 @@ $abertura = $_GET['abre'];
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/rel1.png" alt="" class="w-100">
                             </a>
 
-                            <a href="#" class="titulo mt-2">Eleição do Conselho de Moradores de Brasília Teimosa vira caso de polícia e vai parar na Justiça</a>
+                            <a href="#" class="titulo mt-3">Eleição do Conselho de Moradores de Brasília Teimosa vira caso de polícia e vai parar na Justiça</a>
 
                             <div class="tags d-flex mt-4">
                                 <a href="#" class="btn text-uppercase me-2">socioambiental</a>
@@ -567,7 +567,7 @@ $abertura = $_GET['abre'];
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/rel2.png" alt="" class="w-100">
                             </a>
 
-                            <a href="#" class="titulo mt-2">Eleição do Conselho de Moradores de Brasília Teimosa vira caso de polícia e vai parar na Justiça</a>
+                            <a href="#" class="titulo mt-3">Eleição do Conselho de Moradores de Brasília Teimosa vira caso de polícia e vai parar na Justiça</a>
 
                             <div class="tags d-flex mt-4">
                                 <a href="#" class="btn text-uppercase me-2">socioambiental</a>
@@ -582,7 +582,7 @@ $abertura = $_GET['abre'];
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/rel3.png" alt="" class="w-100">
                             </a>
 
-                            <a href="#" class="titulo mt-2">Eleição do Conselho de Moradores de Brasília Teimosa vira caso de polícia e vai parar na Justiça</a>
+                            <a href="#" class="titulo mt-3">Eleição do Conselho de Moradores de Brasília Teimosa vira caso de polícia e vai parar na Justiça</a>
 
                             <div class="tags d-flex mt-4">
                                 <a href="#" class="btn text-uppercase me-2">socioambiental</a>
