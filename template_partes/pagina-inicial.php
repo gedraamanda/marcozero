@@ -1,7 +1,7 @@
 <div class="marco-home">
 	<section class="especial position-relative">
         <div class="d-flex h-100 pt-3">
-            <div class="especial__texto especial__texto py-4">
+            <div class="especial__texto especial__texto py-5">
                 <div class="d-flex flex-column int mx-auto">
                     <a href="#" class="cat text-uppercase">especial</a>
 
@@ -466,7 +466,7 @@
                                     <a href="" class="ent">Pastor Henrique Vieira</a>
                                 </div>
 
-                                <a href="#" class="titulo mt-2">“O campo progressista precisa ter respeito com a gramática da fe”</a>
+                                <a href="#" class="titulo mt-3 mx-2">“O campo progressista precisa ter respeito com a gramática da fe”</a>
                             </div>
                         </div>
 
@@ -480,7 +480,7 @@
                                     <a href="" class="ent">Kerexu Yxapyry</a>
                                 </div>
 
-                                <a href="#" class="titulo mt-2">“A crise climatica e um sintoma de muita violencia”</a>
+                                <a href="#" class="titulo mt-3 mx-2">“A crise climatica e um sintoma de muita violencia”</a>
                             </div>
                         </div>
 
@@ -494,7 +494,7 @@
                                     <a href="" class="ent">Júlia Gabriela de Jesus</a>
                                 </div>
 
-                                <a href="#" class="titulo mt-2">“Eu acredito que as mulheres devem ocupar esses lugares”</a>
+                                <a href="#" class="titulo mt-3 mx-2">“Eu acredito que as mulheres devem ocupar esses lugares”</a>
                             </div>
                         </div>
                     </div>
