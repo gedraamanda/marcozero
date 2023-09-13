@@ -50,6 +50,18 @@ $(document).ready(function () {
         });
     }
 
+    //post de podcast
+    if($('.pod-outros-sl').length > 0) {
+        var sliderPodOutros = tns({
+            container: '.pod-outros-sl',
+            items : 4,
+            nav: false,
+            loop: false,
+            controlsContainer: '.slider-control-pod',
+            gutter: 40
+        });
+    }
+
     //galeria posts
     const galeriaMarco = () => {
         const productCatsSlider = document.querySelectorAll('.marco-galeria'); // container above slider

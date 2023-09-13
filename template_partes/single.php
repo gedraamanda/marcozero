@@ -160,6 +160,14 @@ $abertura = $_GET['abre'];
             <div class="row">
                 <div class="col-7">
                     <div class="texto ms-5">
+	                    <?php if ( isset( $abertura ) && $abertura === 'podcast' ) { ?>
+                            <div class="d-flex single-podcast align-items-center mb-4">
+                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod1.png" alt="" class="">
+
+                                <p class="m-0 mx-5">Podcast de análise e opinião sobre os fatos mais importantes da semana pela equipe de Marco Zero Conteúdo, coletivo de jornalismo independente e investigativo do Recife</p>
+                            </div>
+                        <?php } ?>
+
                         <p>O Centro de Desenvolvimento Agroecológico Sabiá, em parceria com a Casa Mulher do Nordeste e a organização não governamental Fase, realizou o Seminário Agricultura Urbana – Produzindo Comida de Verdade e Gerando Qualidade de Vida.
                             <a href="">O encontro</a> reuniu mais de 50 agricultoras da Região Metropolitana do Recife para promover uma troca de experiências e celebrar a finalização do projeto de fomento à produção alimentar em hortas comunitárias e quintais produtivos em 15 comunidades.</p>
 
@@ -385,6 +393,70 @@ $abertura = $_GET['abre'];
                                 <a href="">The GroundTruth Project</a>.</p>
                         </div>
 
+	                    <?php if ( isset( $abertura ) && $abertura === 'podcast' ) { ?>
+                            <div class="end-podcast mb-5 pb-5">
+                                <div class="siga text-center mx-auto">
+                                    <span class="siga-titulo m-0">SIGA E OUÇA NO SEU APLICATIVO PREFERIDO</span>
+
+                                    <div class="d-flex agreg justify-content-between mt-3">
+                                        <div class="spot d-flex flex-column">
+                                            <a href=""><i></i></a>
+
+                                            <a href="" class="titulo mt-auto">Spotify</a>
+                                        </div>
+
+                                        <div class="google d-flex flex-column">
+                                            <a href=""><i></i></a>
+
+                                            <a href="" class="titulo mt-auto">Google Cast</a>
+                                        </div>
+
+                                        <div class="you d-flex flex-column">
+                                            <a href=""><i></i></a>
+
+                                            <a href="" class="titulo mt-auto">Youtube</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="outros mt-5 position-relative">
+                                    <span class="siga-titulo m-0 text-uppercase d-block text-center">ouça outros episódios do podcast arrumadinho</span>
+
+                                    <div class="slider-control-pod d-flex" aria-label="Carousel Navigation" tabindex="0">
+                                        <a class="prev" data-controls="prev" aria-controls="customize" tabindex="-1"></a>
+
+                                        <a class="next ms-auto" data-controls="next" aria-controls="customize" tabindex="-1"></a>
+                                    </div>
+
+                                    <div class="pod-outros-sl mt-3">
+                                        <a href="" class="item">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod1.png" alt="">
+                                        </a>
+
+                                        <a href="" class="item">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod2.png" alt="">
+                                        </a>
+
+                                        <a href="" class="item">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod1.png" alt="">
+                                        </a>
+
+                                        <a href="" class="item">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod2.png" alt="">
+                                        </a>
+
+                                        <a href="" class="item">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod1.png" alt="">
+                                        </a>
+
+                                        <a href="" class="item">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod2.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php } ?>
+
                         <div class="tags d-flex mt-4 align-items-center">
                             <span class="me-2">TAGS</span>
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
@@ -419,65 +491,120 @@ $abertura = $_GET['abre'];
                         </div>
                     </div>
 
-                    <div class="mais-recentes ms-auto">
-                        <span class="mais-titulo m-0 text-uppercase">AS MAIS RECENTES</span>
+	                <?php if ( isset( $abertura ) && $abertura === 'podcast' ) { ?>
+                        <div class="mais-pod ms-auto me-5">
+                            <span class="mais-titulo m-0 text-uppercase">outros podcasts</span>
 
-                        <div class="d-flex flex-column mt-3">
-                            <div class="mais-recentes__post d-flex flex-column mb-5">
-                                <a href="">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/side1.png" alt="">
-                                </a>
+                            <div class="d-flex flex-column mt-3">
+                                <div class="mais-pod__post d-flex flex-column">
+                                    <a href="">
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod1.png" alt="">
+                                    </a>
 
-                                <a href="#" class="titulo mt-2">Menos moralismo e mais cuidado com as pessoas é o foco da política de drogas do governo Lula</a>
+                                    <div class="d-flex mt-2">
+                                        <a href="">
+                                            <i></i>
+                                        </a>
 
-                                <div class="detalhe d-flex aling-items-center mt-2">
-                                    <a href="#" class="assina text-uppercase">marcozero conteúdo</a>
-                                    <span class="data ms-3">09/06/2023</span>
+                                        <a href="#" class="titulo">E na rua que se enfrenta o Bolsonarismo</a>
+                                    </div>
                                 </div>
 
-                                <div class="tags d-flex mt-3">
-                                    <a href="#" class="btn text-uppercase me-2">socioambiental</a>
-                                    <a href="#" class="btn text-uppercase me-2">energia</a>
-                                </div>
-                            </div>
+                                <div class="mais-pod__post d-flex flex-column">
+                                    <a href="">
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod2.png" alt="">
+                                    </a>
 
-                            <div class="mais-recentes__post d-flex flex-column mb-5">
-                                <a href="">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/side2.png" alt="">
-                                </a>
+                                    <div class="d-flex mt-2">
+                                        <a href="">
+                                            <i></i>
+                                        </a>
 
-                                <a href="#" class="titulo mt-2">Menos moralismo e mais cuidado com as pessoas é o foco da política de drogas do governo Lula</a>
+                                        <a href="#" class="titulo">E na rua que se enfrenta o Bolsonarismo</a>
+                                    </div>
 
-                                <div class="detalhe d-flex aling-items-center mt-2">
-                                    <a href="#" class="assina text-uppercase">marcozero conteúdo</a>
-                                    <span class="data ms-3">09/06/2023</span>
                                 </div>
 
-                                <div class="tags d-flex mt-3">
-                                    <a href="#" class="btn text-uppercase me-2">socioambiental</a>
-                                    <a href="#" class="btn text-uppercase me-2">energia</a>
-                                </div>
-                            </div>
+                                <div class="mais-pod__post d-flex flex-column">
+                                    <a href="">
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod1.png" alt="">
+                                    </a>
 
-                            <div class="mais-recentes__post d-flex flex-column mb-4">
-                                <a href="">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/side3.png" alt="">
-                                </a>
 
-                                <a href="#" class="titulo mt-2">Menos moralismo e mais cuidado com as pessoas é o foco da política de drogas do governo Lula</a>
+                                    <div class="d-flex mt-2">
+                                        <a href="">
+                                            <i></i>
+                                        </a>
 
-                                <div class="detalhe d-flex aling-items-center mt-2">
-                                    <a href="#" class="assina text-uppercase">marcozero conteúdo</a>
-                                    <span class="data ms-3">09/06/2023</span>
-                                </div>
+                                        <a href="#" class="titulo">E na rua que se enfrenta o Bolsonarismo</a>
+                                    </div>
 
-                                <div class="tags d-flex mt-3">
-                                    <a href="#" class="btn text-uppercase me-2">socioambiental</a>
-                                    <a href="#" class="btn text-uppercase me-2">energia</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    <?php } else { ?>
+                        <div class="mais-recentes ms-auto">
+                            <span class="mais-titulo m-0 text-uppercase">AS MAIS RECENTES</span>
+
+                            <div class="d-flex flex-column mt-3">
+                                <div class="mais-recentes__post d-flex flex-column mb-5">
+                                    <a href="">
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/side1.png" alt="">
+                                    </a>
+
+                                    <a href="#" class="titulo mt-2">Menos moralismo e mais cuidado com as pessoas é o foco da política de drogas do governo Lula</a>
+
+                                    <div class="detalhe d-flex aling-items-center mt-2">
+                                        <a href="#" class="assina text-uppercase">marcozero conteúdo</a>
+                                        <span class="data ms-3">09/06/2023</span>
+                                    </div>
+
+                                    <div class="tags d-flex mt-3">
+                                        <a href="#" class="btn text-uppercase me-2">socioambiental</a>
+                                        <a href="#" class="btn text-uppercase me-2">energia</a>
+                                    </div>
+                                </div>
+
+                                <div class="mais-recentes__post d-flex flex-column mb-5">
+                                    <a href="">
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/side2.png" alt="">
+                                    </a>
+
+                                    <a href="#" class="titulo mt-2">Menos moralismo e mais cuidado com as pessoas é o foco da política de drogas do governo Lula</a>
+
+                                    <div class="detalhe d-flex aling-items-center mt-2">
+                                        <a href="#" class="assina text-uppercase">marcozero conteúdo</a>
+                                        <span class="data ms-3">09/06/2023</span>
+                                    </div>
+
+                                    <div class="tags d-flex mt-3">
+                                        <a href="#" class="btn text-uppercase me-2">socioambiental</a>
+                                        <a href="#" class="btn text-uppercase me-2">energia</a>
+                                    </div>
+                                </div>
+
+                                <div class="mais-recentes__post d-flex flex-column mb-4">
+                                    <a href="">
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/side3.png" alt="">
+                                    </a>
+
+                                    <a href="#" class="titulo mt-2">Menos moralismo e mais cuidado com as pessoas é o foco da política de drogas do governo Lula</a>
+
+                                    <div class="detalhe d-flex aling-items-center mt-2">
+                                        <a href="#" class="assina text-uppercase">marcozero conteúdo</a>
+                                        <span class="data ms-3">09/06/2023</span>
+                                    </div>
+
+                                    <div class="tags d-flex mt-3">
+                                        <a href="#" class="btn text-uppercase me-2">socioambiental</a>
+                                        <a href="#" class="btn text-uppercase me-2">energia</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+	                <?php } ?>
+
+
 
                 </div>
             </div>

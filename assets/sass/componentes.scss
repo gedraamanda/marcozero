@@ -275,6 +275,43 @@
   }
 }
 
+.mais-pod {
+  width: 160px;
+  margin-top: 50%;
+
+  .mais-titulo {
+    font-family: $resReg;
+    font-size: 14px;
+    letter-spacing: 0.28px;
+    border-bottom: 1px solid #000;
+    display: block;
+  }
+
+  &__post {
+    margin-bottom: 32px;
+
+    i {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='45' height='45' fill='none'%3E%3Cellipse cx='22.04' cy='22.5' fill='%23EBEB01' rx='22.04' ry='22.5'/%3E%3Cpath fill='%23000' d='M34.285 22 16.653 32.392V11.608L34.285 22Z'/%3E%3C/svg%3E");
+      width: 45px;
+      height: 45px;
+      display: block;
+      margin-right: 8px;
+    }
+
+    img {
+      width: 138px;
+      height: auto;
+    }
+
+    .titulo {
+      font-family: $resMed;
+      font-size: 14px;
+      line-height: 105%;
+      display: block;
+    }
+  }
+}
+
 .citacao {
   width: 80%;
 
@@ -507,3 +544,5 @@
   left: 50%;
   transform: translate3d( -50%, -50%, 0 );
 }
+
+
