@@ -37,7 +37,7 @@
                 <div class="d-flex flex-column texto">
                     <h1 class="m-0 text-uppercase mt-3">direitos humanos</h1>
 
-                    <div class="d-flex flex-column mx-5 mt-auto">
+                    <div class="d-flex flex-column mx-4 mt-auto">
                         <a href="#" class="text-uppercase tituloGrande mb-2">por acesso à praia</a>
 
                         <a href="">
@@ -70,7 +70,7 @@
     </div>
 
     <div class="container mt-5 pt-5">
-        <div class="marco-result__listagem listagem mx-5">
+        <div class="marco-result__listagem listagem col-10 mx-auto">
             <div class="row row-cols-3 listagem__int">
                 <div class="listagem-post">
                     <div class="d-flex flex-column">
