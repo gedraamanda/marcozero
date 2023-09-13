@@ -119,6 +119,14 @@ $(window).scroll(function () {
         if(!isVisible($(".marco-footer"),-700)) {
            $('.menu-footer').removeClass('hiden');
         }
+
+
+        if(scrollY > altura) {
+            if (!$('.menu-home').hasClass('active')) {
+                $('.menu-home').addClass('active');
+            }
+        }
+
     }
 
     //desce
@@ -134,11 +142,21 @@ $(window).scroll(function () {
         }
 
         if(scrollY >= altura - 150) {
-            $('.menu-home').addClass('active');
+            if(!$('.menu-home').hasClass('active')) {
+                $('.menu-home').addClass('active');
+            }
         }
 
         if(isVisible($(".marco-footer"),-700)) {
-            $('.menu-footer').addClass('hiden');
+            if(!$('.menu-footer').hasClass('hiden')) {
+                $('.menu-footer').addClass('hiden');
+            }
+        }
+
+        if(scrollY >= altura * 2) {
+            if($('.menu-home').hasClass('active')) {
+                $('.menu-home').removeClass('active');
+            }
         }
     }
 
