@@ -150,10 +150,6 @@ $(window).scroll(function () {
             if (!$('.menu-especial').hasClass('esconde')) {
                 $('.menu-especial').addClass('esconde');
             }
-
-            if (!$('.menu-footer').hasClass('hiden')) {
-                $('.menu-footer').addClass('hiden');
-            }
         }
 
         if(!isVisible($(".marco-footer"),-700)) {
@@ -184,22 +180,9 @@ $(window).scroll(function () {
             $('.menu-footer-home').addClass('less');
         }
 
-        //menu-footer nas outras paginas
-        if(scrollY >= altura && $('.menu-footer-default').length > 0) {
-            if ($('.menu-footer-default').hasClass('hiden')) {
-                $('.menu-footer-default').removeClass('hiden');
-            }
-        }
-
         if(scrollY >= altura - 150) {
             if(!$('.menu-home').hasClass('active')) {
                 $('.menu-home').addClass('active');
-            }
-        }
-
-        if(isVisible($(".marco-footer"),-700)) {
-            if(!$('.menu-footer').hasClass('hiden')) {
-                $('.menu-footer').addClass('hiden');
             }
         }
 

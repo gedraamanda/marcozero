@@ -149,7 +149,8 @@
   z-index: 9;
 
   &.menu-footer-default {
-    position: fixed;
+    position: relative;
+    top: auto !important;
   }
 
   &.hiden{
