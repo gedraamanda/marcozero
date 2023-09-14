@@ -50,7 +50,7 @@ $abertura = $_GET['abre'];
 ?>
 
 
-<div class="menu-default <?php echo is_home() ? 'menu-home' : '' ?> <?php echo isset($abertura) && $abertura === 'foto' ? 'menu-borda' : '' ?>">
+<div class="menu-default <?php echo is_home() ? 'menu-home' : '' ?> <?php echo isset($abertura) && $abertura === 'foto' ? 'menu-borda' : '' ?> <?php echo $_SERVER['REQUEST_URI'] === '/especial/' ? 'menu-especial esconde' : '' ?>">
     <div class="container">
         <div class="d-flex justify-content-between py-3 int">
             <div class="logo d-flex align-items-center">

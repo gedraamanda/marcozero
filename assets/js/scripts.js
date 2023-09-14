@@ -109,6 +109,24 @@ $(document).ready(function () {
 
     //icone de explicacao colocar azul
     $('strong:contains("<+>")').css('color', '#1E69FA');
+
+
+    let panels = gsap.utils.toArray(".panel");
+    let tops = panels.map(panel => ScrollTrigger.create({trigger: panel, start: "top top"}));
+
+    panels.forEach((panel, i) => {
+        ScrollTrigger.create({
+            trigger: panel,
+            start: () => panel.offsetHeight < window.innerHeight ? "top top" : "bottom bottom", // if it's shorter than the viewport, we prefer to pin it at the top
+            pin: true,
+            pinSpacing: false,
+            onLeave: () => {
+            },
+        });
+    });
+
+
+
 });
 
 
@@ -128,11 +146,19 @@ $(window).scroll(function () {
             if ($('.menu-home').hasClass('active')) {
                 $('.menu-home').removeClass('active');
             }
+
+            if (!$('.menu-especial').hasClass('esconde')) {
+                $('.menu-especial').addClass('esconde');
+            }
+
+            if (!$('.menu-footer').hasClass('hiden')) {
+                $('.menu-footer').addClass('hiden');
+            }
         }
 
         if(!isVisible($(".marco-footer"),-700)) {
-            if ($('.menu-footer').hasClass('hiden')) {
-                $('.menu-footer').removeClass('hiden');
+            if ($('.menu-footer-home').hasClass('hiden')) {
+                $('.menu-footer-home').removeClass('hiden');
             }
         }
 
@@ -143,7 +169,7 @@ $(window).scroll(function () {
             }
         }
 
-        if($('.menu-home').length == 0) {
+        if($('.menu-home').length == 0 && scrollY > altura) {
             if($('.menu-default').hasClass('esconde')) {
                 $('.menu-default').removeClass('esconde');
             }

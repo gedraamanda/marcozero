@@ -45,6 +45,8 @@ function add_estilos_e_scripts() {
 	wp_enqueue_script( 'jquery');
 
 	wp_enqueue_script( 'tiny-js', 'https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js', array(), '', true );
+	wp_enqueue_script( 'gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js', array(), '', true );
+	wp_enqueue_script( 'gsap-trig', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js', array(), '', true );
     wp_enqueue_script( 'scripts', get_template_directory_uri() . '/scripts.js', array(), '', true );
 
 }

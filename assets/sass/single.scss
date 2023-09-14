@@ -287,3 +287,17 @@
     }
   }
 }
+
+
+//especial 
+.marco-especial {
+  .capa {
+    img {
+      height: 100vh !important;
+      object-fit: cover;
+    }
+  }
+  &__conteudo {
+    background: #F5CCDB;
+  }
+}

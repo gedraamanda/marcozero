@@ -91,6 +91,12 @@
     }
   }
 
+  &.menu-especial {
+    //display: none;
+    position: fixed;
+    width: 100%;
+  }
+
   &.menu-home {
     position: fixed;
     transform: translate(0, -100%);
