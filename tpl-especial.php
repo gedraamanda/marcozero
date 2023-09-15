@@ -13,302 +13,65 @@ get_header(); ?>
             <div class="row">
                 <div class="col-7">
                     <div class="texto ms-5">
-						<?php if ( isset( $abertura ) && $abertura === 'podcast' ) { ?>
-                            <div class="d-flex single-podcast align-items-center mb-4">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod1.png" alt="" class="">
+						<h1 class="m-0 text-uppercase mb-4">MANIFESTO EM DEFESA DA CIÊNCIA NO BRASIL</h1>
 
-                                <p class="m-0 mx-5">Podcast de análise e opinião sobre os fatos mais importantes da semana pela equipe de Marco Zero Conteúdo, coletivo de jornalismo independente e investigativo do Recife</p>
-                            </div>
-						<?php } ?>
+                        <p>O futuro do Brasil depende de um monte de coisa, mas certamente passa por uma reconstrução da Educação, que enfrenta um verdadeiro desmonte desde 2016, intensificado nos quatro anos de Bolsonaro. Todas as áreas do conhecimento sofrem, mas as Ciências Humanas, que já são alvos de piadas, sentem ainda mais as consequências.</p>
 
-                        <p>O Centro de Desenvolvimento Agroecológico Sabiá, em parceria com a Casa Mulher do Nordeste e a organização não governamental Fase, realizou o Seminário Agricultura Urbana – Produzindo Comida de Verdade e Gerando Qualidade de Vida.
-                            <a href="">O encontro</a> reuniu mais de 50 agricultoras da Região Metropolitana do Recife para promover uma troca de experiências e celebrar a finalização do projeto de fomento à produção alimentar em hortas comunitárias e quintais produtivos em 15 comunidades.</p>
-
-                        <p>Com o objetivo de incentivar as famílias a produzirem seus próprios alimentos em terrenos antes inutilizados e, assim, criar
-                            <a href="">hortas comunitárias</a> que possam fortalecer uma economia criativa e o acesso a alimentos de qualidade, o projeto atendeu 280 pessoas em 15 comunidades da Região Metropolitana do Recife.</p>
-
-                        <p>A iniciativa de fomento à agricultura comunitária teve início em julho de 2022 e é fruto da emenda parlamentar do deputado federal Túlio Gadelha (Rede), aprovada por meio do Termo de Fomento do Ministério da Agricultura, Pecuária e Abastecimento. O projeto também tem apoio da organização Misereor.</p>
-
-                        <div class="marco-galeria position-relative my-5">
-                            <div class="slider-control-galeria d-flex" aria-label="Carousel Navigation" tabindex="0">
-                                <a class="prev" data-controls="prev" aria-controls="customize" tabindex="-1"></a>
-
-                                <a class="next ms-auto" data-controls="next" aria-controls="customize" tabindex="-1"></a>
-                            </div>
-
-                            <div class="mx-5">
-                                <div class="galeria-sl">
-                                    <div class="sl">
-                                        <div class="text-center">
-                                            <picture>
-                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/home2.png" alt="" class="mw-100">
-                                            </picture>
-                                        </div>
+                        <p>No especial #SOUdeHUMANAS, a gente usa o humor (afinal, precisamos rir, nem que seja de nervoso!) para revelar o tamanho da tragédia e, ao mesmo tempo, qual é o papel da Ciência no Brasil do amanhã.</p>
 
 
-                                        <figcaption class="legenda-credito mx-5 mt-2">
-                                            <p class="m-0">Comida só dura até o meio do mês na casa de dona Zilma.</p>
-                                            <span>Foto © Arnaldo Sete.Projeto Colabora</span>
-                                        </figcaption>
-                                    </div>
+                        <p><b>“Desculpa, eu sou de Humanas”</b> é a estampa de uma camiseta que custa 38 reais na internet. Em outra loja, tem uma que custa 75 reais e diz: “Não sei contar, sou de Humanas”. E ainda há outra que diz: “Sou de Humanas e de Exaustas”. E, se você tem dificuldade para calcular de cabeça a diferença entre 75 e 38 reais, bem-vindo ao clube das humanas porque nós que escrevemos esse texto também precisamos usar a calculadora para saber que o resultado é 37.</p>
 
-                                    <div class="sl">
-                                        <div class="text-center">
-                                            <picture>
-                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/home3.png" alt="" class="mw-100">
-                                            </picture>
-                                        </div>
-                                    </div>
-
-                                    <div class="sl">
-                                        <div class="text-center">
-                                            <picture>
-                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/ent1.png" alt="" class="mw-100">
-                                            </picture>
-                                        </div>
-
-                                        <figcaption class="legenda-credito mx-5 mt-2">
-                                            <p class="m-0">Pastor Henrique Vieira</p>
-                                        </figcaption>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p>De acordo com a assessora técnica do Centro Sabiá, Simone Arimatéia, o projeto possibilitou a criação de espaços agricultáveis dentro da cidade. “Locais que eram de confinamento de lixo ou áreas de aterro ganharam vida e começaram a produzir alimentos. Em um ano de projeto a ação implantou diversas hortas comunitárias e realizou o acompanhamento em lugares onde não se pensou que era possível produzir comida com qualidade”, disse a assessora.</p>
-
-                        <h3>MULHERES SÃO PROTAGONISTAS</h3>
-
-                        <p>Chama a atenção a forte presença feminina no encontro da agricultura urbana responsável pela criação das hortas comunitárias e quintais produtivos. A iniciativa do Centro Sabiá é composta por uma maioria de mulheres, que representam mais de 80% dos beneficiários do projeto, sendo 36% de mulheres negras.</p>
-
-                        <div class="grid-imagens my-5">
-                            <div class="d-flex">
-                                <div class="coluna-1">
-                                    <div class="d-flex flex-column">
-                                        <div class="mb-3">
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/home3.png" alt="" class="mw-100">
-                                        </div>
-
-                                        <div>
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/ent2.png" alt="" class="mw-100">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="coluna-2">
-                                    <div class="d-flex flex-column">
-                                        <div class="mb-3">
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod2.png" alt="" class="mw-100">
-                                        </div>
-
-                                        <div>
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/ent1.png" alt="" class="mw-100">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="legenda-credito mt-2">
-                                <p class="m-0">Bombeiros resgataram corpo de um homem de 45 anos às 13:30min.</p>
-                                <span>Foto © acervo pessoal</span>
-                            </div>
-                        </div>
-
-                        <div class="grid-imagens my-5">
-                            <div class="d-flex">
-                                <div class="coluna-1">
-                                    <div class="d-flex flex-column">
-                                        <div class="mb-3">
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/ent1.png" alt="" class="mw-100">
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="coluna-2">
-                                    <div class="d-flex flex-column">
-                                        <div class="mb-3">
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod2.png" alt="" class="mw-100">
-                                        </div>
-
-                                        <div class="mb-3">
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/home3.png" alt="" class="mw-100">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="legenda-credito mt-2">
-                                <p class="m-0">Bombeiros resgataram corpo de um homem de 45 anos às 13:30min.</p>
-                                <span>Foto © acervo pessoal</span>
-                            </div>
-                        </div>
-
-                        <div class="grid-imagens my-5">
-                            <div class="d-flex">
-                                <div class="coluna-1">
-                                    <div class="d-flex flex-column">
-                                        <div class="mb-3">
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/ent1.png" alt="" class="mw-100">
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="coluna-2">
-                                    <div class="d-flex flex-column">
-
-                                        <div class="mb-3">
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/home3.png" alt="" class="mw-100">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="legenda-credito mt-2">
-                                <p class="m-0">Bombeiros resgataram corpo de um homem de 45 anos às 13:30min.</p>
-                                <span>Foto © acervo pessoal</span>
-                            </div>
-                        </div>
-
-                        <p>“Nesses territórios onde estamos atuando o perfil majoritariamente encontrado é de mulheres. Mulheres mais velhas, maduras e algumas já idosas. Muitas delas são mulheres pretas, periféricas e em situação de vulnerabilidade social. Pessoas que já passaram pelo mercado de trabalho, mas que perderam o emprego e não conseguiram mais voltar ou pessoas que nunca nem estiveram no mercado de trabalho. Essas condições faz com que essas mulheres procurem espaços de acolhimento para conseguir tocar suas vidas e se envolvam em ações como essa, que proporcionam uma independência para elas produzirem o próprio alimento e de suas famílias”, declarou Simone Arimatéia.</p>
-
-                        <p>A agricultora Dianira Lima, moradora da Vila Independência, no bairro Vasco da Gama, zona norte do Recife, é uma das beneficiárias do projeto e integrante da horta comunitária “Resistir é preciso”.</p>
-
-                        <div class="citacao ms-auto my-5">
-                            <p class="m-0">“Essa semana, por sorte, veio um senhor e deu fuba e uns tres pacotes de macarrao”</p>
-                        </div>
+                        <p><b>Todo mundo que é de Humanas já passou por algum tipo de constrangimento.</b> E nem estamos falando de não deixar transparecer que você é uma pessoa adulta, mas tem dificuldades com alguma das operações básicas da aritmética na hora de dividir a conta do bar ou conferir o troco passado no caixa. Até porque essa última situação tem diminuído graças ao Pix e a outras transações comerciais digitais – exceto para a família Bolsonaro, que diz defender a tradição e talvez por isso prefira comprar as coisas em dinheiro vivo.</p>
 
                         <figure class="wp-block-image my-5">
                             <picture>
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/content1.png" alt="" class="w-100">
+                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/especial1.png" alt="" class="w-100">
                             </picture>
-
-                            <figcaption class="legenda-credito mx-5">
-                                <p class="m-0">Comida só dura até o meio do mês na casa de dona Zilma.</p>
-                                <span>Foto © Arnaldo Sete.Projeto Colabora</span>
-                            </figcaption>
 
                         </figure>
 
-                        <p>“Quando recebi o convite para participar da horta comunitária urbana foi um grande desafio, mas também uma oportunidade de adquirir muito conhecimento. E está valendo muito a pena porque lidar com a terra, aprender a plantar, a colher, cuidar e preparar a horta é de grande importância e nos proporciona a colheita da alimentação orgânica e saudável”, declarou Dianira.</p>
-
-                        <p>Marleide Monteiro, moradora do bairro de Passarinho, no Recife, também integra o projeto e afirma que, graças à iniciativa, é uma agricultora em formação: “Eu me sinto, sim, uma agricultora porque mesmo em um espaço pequeno, um quintal, através das minhas mãos e do aprendizado com outras mulheres, eu também criei uma horta na minha comunidade e isso é maravilhoso”.</p>
+                        <p>“Comunicação através da Semiótica”, que vai apresentar um seminário sobre “Dialética Hegeliana” ou como ganhar dinheiro com Antropologia, Etnologia ou sua irmã gêmea Etnografia. Quem é de Humanas certamente já ouviu uma gracinha quando disse que tinha prova de Modelo Vivo no curso de Artes, ou de Linguística Aplicada em Letras, que aliás é um dos cursos que mais sofre bullying na área. Até aquele seu primo concurseiro se sente autorizado a fazer piadas tipo: “Estudar Letras é muito fácil, só tem 26 no alfabeto. Difícil mesmo é estudar Números, que são infinitos.”</p>
 
 
-                        <div class="lista mx-5 px-5 py-4 my-5" style="--cat-color: #EBEB01;">
-                            <span class="titulo text-uppercase mb-3 d-block">tres cuidados para quem aposta</span>
-
-                            <div class="lista__item">
-                                <p class="m-0"><span>1. </span>É preciso saber que existe essa gangorra, entre perder e ganhar e é preciso saber lidar com isso.</p>
-                            </div>
-
-                            <div class="lista__item">
-                                <p class="m-0"><span>2. </span>Manter uma coerência durante esse processo: quanto você vai gastar no jogo? Esse dinheiro fará diferença?</p>
-                            </div>
-
-                            <div class="lista__item">
-                                <p class="m-0"><span>3. </span>Ter em mente o momento de parar. “A hora de parar é quando você viu que perdeu, que você só tinha aquele dinheiro extra, que se você for apostar mais uma vez pode acabar se comprometendo, acho que essa é a hora.”</p>
-                            </div>
+                        <div class="parallax mt-3">
+                            <picture>
+                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/parallax1.png" alt="" class="w-100 img-parallax">
+                            </picture>
                         </div>
 
-                        <div class="informacao mx-5 px-5 py-4 my-5" style="--cat-color: #7BDDDD;">
-                            <span class="titulo text-uppercase mb-3 d-block">box informações complementares</span>
 
-                            <p>Box de informação complementar Os moradores que fazem apostas nos aplicativos entendem ser grave o escândalo de manipulação nos jogos de futebol, mas veem naturalidade no problema. Nos últimos meses, investigações mostraram que jogadores receberam quantias em dinheiro para ganhar cartão amarelo e vermelho durante as partidas, além de outras irregularidades.</p>
-                            <p>As suspeitas sempre existiram em campeonatos de divisões inferiores, mas chegaram a elite do futebol brasileiro.</p>
-                            <p>Para Matheus, do Grajaú, não foi uma surpresa. “Sempre teve um jogador que recebia um pouco menos, principalmente em campeonatos de pequena expressão”, avalia.</p>
-                            <p>Para ele, torneios como a Série C do Campeonato Brasileiro, em que os jogadores têm salários menores, são um prato cheio para esses agenciadores. “Numa aposta ele pode quadruplicar o valor do salário.” No caso de Lucas, de Diadema, ele critica a atitude dos jogadores e diz que a ética deveria falar mais alto. “Por eu levar o esporte muito a sério, eu não aceitaria esse tipo de acordo”, diz Lucas.</p>
+
+                        <p>O mundo não perdoa quem é de Humanas. <a href="">Tem uma página de humor nas redes sociais com quase 700 mil seguidores chamada “Ajudar o povo de humanas a fazer miçanga”</a>, uma iniciativa louvável que, além de oferecer auxílio ao principal plano B financeiro de quem escolheu essa área das ciências, é tão de Humanas que manifesta uma das características humanas mais louváveis, a solidariedade,
+                            <a href="">e foi criada por uma estudante que depois de trancar seis cursos da área de Humanas resolveu fazer meme.</a></p>
+
+                        <figure class="wp-block-image my-5 img-center text-center">
+                            <picture>
+                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/especial2.png" alt="">
+                            </picture>
+
+                        </figure>
+
+                        <p>Em abril de 2019, o presidente da República Jair Bolsonaro deu início a um dos projetos de maior êxito em quatro anos de governo: o desmonte completo da Educação no Brasil. A primeira ação desta empreitada foi simbólica: o anúncio de corte de investimentos dos cursos de Humanas. Sim, o Brasil é um país desigual, faminto e desempregado, mas o presidente decidiu começar a curá-lo cortando o investimento em cursos de Humanas. E isso antes de sangrar a pesquisa científica em geral – dados da SBPC indicam que o orçamento para a Capes e CNPq caíram de 9 para 3 bilhões de reais de 2019 a 2021. O nos instiga e tentaremos responder ao longo desta reportagem é: por que o ataque sistemático contra as Ciências Humanas? Por que tanta ojeriza dos Historiadores, Antropólogos ou Filósofos – desde que o filósofo não seja o Olavo de Carvalho? Aliás, por que tanta gente considerava o Olavo um filósofo? A gente nem vai tentar responder porque não vale a pena o esforço. Assim como o Olavo tem feito ultimamente, preferimos ficar calados.</p>
+
+                        <div class="parallax mt-3">
+                            <picture>
+                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/parallax2.png" alt="" class="w-100 img-parallax">
+                            </picture>
                         </div>
 
-                        <h3>ENTENDA O CASO</h3>
+                        <p>No Twitter, Bolsonaro justificou aquela primeira medida dizendo que “O objetivo é focar em áreas que gerem retorno imediato ao contribuinte, como: veterinária, engenharia e medicina”. Para o então ministro da Educação, Abraham Weintraub, deveriam ser cortados orçamentos das áreas que “tiverem baixo desempenho e fizerem balbúrdia”. Weintraub era especialmente atormentado pelo povo de Humanas, e provavelmente ainda é atormentado pelas vozes da sua própria cabeça, que devem ser em parte responsáveis por tamanha dissonância cognitiva. Mas ele tem tanto ranço das Humanas que chegou a dizer essas coisas:</p>
+                        <p>No Twitter, Bolsonaro justificou aquela primeira medida dizendo que “O objetivo é focar em áreas que gerem retorno imediato ao contribuinte, como: veterinária, engenharia e medicina”. Para o então ministro da Educação, Abraham Weintraub, deveriam ser cortados orçamentos das áreas que “tiverem baixo desempenho e fizerem balbúrdia”. Weintraub era especialmente atormentado pelo povo de Humanas, e provavelmente ainda é atormentado pelas vozes da sua própria cabeça, que devem ser em parte responsáveis por tamanha dissonância cognitiva. Mas ele tem tanto ranço das Humanas que chegou a dizer essas coisas:</p>
+                        <p>No Twitter, Bolsonaro justificou aquela primeira medida dizendo que “O objetivo é focar em áreas que gerem retorno imediato ao contribuinte, como: veterinária, engenharia e medicina”. Para o então ministro da Educação, Abraham Weintraub, deveriam ser cortados orçamentos das áreas que “tiverem baixo desempenho e fizerem balbúrdia”. Weintraub era especialmente atormentado pelo povo de Humanas, e provavelmente ainda é atormentado pelas vozes da sua própria cabeça, que devem ser em parte responsáveis por tamanha dissonância cognitiva. Mas ele tem tanto ranço das Humanas que chegou a dizer essas coisas:</p>
+                        <p>No Twitter, Bolsonaro justificou aquela primeira medida dizendo que “O objetivo é focar em áreas que gerem retorno imediato ao contribuinte, como: veterinária, engenharia e medicina”. Para o então ministro da Educação, Abraham Weintraub, deveriam ser cortados orçamentos das áreas que “tiverem baixo desempenho e fizerem balbúrdia”. Weintraub era especialmente atormentado pelo povo de Humanas, e provavelmente ainda é atormentado pelas vozes da sua própria cabeça, que devem ser em parte responsáveis por tamanha dissonância cognitiva. Mas ele tem tanto ranço das Humanas que chegou a dizer essas coisas:</p>
+                        <p>No Twitter, Bolsonaro justificou aquela primeira medida dizendo que “O objetivo é focar em áreas que gerem retorno imediato ao contribuinte, como: veterinária, engenharia e medicina”. Para o então ministro da Educação, Abraham Weintraub, deveriam ser cortados orçamentos das áreas que “tiverem baixo desempenho e fizerem balbúrdia”. Weintraub era especialmente atormentado pelo povo de Humanas, e provavelmente ainda é atormentado pelas vozes da sua própria cabeça, que devem ser em parte responsáveis por tamanha dissonância cognitiva. Mas ele tem tanto ranço das Humanas que chegou a dizer essas coisas:</p>
+                        <p>No Twitter, Bolsonaro justificou aquela primeira medida dizendo que “O objetivo é focar em áreas que gerem retorno imediato ao contribuinte, como: veterinária, engenharia e medicina”. Para o então ministro da Educação, Abraham Weintraub, deveriam ser cortados orçamentos das áreas que “tiverem baixo desempenho e fizerem balbúrdia”. Weintraub era especialmente atormentado pelo povo de Humanas, e provavelmente ainda é atormentado pelas vozes da sua própria cabeça, que devem ser em parte responsáveis por tamanha dissonância cognitiva. Mas ele tem tanto ranço das Humanas que chegou a dizer essas coisas:</p>
+                        <p>No Twitter, Bolsonaro justificou aquela primeira medida dizendo que “O objetivo é focar em áreas que gerem retorno imediato ao contribuinte, como: veterinária, engenharia e medicina”. Para o então ministro da Educação, Abraham Weintraub, deveriam ser cortados orçamentos das áreas que “tiverem baixo desempenho e fizerem balbúrdia”. Weintraub era especialmente atormentado pelo povo de Humanas, e provavelmente ainda é atormentado pelas vozes da sua própria cabeça, que devem ser em parte responsáveis por tamanha dissonância cognitiva. Mas ele tem tanto ranço das Humanas que chegou a dizer essas coisas:</p>
+                        <p>No Twitter, Bolsonaro justificou aquela primeira medida dizendo que “O objetivo é focar em áreas que gerem retorno imediato ao contribuinte, como: veterinária, engenharia e medicina”. Para o então ministro da Educação, Abraham Weintraub, deveriam ser cortados orçamentos das áreas que “tiverem baixo desempenho e fizerem balbúrdia”. Weintraub era especialmente atormentado pelo povo de Humanas, e provavelmente ainda é atormentado pelas vozes da sua própria cabeça, que devem ser em parte responsáveis por tamanha dissonância cognitiva. Mas ele tem tanto ranço das Humanas que chegou a dizer essas coisas:</p>
+                        <p>No Twitter, Bolsonaro justificou aquela primeira medida dizendo que “O objetivo é focar em áreas que gerem retorno imediato ao contribuinte, como: veterinária, engenharia e medicina”. Para o então ministro da Educação, Abraham Weintraub, deveriam ser cortados orçamentos das áreas que “tiverem baixo desempenho e fizerem balbúrdia”. Weintraub era especialmente atormentado pelo povo de Humanas, e provavelmente ainda é atormentado pelas vozes da sua própria cabeça, que devem ser em parte responsáveis por tamanha dissonância cognitiva. Mas ele tem tanto ranço das Humanas que chegou a dizer essas coisas:</p>
+                        <p>No Twitter, Bolsonaro justificou aquela primeira medida dizendo que “O objetivo é focar em áreas que gerem retorno imediato ao contribuinte, como: veterinária, engenharia e medicina”. Para o então ministro da Educação, Abraham Weintraub, deveriam ser cortados orçamentos das áreas que “tiverem baixo desempenho e fizerem balbúrdia”. Weintraub era especialmente atormentado pelo povo de Humanas, e provavelmente ainda é atormentado pelas vozes da sua própria cabeça, que devem ser em parte responsáveis por tamanha dissonância cognitiva. Mas ele tem tanto ranço das Humanas que chegou a dizer essas coisas:</p>
 
-                        <p>Para entender porque, diferente do que tem ocorrido no fim da vida, na primeira infância a desnutrição já não <strong><+></strong> é uma ameaça tão presente, é preciso olhar para a história recente do Brasil. A nutricionista e doutoranda em Saúde Pública.</p>
 
-                        <div class="box-explicacao mx-5 px-4 py-3 my-3" style="--cat-color: #1E69FA;">
-                            <span class="titulo"><+></span>
-
-                            <div class="int mx-auto">
-                                <p>Os moradores que fazem apostas nos aplicativos entendem ser grave o escândalo de manipulação nos jogos de futebol, mas veem naturalidade no problema. Nos últimos meses, investigações mostraram que jogadores receberam quantias em dinheiro para ganhar cartão amarelo e vermelho durante as partidas, além de outras irregularidades.s</p>
-                            </div>
-                        </div>
-
-                        <p>Para entender porque, diferente do que tem ocorrido no fim da vida, na primeira infância a desnutrição já não é uma ameaça tão presente, é preciso olhar para a história recente do Brasil. A nutricionista e doutoranda em Saúde Pública.</p>
-
-                        <div class="infos mx-5 px-5 py-4 my-5">
-                            <span class="titulo text-uppercase mb-2 d-block">resposta da secretaria de segurança</span>
-
-                            <p>Os moradores que fazem apostas nos aplicativos entendem ser grave o escândalo de manipulação nos jogos de futebol, mas veem naturalidade no problema. Nos últimos meses, investigações mostraram que jogadores receberam quantias em dinheiro para ganhar cartão amarelo e vermelho durante as partidas, além de outras irregularidades.</p>
-                        </div>
-
-                        <div class="apoio my-5 pt-2">
-                            <p>Esta reportagem foi produzida com apoio do <a href="">Report for the World</a>, uma iniciativa do
-                                <a href="">The GroundTruth Project</a>.</p>
-                        </div>
-
-						<?php if ( isset( $abertura ) && $abertura === 'podcast' ) { ?>
-                            <div class="end-podcast mb-5 pb-5">
-                                <div class="siga text-center mx-auto">
-                                    <span class="siga-titulo m-0">SIGA E OUÇA NO SEU APLICATIVO PREFERIDO</span>
-
-                                    <div class="d-flex agreg justify-content-between mt-3">
-                                        <div class="spot d-flex flex-column">
-                                            <a href=""><i></i></a>
-
-                                            <a href="" class="titulo mt-auto">Spotify</a>
-                                        </div>
-
-                                        <div class="google d-flex flex-column">
-                                            <a href=""><i></i></a>
-
-                                            <a href="" class="titulo mt-auto">Google Cast</a>
-                                        </div>
-
-                                        <div class="you d-flex flex-column">
-                                            <a href=""><i></i></a>
-
-                                            <a href="" class="titulo mt-auto">Youtube</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="outros mt-5 position-relative">
-                                    <span class="siga-titulo m-0 text-uppercase d-block text-center">ouça outros episódios do podcast arrumadinho</span>
-
-                                    <div class="slider-control-pod d-flex" aria-label="Carousel Navigation" tabindex="0">
-                                        <a class="prev" data-controls="prev" aria-controls="customize" tabindex="-1"></a>
-
-                                        <a class="next ms-auto" data-controls="next" aria-controls="customize" tabindex="-1"></a>
-                                    </div>
-
-                                    <div class="pod-outros-sl mt-3">
-                                        <a href="" class="item">
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod1.png" alt="">
-                                        </a>
-
-                                        <a href="" class="item">
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod2.png" alt="">
-                                        </a>
-
-                                        <a href="" class="item">
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod1.png" alt="">
-                                        </a>
-
-                                        <a href="" class="item">
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod2.png" alt="">
-                                        </a>
-
-                                        <a href="" class="item">
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod1.png" alt="">
-                                        </a>
-
-                                        <a href="" class="item">
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod2.png" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-						<?php } ?>
 
                         <div class="tags d-flex mt-4 align-items-center">
                             <span class="me-2">TAGS</span>
@@ -326,139 +89,36 @@ get_header(); ?>
                     </div>
                 </div>
 
-                <div class="col-5 sidebar">
-                    <div class="d-flex flex-column ms-5" style="width: max-content;">
-                        <div class="d-flex">
-                            <div class="social d-flex align-items-center">
-                                <a href="" class="facebook"></a>
-                                <a href="" class="instagram"></a>
-                                <a href="" class="twitter"></a>
-                                <a href="" class="youtube-m"></a>
+                <div class="col-4 offset-md-1">
+                    <div class="sidebar ms-auto">
+                        <div class="guia">
+                            <div class="d-flex flex-column">
+                                <span>CAPÍTULOS</span>
+                                <a href="#">A 'baburdia'</a>
+                                <a href="#">Humanos de humanas</a>
+                                <a href="#">A tragédia</a>
+                                <a href="#">O que você não sabe</a>
+                                <a href="#">O papel das humanas no futuro do Brasil</a>
                             </div>
-
-                            <a href="#" class="apoie less ms-auto">APOIE</a>
                         </div>
 
-                        <div class="mt-3">
-                            <a href="" class="apoie less bg-blue text-light">ASSINE NOSSA NEWSLETTER</a>
+                        <div class="d-flex flex-column mt-5" style="width: max-content;">
+                            <div class="d-flex">
+                                <div class="social d-flex align-items-center">
+                                    <a href="" class="facebook"></a>
+                                    <a href="" class="instagram"></a>
+                                    <a href="" class="twitter"></a>
+                                    <a href="" class="youtube-m"></a>
+                                </div>
+
+                                <a href="#" class="apoie less ms-auto">APOIE</a>
+                            </div>
+
+                            <div class="mt-3">
+                                <a href="" class="apoie less bg-blue text-light">ASSINE NOSSA NEWSLETTER</a>
+                            </div>
                         </div>
                     </div>
-
-					<?php if ( isset( $abertura ) && $abertura === 'podcast' ) { ?>
-                        <div class="mais-pod ms-auto me-5">
-                            <span class="mais-titulo m-0 text-uppercase">outros podcasts</span>
-
-                            <div class="d-flex flex-column mt-3">
-                                <div class="mais-pod__post d-flex flex-column">
-                                    <a href="">
-                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod1.png" alt="">
-                                    </a>
-
-                                    <div class="d-flex mt-2">
-                                        <a href="">
-                                            <i></i>
-                                        </a>
-
-                                        <a href="#" class="titulo">E na rua que se enfrenta o Bolsonarismo</a>
-                                    </div>
-                                </div>
-
-                                <div class="mais-pod__post d-flex flex-column">
-                                    <a href="">
-                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod2.png" alt="">
-                                    </a>
-
-                                    <div class="d-flex mt-2">
-                                        <a href="">
-                                            <i></i>
-                                        </a>
-
-                                        <a href="#" class="titulo">E na rua que se enfrenta o Bolsonarismo</a>
-                                    </div>
-
-                                </div>
-
-                                <div class="mais-pod__post d-flex flex-column">
-                                    <a href="">
-                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod1.png" alt="">
-                                    </a>
-
-
-                                    <div class="d-flex mt-2">
-                                        <a href="">
-                                            <i></i>
-                                        </a>
-
-                                        <a href="#" class="titulo">E na rua que se enfrenta o Bolsonarismo</a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-					<?php } else { ?>
-                        <div class="mais-recentes ms-auto">
-                            <span class="mais-titulo m-0 text-uppercase">AS MAIS RECENTES</span>
-
-                            <div class="d-flex flex-column mt-3">
-                                <div class="mais-recentes__post d-flex flex-column mb-5">
-                                    <a href="">
-                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/side1.png" alt="">
-                                    </a>
-
-                                    <a href="#" class="titulo mt-2">Menos moralismo e mais cuidado com as pessoas é o foco da política de drogas do governo Lula</a>
-
-                                    <div class="detalhe d-flex aling-items-center mt-2">
-                                        <a href="#" class="assina text-uppercase">marcozero conteúdo</a>
-                                        <span class="data ms-3">09/06/2023</span>
-                                    </div>
-
-                                    <div class="tags d-flex mt-3">
-                                        <a href="#" class="btn text-uppercase me-2">socioambiental</a>
-                                        <a href="#" class="btn text-uppercase me-2">energia</a>
-                                    </div>
-                                </div>
-
-                                <div class="mais-recentes__post d-flex flex-column mb-5">
-                                    <a href="">
-                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/side2.png" alt="">
-                                    </a>
-
-                                    <a href="#" class="titulo mt-2">Menos moralismo e mais cuidado com as pessoas é o foco da política de drogas do governo Lula</a>
-
-                                    <div class="detalhe d-flex aling-items-center mt-2">
-                                        <a href="#" class="assina text-uppercase">marcozero conteúdo</a>
-                                        <span class="data ms-3">09/06/2023</span>
-                                    </div>
-
-                                    <div class="tags d-flex mt-3">
-                                        <a href="#" class="btn text-uppercase me-2">socioambiental</a>
-                                        <a href="#" class="btn text-uppercase me-2">energia</a>
-                                    </div>
-                                </div>
-
-                                <div class="mais-recentes__post d-flex flex-column mb-4">
-                                    <a href="">
-                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/side3.png" alt="">
-                                    </a>
-
-                                    <a href="#" class="titulo mt-2">Menos moralismo e mais cuidado com as pessoas é o foco da política de drogas do governo Lula</a>
-
-                                    <div class="detalhe d-flex aling-items-center mt-2">
-                                        <a href="#" class="assina text-uppercase">marcozero conteúdo</a>
-                                        <span class="data ms-3">09/06/2023</span>
-                                    </div>
-
-                                    <div class="tags d-flex mt-3">
-                                        <a href="#" class="btn text-uppercase me-2">socioambiental</a>
-                                        <a href="#" class="btn text-uppercase me-2">energia</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-					<?php } ?>
-
-
-
                 </div>
             </div>
         </div>

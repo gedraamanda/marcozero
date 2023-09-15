@@ -2,6 +2,8 @@
  * Scripts
  */
 $(document).ready(function () {
+    parallax();
+
     //slider home
     if($('.slider-sl').length > 0) {
         var sliderHome = tns({
@@ -125,9 +127,33 @@ $(document).ready(function () {
         });
     });
 
+    //margem parallax e efeito
+    $(window).resize(function() {
+        parallax();
+    });
+
+    const image = document.getElementsByClassName('img-parallax');
+    new simpleParallax(image, {
+        delay: .6,
+        transition: 'cubic-bezier(0,0,0,1)'
+    });
+
 
 
 });
+
+function parallax() {
+    //parallax
+    if($('.parallax').length > 0) {
+        $('.parallax').each(function (index) {
+            var imgH = $(this).find('img').height();
+
+            $(this).next().css('margin-top', imgH + 60);
+
+
+        })
+    }
+}
 
 
 var lastScrollTop = 0;

@@ -141,8 +141,11 @@
     }
 
     .wp-block-image {
-      transform: translateX(-3rem);
-      width: calc(100% + 3rem);
+      &:not(.img-center) {
+        transform: translateX(-3rem);
+        width: calc(100% + 3rem);
+      }
+
     }
   }
 
@@ -291,6 +294,11 @@
 
 //especial 
 .marco-especial {
+  padding-bottom: 60vh;
+  position: relative;
+  display: block;
+  background: #F5CCDB;
+
   .capa {
     img {
       height: 100vh !important;
@@ -299,5 +307,37 @@
   }
   &__conteudo {
     background: #F5CCDB;
+    margin-bottom: 500px;
+
+    .texto {
+      h1 {
+        font-family: $resBold;
+        font-size: 24px;
+        border-top: 5px solid #000;
+        padding-top: 15px;
+      }
+    }
+
+    .sidebar {
+      width: 315px;
+
+      .guia {
+        span {
+          font-family: $resBold;
+          font-size: 16px;
+          letter-spacing: 0.32px;
+          border-bottom: 2px solid;
+        }
+
+        a {
+          font-family: $resMed;
+          font-size: 16px;
+          letter-spacing: 0.32px;
+          border-bottom: 1px solid;
+          padding: 3px 0;
+        }
+      }
+    }
+
   }
 }

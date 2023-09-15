@@ -1,7 +1,7 @@
 <?php wp_footer(); ?>
 
 <?php if(!is_home()) { ?>
-    <div class="menu-footer menu-footer-default w-100 less mt-5">
+    <div class="menu-footer menu-footer-default w-100 less">
         <div class="container">
             <div class="d-flex justify-content-between">
                 <a href="#" class="apoie">ASSINE NOSSA NEWSLETTER</a>
