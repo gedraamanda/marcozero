@@ -1,5 +1,5 @@
 <?php if(is_home()) { ?>
-    <div class="menu-principal pb-3">
+    <div class="menu-principal pt-3 pt-md-0 pb-3">
         <div class="container">
             <div class="d-flex align-items-center">
                 <div class="logo-grande d-flex align-items-center">
@@ -10,7 +10,16 @@
                     </a>
                 </div>
 
-                <div class="d-flex flex-column ms-auto mt-3">
+                <div class="menu-hamburguer d-flex d-md-none ms-auto align-items-center">
+                    <a href="#" class="lupa me-3"></a>
+
+                    <div class="hamb d-flex flex-column">
+                        <span class="mb-2"></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="d-none d-md-flex flex-column ms-auto mt-3">
                     <div class="social d-flex align-items-center">
                         <a href="" class="facebook"></a>
                         <a href="" class="instagram"></a>
@@ -24,8 +33,8 @@
                 </div>
             </div>
 
-            <div class="d-flex">
-                <div class="menu-cat d-flex align-items-center">
+            <div class="d-none d-md-flex">
+                <div class="menu-cat d-none d-md-flex align-items-center">
                     <a href="#" class="text-uppercase me-5"><span class="opacity-0"></span>direitos humanos</a>
                     <a href="#" class="text-uppercase me-5"><span class="me-3"></span>socioambiental</a>
                     <a href="#" class="text-uppercase me-5"><span class="me-3"></span>direito à cidade</a>
@@ -58,7 +67,7 @@ $abertura = $_GET['abre'];
                 <h1 class="m-0">MARCO<span>ZERO</span></h1>
             </div>
 
-            <div class="menu-cat d-flex align-items-center ms-0">
+            <div class="menu-cat d-none d-md-flex align-items-center ms-0">
                 <a href="#" class="text-uppercase me-3"><span class="opacity-0"></span>direitos humanos</a>
                 <a href="#" class="text-uppercase me-3"><span class="me-2"></span>socioambiental</a>
                 <a href="#" class="text-uppercase me-3"><span class="me-2"></span>direito à cidade</a>

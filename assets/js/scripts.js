@@ -6,14 +6,29 @@ $(document).ready(function () {
 
     //slider home
     if($('.slider-sl').length > 0) {
-        var sliderHome = tns({
-            container: '.slider-sl',
-            mode : 'gallery',
-            speed : 1200,
-            mouseDrag: true,
-            nav: false,
-            controlsContainer: '.slider-control-homeslide',
-        });
+        if($(window).width() >= 768) {
+            var sliderHome = tns({
+                container: '.slider-sl',
+                mouseDrag: true,
+                nav: false,
+                controlsContainer: '.slider-control-homeslide',
+                items: 1,
+                mode : 'gallery',
+                speed : 1200,
+            });
+        } else {
+            var sliderHome = tns({
+                container: '.slider-sl',
+                mouseDrag: true,
+                loop: false,
+                controlsContainer: '.slider-control-homeslide',
+                items: 1.1,
+                gutter: 10,
+                mode: "carousel",
+                navPosition : 'bottom'
+            });
+        }
+
     }
 
     //slider home horizontal
@@ -33,10 +48,21 @@ $(document).ready(function () {
         var sliderStories = tns({
             container: '.stories__slide',
             items : 4,
-            nav: false,
             loop: false,
             controlsContainer: '.slider-control-stories',
-            gutter: 40
+            navPosition : 'bottom',
+            responsive: {
+                350: {
+                    items : 1,
+                    nav: true,
+
+                },
+                500: {
+                    items : 4,
+                    nav: false,
+                    gutter: 40,
+                }
+            }
         });
     }
 
@@ -44,11 +70,20 @@ $(document).ready(function () {
     if($('.video-sl').length > 0) {
         var sliderVideo = tns({
             container: '.video-sl',
-            items : 2,
-            nav: false,
             loop: false,
             controlsContainer: '.slider-control-video',
-            gutter: 40
+            navPosition : 'bottom',
+            responsive: {
+                350: {
+                    items : 1,
+                    nav: true,
+                },
+                500: {
+                    items : 2,
+                    gutter: 40,
+                    nav: false,
+                }
+            }
         });
     }
 
@@ -61,6 +96,20 @@ $(document).ready(function () {
             loop: false,
             controlsContainer: '.slider-control-pod',
             gutter: 40
+        });
+    }
+
+    //entrevista mobile
+    if($('.entrevista__posts').length > 0 && $(window).width() <= 768) {
+        var sliderEntrevista = tns({
+            container: '.entrevista__posts',
+            items : 1,
+            nav: true,
+            navPosition: 'bottom',
+            loop: false,
+            controlsContainer: '.slider-control-entrevista',
+            gutter: 10,
+            autoHeight: true
         });
     }
 
@@ -164,7 +213,7 @@ $(window).scroll(function () {
 
     //sobe
     if(scrollY < lastScrollTop) {
-        if($('.menu-footer-home').length > 0 && $('.menu-footer-home').hasClass('less') && scrollY < 500) {
+        if($('.menu-footer-home').length > 0 && $('.menu-footer-home').hasClass('less') && scrollY < 500) { console.log('1');
             $('.menu-footer-home').removeClass('less');
         }
 
@@ -179,7 +228,7 @@ $(window).scroll(function () {
         }
 
         if(!isVisible($(".marco-footer"),-700)) {
-            if ($('.menu-footer-home').hasClass('hiden')) {
+            if ($('.menu-footer-home').hasClass('hiden')) { console.log('2');
                 $('.menu-footer-home').removeClass('hiden');
             }
         }
@@ -202,7 +251,7 @@ $(window).scroll(function () {
     //desce
     if(scrollY > lastScrollTop) {
         //menu footer na home
-        if($('.menu-footer-home').length > 0 && isVisible($(".menu-footer-home"), 40) && scrollY > 500) {
+        if($('.menu-footer-home').length > 0 && isVisible($(".menu-footer-home"), 40) && scrollY > 500) { console.log('3');
             $('.menu-footer-home').addClass('less');
         }
 

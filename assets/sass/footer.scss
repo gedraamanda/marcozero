@@ -26,12 +26,26 @@
     }
   }
 
+  .f-bord {
+    @media (max-width: 768px) {
+      border-top: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      margin: 40px 0 10px;
+      padding: 10px 0;
+    }
+  }
+
   .menu-lista {
     a {
       font-family: $resReg;
       color: #fff;
       font-size: 12px;
       letter-spacing: 0.24px;
+      margin-bottom: 5px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 0;
+      }
 
       &.azul {
         color: $azul;
@@ -61,7 +75,9 @@
   }
 
   .apoio {
-    margin-right: 88px;
+    @media (min-width: 768px) {
+      margin-right: 88px;
+    }
 
     span {
       font-family: $resReg;

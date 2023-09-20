@@ -22,3 +22,27 @@ a {
 .bg-blue {
   background: $azul !important;
 }
+
+.tns-nav {
+  text-align: center;
+  margin-top: 30px;
+
+  button {
+    width: 12px;
+    height: 12px;
+    background-color: #000;
+    border: none;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    margin-right: 7px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+
+    &.tns-nav-active {
+      background-color: #fff;
+    }
+  }
+}
