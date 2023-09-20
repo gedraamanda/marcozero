@@ -249,11 +249,11 @@ $(window).scroll(function () {
     //desce
     if(scrollY > lastScrollTop) {
         //menu footer na home
-        if($('.menu-footer-home').length > 0 && isVisible($(".menu-footer-home"), 40) && scrollY > 500 && !$('.menu-footer-home').hasClass('less')) { console.log('1');
+        if($('.menu-footer-home').length > 0 && isVisible($(".menu-footer-home"), 40) && scrollY > 500 && !$('.menu-footer-home').hasClass('less')) {
             $('.menu-footer-home').addClass('less');
 
             if($(window).width() <= 768) {
-               teste();
+                setInterval(footerHome, 3000);
             }
         }
 
@@ -282,10 +282,6 @@ $(window).scroll(function () {
 
     lastScrollTop = scrollY;
 });
-
-function teste() { console.log('aqui');
-    setInterval(footerHome, 3000);
-}
 
 var count = 0;
 function footerHome() {
