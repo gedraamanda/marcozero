@@ -258,7 +258,7 @@ $(window).scroll(function () {
                 // }
             }
         } else {
-            if($('.menu-footer-home').length > 0 && isVisible($(".menu-footer-home"), 40)) {
+            if($('.menu-footer-home').length > 0 && isVisible($(".menu-footer-home"), 0)) {
                 console.log('amanda');
             }
         }
