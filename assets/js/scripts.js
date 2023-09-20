@@ -257,6 +257,10 @@ $(window).scroll(function () {
                 //     setInterval(footerHome, 3000);
                 // }
             }
+        } else {
+            if($('.menu-footer-home').length > 0 && isVisible($(".menu-footer-home"), 40)) {
+                console.log('amanda');
+            }
         }
 
 
