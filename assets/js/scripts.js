@@ -283,7 +283,7 @@ $(window).scroll(function () {
     lastScrollTop = scrollY;
 });
 
-function teste() {
+function teste() { console.log('aqui');
     setInterval(footerHome, 3000);
 }
 
