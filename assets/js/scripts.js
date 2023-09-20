@@ -249,13 +249,16 @@ $(window).scroll(function () {
     //desce
     if(scrollY > lastScrollTop) {
         //menu footer na home
-        if($('.menu-footer-home').length > 0 && isVisible($(".menu-footer-home"), 40) && scrollY > 500 && !$('.menu-footer-home').hasClass('less')) {
-            $('.menu-footer-home').addClass('less');
+        if($(window).width() > 768) {
+            if($('.menu-footer-home').length > 0 && isVisible($(".menu-footer-home"), 40) && scrollY > 500 && !$('.menu-footer-home').hasClass('less')) {
+                $('.menu-footer-home').addClass('less');
 
-            if($(window).width() <= 768) {
-                setInterval(footerHome, 3000);
+                // if($(window).width() <= 768) {
+                //     setInterval(footerHome, 3000);
+                // }
             }
         }
+
 
         if(isVisible($(".marco-footer"),-700) && !$('.menu-footer-home').hasClass('hiden')) {
             $('.menu-footer-home').addClass('hiden');
