@@ -276,7 +276,11 @@
   &__principal {
     a {
       font-family: $resBold;
-      font-size: 28px;
+      font-size: 22px;
+
+      @media (min-width: 768px) {
+        font-size: 28px;
+      }
     }
   }
 
@@ -286,9 +290,13 @@
 
     a {
       font-family: $resReg;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 1;
       margin-bottom: 10px!important;
+
+      @media (min-width: 768px) {
+        font-size: 16px;
+      }
 
       &:last-child {
         margin-bottom: 0 !important;
