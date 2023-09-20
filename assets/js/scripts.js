@@ -253,7 +253,7 @@ $(window).scroll(function () {
             $('.menu-footer-home').addClass('less');
 
             if($(window).width() <= 768) {
-                setInterval(footerHome, 3000);
+               teste();
             }
         }
 
@@ -282,6 +282,10 @@ $(window).scroll(function () {
 
     lastScrollTop = scrollY;
 });
+
+function teste() {
+    setInterval(footerHome, 3000);
+}
 
 var count = 0;
 function footerHome() {
