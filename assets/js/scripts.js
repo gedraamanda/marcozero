@@ -289,6 +289,8 @@ function footerHome() {
         count = 0;
     }
 
+    console.log(':D');
+
     $('.m-fade').removeClass('activehome');
     $('.m-fade').eq(count).addClass('activehome');
 
