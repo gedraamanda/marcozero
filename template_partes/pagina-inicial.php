@@ -142,7 +142,7 @@
     <div class="menu-footer menu-footer-home w-100">
         <div class="container">
             <div class="d-flex justify-content-center justify-content-md-between position-relative">
-                <a href="#" class="apoie m-fade">ASSINE NOSSA NEWSLETTER</a>
+                <a href="#" class="apoie m-fade activehome">ASSINE NOSSA NEWSLETTER</a>
 
                 <p class="m-0 m-fade"><a href="#" class="apoie">APOIE</a> O JORNALISMO INDEPENDENTE</p>
 
