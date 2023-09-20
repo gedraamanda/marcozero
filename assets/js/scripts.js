@@ -252,14 +252,14 @@ $(window).scroll(function () {
         if($(window).width() > 768) {
             if($('.menu-footer-home').length > 0 && isVisible($(".menu-footer-home"), 40) && scrollY > 500 && !$('.menu-footer-home').hasClass('less')) {
                 $('.menu-footer-home').addClass('less');
-
-                // if($(window).width() <= 768) {
-                //     setInterval(footerHome, 3000);
-                // }
             }
         } else {
-            if($('.menu-footer-home').length > 0 && isVisible($(".menu-footer-home"), 0)) {
-                console.log('amanda');
+            if($('.menu-footer-home').length > 0 && isVisible($(".menu-footer-home"), 0) && !$('.menu-footer-home').hasClass('less')) {
+                $('.menu-footer-home').addClass('less');
+
+                if($(window).width() <= 768) {
+                    setInterval(footerHome, 3000);
+                }
             }
         }
 
