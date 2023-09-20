@@ -1,6 +1,6 @@
 .marco-home {
   .especial {
-    height: calc(100vh - 61px);
+    min-height: 850px;
     background: $azul;
 
     @media (min-width: 768px) {
