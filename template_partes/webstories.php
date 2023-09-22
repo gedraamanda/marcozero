@@ -33,14 +33,14 @@
 <div class="marco-result container">
     <div class="marco-result__destaque position-relative">
 
-        <div class="row row-cols-2">
+        <div class="row row-cols-md-2">
             <div class="d-flex flex-column texto">
                 <h1 class="m-0 text-uppercase mt-3">webstories</h1>
             </div>
         </div>
 
-	    <div class="marco-result__listagem listagem mx-5 mt-5">
-		    <div class="row row-cols-4 listagem__int">
+	    <div class="marco-result__listagem listagem mx-5 mt-3 mt-md-5">
+		    <div class="row row-cols-md-4 listagem__int">
 			    <div class="listagem-post">
 				    <a href="">
 					    <img src="<?php echo get_template_directory_uri() ?>/assets/images/stories1.png" alt="" class="w-100">
