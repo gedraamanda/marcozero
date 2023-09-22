@@ -4,17 +4,17 @@ $abertura = $_GET['abre'];
 
 <div class="marco-single">
     <?php if(isset($abertura) && $abertura === 'foto') { ?>
-        <header style="--cat-color: #1E69FA;" class="py-5 header-foto">
+        <header style="--cat-color: #1E69FA;" class=" pb-4 pb-md-5 py-md-5 header-foto">
             <div class="container h-100 position-relative">
                 <div class="row h-100 ">
-                    <div class="col-10 mx-auto h-100">
-                        <div class="imagem mx-5">
+                    <div class="col-12 col-md-10 mx-auto h-100">
+                        <div class="imagem mx-md-5">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/single-foto.png" alt="" class="w-100">
                         </div>
                     </div>
                 </div>
 
-                <div class="texto ms-5">
+                <div class="texto ms-md-5">
                     <h1 class="m-0 text-uppercase mb-3">Desnutricao ja mata mais pessoas idosas do que criancas em Pernambuco</h1>
 
                     <p class="m-0 linha-fina linhaFinaPd">“É muito ruim olhar para os quatro cantos e não ver o que comer”</p>
@@ -25,7 +25,7 @@ $abertura = $_GET['abre'];
                         <span class="data">09/06/2023</span>
                     </div>
 
-                    <div class="tags d-flex mt-4">
+                    <div class="tags d-flex mt-4 flex-wrap">
                         <a href="#" class="btn text-uppercase me-2">energia</a>
                         <a href="#" class="btn text-uppercase">agroecologia</a>
                     </div>
@@ -33,11 +33,11 @@ $abertura = $_GET['abre'];
             </div>
         </header>
     <?php } elseif(isset($abertura) && $abertura === 'horizontal') { ?>
-        <header style="--cat-color: #7BDDDD;" class="py-5">
+        <header style="--cat-color: #7BDDDD;" class="py-4 py-md-5">
             <div class="container">
-                <div class="row row-cols-2">
-                    <div class="texto px-5 align-self-end">
-                        <h1 class="tituloGrande m-0 text-uppercase mb-3">trf 5 decide se biologa negra serareintegrada ao servico publico</h1>
+                <div class="row row-cols-md-2">
+                    <div class="texto px-md-5 align-self-end order-2 order-md-1">
+                        <h1 class="tituloGrande m-0 text-uppercase mb-2 mb-md-3 ajuste">trf 5 decide se biologa negra serareintegrada ao servico publico</h1>
 
                         <p class="m-0 linha-fina linhaFinaPd">a dificuldade de parir em uma cidade do interior de Pernambuco</p>
 
@@ -47,14 +47,14 @@ $abertura = $_GET['abre'];
                             <span class="data">09/06/2023</span>
                         </div>
 
-                        <div class="tags d-flex mt-5">
+                        <div class="tags d-flex mt-3 mt-md-5 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase me-2">energia</a>
                             <a href="#" class="btn text-uppercase">agroecologia</a>
                         </div>
                     </div>
 
-                    <div class="imagem ps-5 text-center">
+                    <div class="imagem ps-md-5 text-center order-1 order-md-2">
                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/home3.png" alt="" class="">
                     </div>
                 </div>
@@ -64,7 +64,7 @@ $abertura = $_GET['abre'];
         <header style="--cat-color: #EBEB01;" class="header-texto">
             <div class="container">
                 <div class="row">
-                    <div class="col-5 mx-auto">
+                    <div class="col-12 col-md-5 mx-auto">
                         <div class="texto text-center">
                             <h1 class="tituloGrande m-0 text-uppercase mb-3 mx-auto">trf 5 decide se biologa negra serareintegrada ao servico publico</h1>
 
@@ -76,7 +76,7 @@ $abertura = $_GET['abre'];
                                 <span class="data">09/06/2023</span>
                             </div>
 
-                            <div class="tags d-flex mt-5 justify-content-center">
+                            <div class="tags d-flex mt-5 justify-content-center flex-wrap">
                                 <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                                 <a href="#" class="btn text-uppercase me-2">energia</a>
                                 <a href="#" class="btn text-uppercase">agroecologia</a>
@@ -125,11 +125,11 @@ $abertura = $_GET['abre'];
             </header>
         </div>
     <?php } else { ?>
-        <header style="--cat-color: #F3B2CA;" class="py-5">
+        <header style="--cat-color: #F3B2CA;" class="py-4 py-md-5">
             <div class="container">
-                <div class="row row-cols-2">
-                    <div class="texto px-5 align-self-end">
-                        <h1 class="tituloGrande m-0 text-uppercase mb-3">hortas comunitArias e quintais produtivos</h1>
+                <div class="row row-cols-md-2">
+                    <div class="texto px-md-5 align-self-end order-2 order-md-1">
+                        <h1 class="tituloGrande m-0 text-uppercase mb-3 ajuste">hortas comunitArias e quintais produtivos</h1>
 
                         <p class="m-0 linha-fina linhaFinaPd">Projeto cria hortas e quintais produtivos em terrenos baldios do Grande Recife</p>
 
@@ -139,14 +139,14 @@ $abertura = $_GET['abre'];
                             <span class="data">09/06/2023</span>
                         </div>
 
-                        <div class="tags d-flex mt-5">
+                        <div class="tags d-flex mt-3 mt-md-5 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase me-2">energia</a>
                             <a href="#" class="btn text-uppercase">agroecologia</a>
                         </div>
                     </div>
 
-                    <div class="imagem ps-5 text-center">
+                    <div class="imagem ps-md-5 text-center order-1 order-md-2">
                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/single1.png" alt="" class="">
                     </div>
                 </div>
@@ -158,8 +158,8 @@ $abertura = $_GET['abre'];
     <div class="marco-single__conteudo mt-5">
         <div class="container">
             <div class="row">
-                <div class="col-7">
-                    <div class="texto ms-5">
+                <div class="col-12 col-md-7">
+                    <div class="texto ms-md-5">
 	                    <?php if ( isset( $abertura ) && $abertura === 'podcast' ) { ?>
                             <div class="d-flex single-podcast align-items-center mb-4">
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod1.png" alt="" class="">
@@ -331,7 +331,7 @@ $abertura = $_GET['abre'];
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/content1.png" alt="" class="w-100">
                             </picture>
 
-                            <figcaption class="legenda-credito mx-5">
+                            <figcaption class="legenda-credito mx-md-5">
                                <p class="m-0">Comida só dura até o meio do mês na casa de dona Zilma.</p>
                                 <span>Foto © Arnaldo Sete.Projeto Colabora</span>
                             </figcaption>
@@ -473,7 +473,7 @@ $abertura = $_GET['abre'];
                     </div>
                 </div>
 
-                <div class="col-5 sidebar">
+                <div class="col-12 col-md-5 sidebar">
                     <div class="d-flex flex-column ms-5" style="width: max-content;">
                         <div class="d-flex">
                             <div class="social d-flex align-items-center">

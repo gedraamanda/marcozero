@@ -5,11 +5,26 @@
 
     .texto {
       h1 {
-        width: 85%;
+        &.ajuste {
+          border-top: 1px solid #000;
+
+          @media (max-width: 768px) {
+            margin-top: 15px !important;
+            padding-top: 15px;
+          }
+        }
+
+
+        @media (min-width: 768px) {
+          width: 85%;
+          border-top: none;
+        }
       }
 
       .linha-fina {
-        width: 70%;
+        @media (min-width: 768px) {
+          width: 70%;
+        }
       }
     }
 
@@ -25,13 +40,15 @@
       }
 
       &:before {
-        content: '';
-        width: 1px;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        background: #000;
+        @media (min-width: 768px) {
+          content: '';
+          width: 1px;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          background: #000;
+        }
       }
     }
 
@@ -69,7 +86,11 @@
     }
 
     &.header-texto {
-      padding: 90px 0;
+      padding: 40px 0;
+
+      @media (min-width: 768px) {
+        padding: 90px 0;
+      }
     }
 
   }
@@ -100,9 +121,13 @@
     .texto {
       h3 {
         font-family: $resBold;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 125%;
         margin-top: 30px;
+
+        @media (min-width: 768px) {
+          font-size: 20px;
+        }
 
         &:first-child {
           margin-top: 0;
@@ -112,8 +137,14 @@
       p {
         font-family: $tris;
         font-weight: 300;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 150%;
+        letter-spacing: -0.14px;
+
+        @media (min-width: 768px) {
+          font-size: 16px;
+          letter-spacing: normal;
+        }
 
         a {
           font-weight: $bold;
@@ -143,8 +174,10 @@
 
     .wp-block-image {
       &:not(.img-center) {
-        transform: translateX(-3rem);
-        width: calc(100% + 3rem);
+        @media (min-width: 768px) {
+          transform: translateX(-3rem);
+          width: calc(100% + 3rem);
+        }
       }
 
     }
