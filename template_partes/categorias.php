@@ -33,11 +33,17 @@
 <div class="marco-result">
     <div class="marco-result__destaque position-relative">
         <div class="container">
-            <div class="row row-cols-2">
+            <div class="row row-cols-md-2">
                 <div class="d-flex flex-column texto">
                     <h1 class="m-0 text-uppercase mt-3">direitos humanos</h1>
 
-                    <div class="d-flex flex-column mx-4 mt-auto">
+                    <div class="imagem d-md-none mt-3">
+                        <a href="">
+                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/cat1.png" alt="" class="w-100">
+                        </a>
+                    </div>
+
+                    <div class="d-flex flex-column mx-md-4 mt-3 mt-md-auto">
                         <a href="#" class="text-uppercase tituloGrande mb-2">por acesso à praia</a>
 
                         <a href="">
@@ -50,7 +56,7 @@
                             <span class="data">09/06/2023</span>
                         </div>
 
-                        <div class="tags d-flex mt-5">
+                        <div class="tags d-flex mt-3 mt-md-5 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase me-2">energia</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
@@ -58,7 +64,7 @@
                     </div>
                 </div>
 
-                <div class="imagem">
+                <div class="imagem d-none d-md-block">
                     <a href="">
                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/cat1.png" alt="" class="w-100">
                     </a>
@@ -71,7 +77,7 @@
 
     <div class="container mt-5 pt-5">
         <div class="marco-result__listagem listagem col-10 mx-auto">
-            <div class="row row-cols-3 listagem__int">
+            <div class="row row-cols-1 row-cols-md-3 listagem__int">
                 <div class="listagem-post">
                     <div class="d-flex flex-column">
                         <a href="">
@@ -80,7 +86,7 @@
 
                         <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-4">
+                        <div class="tags d-flex mt-4 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -96,7 +102,7 @@
 
                         <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-4">
+                        <div class="tags d-flex mt-4 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -112,7 +118,7 @@
 
                         <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-4">
+                        <div class="tags d-flex mt-4 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -128,7 +134,7 @@
 
                         <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-4">
+                        <div class="tags d-flex mt-4 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -144,7 +150,7 @@
 
                         <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-4">
+                        <div class="tags d-flex mt-4 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -160,7 +166,7 @@
 
                         <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-4">
+                        <div class="tags d-flex mt-4 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -176,7 +182,7 @@
 
                         <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-4">
+                        <div class="tags d-flex mt-4 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -192,7 +198,7 @@
 
                         <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-4">
+                        <div class="tags d-flex mt-4 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -208,7 +214,7 @@
 
                         <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-4">
+                        <div class="tags d-flex mt-4 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -224,7 +230,7 @@
 
                         <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-4">
+                        <div class="tags d-flex mt-4 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -240,7 +246,7 @@
 
                         <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-4">
+                        <div class="tags d-flex mt-4 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -256,7 +262,7 @@
 
                         <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-4">
+                        <div class="tags d-flex mt-4 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -272,7 +278,7 @@
 
                         <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-4">
+                        <div class="tags d-flex mt-4 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -288,7 +294,7 @@
 
                         <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-4">
+                        <div class="tags d-flex mt-4 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -304,7 +310,7 @@
 
                         <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-4">
+                        <div class="tags d-flex mt-4 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -320,7 +326,7 @@
 
                         <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-4">
+                        <div class="tags d-flex mt-4 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -336,7 +342,7 @@
 
                         <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-4">
+                        <div class="tags d-flex mt-4 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -352,7 +358,7 @@
 
                         <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-4">
+                        <div class="tags d-flex mt-4 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -368,7 +374,7 @@
 
                         <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-4">
+                        <div class="tags d-flex mt-4 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -384,7 +390,7 @@
 
                         <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-4">
+                        <div class="tags d-flex mt-4 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -400,7 +406,7 @@
 
                         <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-4">
+                        <div class="tags d-flex mt-4 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -416,7 +422,7 @@
 
                         <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-4">
+                        <div class="tags d-flex mt-4 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -432,7 +438,7 @@
 
                         <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-4">
+                        <div class="tags d-flex mt-4 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
@@ -448,7 +454,7 @@
 
                         <a href="#" class="titulo mt-3">No Recife, Rede de Feministas reúne mulheres da América Latina para debater política de drogas</a>
 
-                        <div class="tags d-flex mt-4">
+                        <div class="tags d-flex mt-4 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>

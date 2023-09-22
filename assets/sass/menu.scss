@@ -176,6 +176,20 @@
   &.menu-footer-default {
     position: relative;
     top: auto !important;
+
+    .m-fade {
+      @media (max-width: 768px) {
+        position: absolute;
+        opacity: 0;
+      }
+
+      &.activehome {
+        @media (max-width: 768px) {
+          opacity: 1;
+          z-index: 99;
+        }
+      }
+    }
   }
 
   &.menu-footer-home {

@@ -1,18 +1,38 @@
 .marco-result{
   h1 {
     font-family: $resBold;
-    font-size: 57px;
+    font-size: 32px;
+
+    @media (min-width: 768px) {
+      font-size: 57px;
+    }
   }
 
   &__destaque {
     .linha-fina {
       font-family: $resReg;
-      font-size: 21px;
+      font-size: 16px;
       line-height: 125%;
+
+      @media (min-width: 768px) {
+        font-size: 21px;
+      }
     }
 
     .imagem {
-      height: 570px;
+      height: 310px;
+      transform: translateX(-12px);
+      width: calc(100% + 24px);
+
+      @media (min-width: 768px) {
+        height: 570px;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+        width: auto;
+      }
 
       img {
         height: 100%;
@@ -30,7 +50,11 @@
     .listagem-post {
       padding-left: 30px;
       padding-right: 30px;
-      margin-bottom: 80px;
+      margin-bottom: 50px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 80px;
+      }
 
       .titulo {
         font-family: $resMed;

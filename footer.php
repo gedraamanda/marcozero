@@ -3,12 +3,12 @@
 <?php if(!is_home()) { ?>
     <div class="menu-footer menu-footer-default w-100 less">
         <div class="container">
-            <div class="d-flex justify-content-between">
-                <a href="#" class="apoie">ASSINE NOSSA NEWSLETTER</a>
+            <div class="d-flex justify-content-center justify-content-md-between position-relative">
+                <a href="#" class="apoie m-fade activehome">ASSINE NOSSA NEWSLETTER</a>
 
-                <p class="m-0"><a href="#" class="apoie">APOIE</a> O JORNALISMO INDEPENDENTE</p>
+                <p class="m-0 m-fade"><a href="#" class="apoie">APOIE</a> O JORNALISMO INDEPENDENTE</p>
 
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center m-fade">
                     <p class="m-0 me-3">VISITE NOSSAS REDES SOCIAIS</p>
 
                     <div class="social d-flex align-items-center">
