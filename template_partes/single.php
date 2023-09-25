@@ -183,7 +183,7 @@ $abertura = $_GET['abre'];
                                 <a class="next ms-auto" data-controls="next" aria-controls="customize" tabindex="-1"></a>
                             </div>
 
-                            <div class="mx-5">
+                            <div class="mx-md-5">
                                 <div class="galeria-sl">
                                     <div class="sl">
                                         <div class="text-center">
@@ -193,7 +193,7 @@ $abertura = $_GET['abre'];
                                         </div>
 
 
-                                        <figcaption class="legenda-credito mx-5 mt-2">
+                                        <figcaption class="legenda-credito mx-5 mt-2 px-3 px-md-0">
                                             <p class="m-0">Comida só dura até o meio do mês na casa de dona Zilma.</p>
                                             <span>Foto © Arnaldo Sete.Projeto Colabora</span>
                                         </figcaption>
@@ -214,7 +214,7 @@ $abertura = $_GET['abre'];
                                             </picture>
                                         </div>
 
-                                        <figcaption class="legenda-credito mx-5 mt-2">
+                                        <figcaption class="legenda-credito mx-5 mt-2 px-3 px-md-0">
                                             <p class="m-0">Pastor Henrique Vieira</p>
                                         </figcaption>
                                     </div>
@@ -457,14 +457,14 @@ $abertura = $_GET['abre'];
                             </div>
                         <?php } ?>
 
-                        <div class="tags d-flex mt-4 align-items-center">
-                            <span class="me-2">TAGS</span>
+                        <div class="tags d-flex mt-4 align-items-center flex-wrap">
+                            <span class="me-2 d-none d-md-inline-block">TAGS</span>
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase me-2">energia</a>
                             <a href="#" class="btn text-uppercase">reportagem</a>
                         </div>
 
-                        <div class="social d-flex align-items-center mt-4">
+                        <div class="social d-none d-md-flex align-items-center mt-4">
                             <a href="" class="facebook"></a>
                             <a href="" class="instagram"></a>
                             <a href="" class="twitter"></a>
@@ -473,7 +473,7 @@ $abertura = $_GET['abre'];
                     </div>
                 </div>
 
-                <div class="col-12 col-md-5 sidebar">
+                <div class="col-12 col-md-5 sidebar d-none d-md-block">
                     <div class="d-flex flex-column ms-5" style="width: max-content;">
                         <div class="d-flex">
                             <div class="social d-flex align-items-center">
@@ -613,10 +613,10 @@ $abertura = $_GET['abre'];
 
     <div class="relacionadas py-4">
         <div class="container">
-            <div class="mx-5">
+            <div class="mx-md-5">
                 <h3 class="m-0 text-uppercase">publicações relacionadas</h3>
 
-                <div class="row row-cols-3 mt-3 int">
+                <div class="<?php echo !wp_is_mobile() ? '' : '' ?> mt-3 int">
                     <div class="relacionadas__post">
                         <div class="d-flex flex-column">
                             <a href="">
@@ -661,6 +661,12 @@ $abertura = $_GET['abre'];
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="slider-control slider-control-rel d-flex" aria-label="Carousel Navigation" tabindex="0">
+                    <a class="prev" data-controls="prev" aria-controls="customize" tabindex="-1"></a>
+
+                    <a class="next ms-auto" data-controls="next" aria-controls="customize" tabindex="-1"></a>
                 </div>
             </div>
 
@@ -669,10 +675,16 @@ $abertura = $_GET['abre'];
 
     <div class="relacionadas sugestao mt-5 py-4">
         <div class="container">
-            <div class="mx-5">
+            <div class="mx-5 position-relative">
                 <h3 class="m-0 text-uppercase">sugestão do editor</h3>
 
-                <div class="row row-cols-3 mt-3 int">
+                <div class="slider-control slider-control-rel d-flex" aria-label="Carousel Navigation" tabindex="0">
+                    <a class="prev" data-controls="prev" aria-controls="customize" tabindex="-1"></a>
+
+                    <a class="next ms-auto" data-controls="next" aria-controls="customize" tabindex="-1"></a>
+                </div>
+
+                <div class="<?php echo !wp_is_mobile() ? 'row row-cols-3' : '' ?> mt-3 int">
                     <div class="relacionadas__post">
                         <div class="d-flex flex-column">
                             <a href="">
@@ -718,6 +730,8 @@ $abertura = $_GET['abre'];
                         </div>
                     </div>
                 </div>
+
+
             </div>
 
         </div>

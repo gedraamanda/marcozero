@@ -6,9 +6,8 @@
     .texto {
       h1 {
         &.ajuste {
-          border-top: 1px solid #000;
-
           @media (max-width: 768px) {
+            border-top: 1px solid #000;
             margin-top: 15px !important;
             padding-top: 15px;
           }
@@ -185,10 +184,15 @@
 
   .apoio {
     border-top: 1px solid #000;
+
     p {
       font-family: $resReg;
       color: $azul;
-      font-size: 20px;
+      font-size: 14px;
+
+      @media (min-width: 768px) {
+        font-size: 20px;
+      }
 
       a {
         color: $azul;
@@ -291,6 +295,7 @@
 .relacionadas {
   background: $azul;
   margin-top: 75px;
+  position: relative;
   
   &.sugestao {
     background: #fff;
@@ -298,30 +303,63 @@
     h3 {
       color: #000;
     }
+
+    .slider-control {
+      position: absolute;
+      bottom: 25px;
+      width: 97%;;
+    }
   }
 
   h3 {
     font-family: $resBold;
-    font-size: 22px;
+    font-size: 18px;
     color: #fff;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      font-size: 22px;
+      text-align: start;
+    }
   }
 
   .int {
-    margin-left: -30px !important;
-    margin-right: -30px !important;
+    @media (min-width: 768px) {
+      margin-left: -30px !important;
+      margin-right: -30px !important;
+    }
   }
 
   &__post {
-    padding-left: 30px;
-    padding-right: 30px;
+    @media (min-width: 768px) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
 
     .titulo {
       font-family: $resMed;
       font-size: 18px;
       line-height: 125%;
       display: block;
-      width: 80%;
+
+      @media (min-width: 768px) {
+        width: 80%;
+      }
+
     }
+
+    img {
+      @media (max-width: 768px) {
+        height: 250px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .slider-control {
+    position: absolute;
+    bottom: 45px;
+    width: 94%;;
   }
 }
 

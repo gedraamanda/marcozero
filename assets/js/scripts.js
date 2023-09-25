@@ -138,6 +138,31 @@ $(document).ready(function () {
         galeriaMarco();
     }
 
+    //galeria posts
+    const relacionadasMarco = () => {
+        const productCatsSlider = document.querySelectorAll('.relacionadas'); // container above slider
+        productCatsSlider.forEach(sliderWrapper => {
+            const slider = sliderWrapper.querySelector('.int'); // container with slider
+            const controlsContainerD = sliderWrapper.querySelector('.slider-control-rel');
+
+
+            const sliderRel = tns({
+                container: slider,
+                loop: false,
+                mouseDrag: true,
+                nav: true,
+                navPosition: 'bottom',
+                controlsContainer: controlsContainerD,
+            });
+
+
+        });
+    };
+
+    if($('.relacionadas').length > 0 && $(window).width() <= 768) {
+        relacionadasMarco();
+    }
+
 
     //menu hamburguer
     $('.hamb').on('click', function () {
@@ -154,9 +179,12 @@ $(document).ready(function () {
         $(this).toggleClass('open');
     });
 
-    $('.sl').on('click', function (){
-        $(this).find('img').toggleClass('plus');
-    })
+    if($(window).width() > 768) {
+        $('.sl').on('click', function (){
+            $(this).find('img').toggleClass('plus');
+        })
+    }
+
 
     //icone de explicacao colocar azul
     $('strong:contains("<+>")').css('color', '#1E69FA');
