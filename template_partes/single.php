@@ -161,10 +161,10 @@ $abertura = $_GET['abre'];
                 <div class="col-12 col-md-7">
                     <div class="texto ms-md-5">
 	                    <?php if ( isset( $abertura ) && $abertura === 'podcast' ) { ?>
-                            <div class="d-flex single-podcast align-items-center mb-4">
+                            <div class="d-flex single-podcast align-items-md-center mb-4">
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod1.png" alt="" class="">
 
-                                <p class="m-0 mx-5">Podcast de análise e opinião sobre os fatos mais importantes da semana pela equipe de Marco Zero Conteúdo, coletivo de jornalismo independente e investigativo do Recife</p>
+                                <p class="m-0 ms-3 mx-md-5">Podcast de análise e opinião sobre os fatos mais importantes da semana pela equipe de Marco Zero Conteúdo, coletivo de jornalismo independente e investigativo do Recife</p>
                             </div>
                         <?php } ?>
 
@@ -343,7 +343,7 @@ $abertura = $_GET['abre'];
                         <p>Marleide Monteiro, moradora do bairro de Passarinho, no Recife, também integra o projeto e afirma que, graças à iniciativa, é uma agricultora em formação: “Eu me sinto, sim, uma agricultora porque mesmo em um espaço pequeno, um quintal, através das minhas mãos e do aprendizado com outras mulheres, eu também criei uma horta na minha comunidade e isso é maravilhoso”.</p>
 
 
-                        <div class="lista mx-5 px-5 py-4 my-5" style="--cat-color: #EBEB01;">
+                        <div class="lista mx-md-5 px-5 py-4 my-5" style="--cat-color: #EBEB01;">
                             <span class="titulo text-uppercase mb-3 d-block">tres cuidados para quem aposta</span>
 
                             <div class="lista__item">
@@ -359,7 +359,7 @@ $abertura = $_GET['abre'];
                             </div>
                         </div>
 
-                        <div class="informacao mx-5 px-5 py-4 my-5" style="--cat-color: #7BDDDD;">
+                        <div class="informacao mx-md-5 px-5 py-4 my-5" style="--cat-color: #7BDDDD;">
                             <span class="titulo text-uppercase mb-3 d-block">box informações complementares</span>
 
                             <p>Box de informação complementar Os moradores que fazem apostas nos aplicativos entendem ser grave o escândalo de manipulação nos jogos de futebol, mas veem naturalidade no problema. Nos últimos meses, investigações mostraram que jogadores receberam quantias em dinheiro para ganhar cartão amarelo e vermelho durante as partidas, além de outras irregularidades.</p>
@@ -372,7 +372,7 @@ $abertura = $_GET['abre'];
 
                         <p>Para entender porque, diferente do que tem ocorrido no fim da vida, na primeira infância a desnutrição já não <strong><+></strong> é uma ameaça tão presente, é preciso olhar para a história recente do Brasil. A nutricionista e doutoranda em Saúde Pública.</p>
 
-                        <div class="box-explicacao mx-5 px-4 py-3 my-3" style="--cat-color: #1E69FA;">
+                        <div class="box-explicacao mx-md-5 px-4 py-3 my-3" style="--cat-color: #1E69FA;">
                             <span class="titulo"><+></span>
 
                             <div class="int mx-auto">
@@ -382,7 +382,7 @@ $abertura = $_GET['abre'];
 
                         <p>Para entender porque, diferente do que tem ocorrido no fim da vida, na primeira infância a desnutrição já não é uma ameaça tão presente, é preciso olhar para a história recente do Brasil. A nutricionista e doutoranda em Saúde Pública.</p>
 
-                        <div class="infos mx-5 px-5 py-4 my-5">
+                        <div class="infos mx-md-5 px-5 py-4 my-5">
                             <span class="titulo text-uppercase mb-2 d-block">resposta da secretaria de segurança</span>
 
                             <p>Os moradores que fazem apostas nos aplicativos entendem ser grave o escândalo de manipulação nos jogos de futebol, mas veem naturalidade no problema. Nos últimos meses, investigações mostraram que jogadores receberam quantias em dinheiro para ganhar cartão amarelo e vermelho durante as partidas, além de outras irregularidades.</p>
@@ -616,7 +616,7 @@ $abertura = $_GET['abre'];
             <div class="mx-md-5">
                 <h3 class="m-0 text-uppercase">publicações relacionadas</h3>
 
-                <div class="<?php echo !wp_is_mobile() ? '' : '' ?> mt-3 int">
+                <div class="<?php echo !wp_is_mobile() ? 'row row-cols-3' : '' ?> mt-3 int">
                     <div class="relacionadas__post">
                         <div class="d-flex flex-column">
                             <a href="">
@@ -663,7 +663,7 @@ $abertura = $_GET['abre'];
                     </div>
                 </div>
 
-                <div class="slider-control slider-control-rel d-flex" aria-label="Carousel Navigation" tabindex="0">
+                <div class="slider-control slider-control-rel d-flex d-md-none" aria-label="Carousel Navigation" tabindex="0">
                     <a class="prev" data-controls="prev" aria-controls="customize" tabindex="-1"></a>
 
                     <a class="next ms-auto" data-controls="next" aria-controls="customize" tabindex="-1"></a>
@@ -678,7 +678,7 @@ $abertura = $_GET['abre'];
             <div class="mx-5 position-relative">
                 <h3 class="m-0 text-uppercase">sugestão do editor</h3>
 
-                <div class="slider-control slider-control-rel d-flex" aria-label="Carousel Navigation" tabindex="0">
+                <div class="slider-control slider-control-rel d-flex d-md-none" aria-label="Carousel Navigation" tabindex="0">
                     <a class="prev" data-controls="prev" aria-controls="customize" tabindex="-1"></a>
 
                     <a class="next ms-auto" data-controls="next" aria-controls="customize" tabindex="-1"></a>

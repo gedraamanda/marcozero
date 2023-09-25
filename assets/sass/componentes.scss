@@ -472,7 +472,11 @@
 
   .titulo {
     font-family: $resBold;
-    font-size: 20px;
+    font-size: 18px;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+    }
   }
 
   &__item {
@@ -496,7 +500,11 @@
 
       span {
         font-family: $resBold;
-        font-size: 20px;
+        font-size: 18px;
+
+        @media (min-width: 768px) {
+          font-size: 20px;
+        }
       }
     }
   }
@@ -508,7 +516,11 @@
 
   .titulo {
     font-family: $resBold;
-    font-size: 20px;
+    font-size: 18px;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+    }
   }
 
   p {

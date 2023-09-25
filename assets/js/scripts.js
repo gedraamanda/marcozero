@@ -91,11 +91,25 @@ $(document).ready(function () {
     if($('.pod-outros-sl').length > 0) {
         var sliderPodOutros = tns({
             container: '.pod-outros-sl',
-            items : 4,
-            nav: false,
-            loop: false,
             controlsContainer: '.slider-control-pod',
-            gutter: 40
+            navPosition: 'bottom',
+            responsive: {
+                350: {
+                    items : 1,
+                    gutter: 20,
+                    nav: true,
+                    center: true,
+                    fixedWidth: 200,
+                    loop: true,
+                },
+                500: {
+                    items : 4,
+                    gutter: 40,
+                    nav: false,
+                    center: false,
+                    loop: false,
+                }
+            }
         });
     }
 
