@@ -8,11 +8,11 @@ get_header(); ?>
         <img src="<?php echo get_template_directory_uri() ?>/assets/images/capa.png" alt="" class="w-100 hw-100">
     </div>
 
-    <div class="marco-single__conteudo marco-especial__conteudo mt-5 panel pt-5">
+    <div class="marco-single__conteudo marco-especial__conteudo mt-5 panel pt-md-5">
         <div class="container">
             <div class="row">
-                <div class="col-7">
-                    <div class="texto ms-5">
+                <div class="col-12 col-md-7">
+                    <div class="texto ms-md-5">
 						<h1 class="m-0 text-uppercase mb-4">MANIFESTO EM DEFESA DA CIÊNCIA NO BRASIL</h1>
 
                         <p>O futuro do Brasil depende de um monte de coisa, mas certamente passa por uma reconstrução da Educação, que enfrenta um verdadeiro desmonte desde 2016, intensificado nos quatro anos de Bolsonaro. Todas as áreas do conhecimento sofrem, mas as Ciências Humanas, que já são alvos de piadas, sentem ainda mais as consequências.</p>
@@ -73,7 +73,7 @@ get_header(); ?>
 
 
 
-                        <div class="tags d-flex mt-4 align-items-center">
+                        <div class="tags d-flex mt-4 align-items-center flex-wrap">
                             <span class="me-2">TAGS</span>
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase me-2">energia</a>
@@ -89,7 +89,7 @@ get_header(); ?>
                     </div>
                 </div>
 
-                <div class="col-4 offset-md-1">
+                <div class="col-12 col-md-4 offset-md-1 d-none d-md-block">
                     <div class="sidebar ms-auto">
                         <div class="guia">
                             <div class="d-flex flex-column">

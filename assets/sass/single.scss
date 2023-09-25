@@ -415,25 +415,27 @@
       }
     }
 
+    .guia {
+      span {
+        font-family: $resBold;
+        font-size: 16px;
+        letter-spacing: 0.32px;
+        border-bottom: 2px solid;
+      }
+
+      a {
+        font-family: $resMed;
+        font-size: 16px;
+        letter-spacing: 0.32px;
+        border-bottom: 1px solid;
+        padding: 3px 0;
+      }
+    }
+
     .sidebar {
       width: 315px;
 
-      .guia {
-        span {
-          font-family: $resBold;
-          font-size: 16px;
-          letter-spacing: 0.32px;
-          border-bottom: 2px solid;
-        }
 
-        a {
-          font-family: $resMed;
-          font-size: 16px;
-          letter-spacing: 0.32px;
-          border-bottom: 1px solid;
-          padding: 3px 0;
-        }
-      }
     }
 
   }
