@@ -13,7 +13,7 @@
 
 
             <div class="row">
-                <div class="col-6 mx-auto">
+                <div class="col-8 col-md-6 mx-auto">
                     <div class="texto d-flex flex-column text-center">
                         <a href="#" class="m-0 text-uppercase mb-2 titulo">Medo de chuva: a saude mental de quem sobreviveu à tragédia
                             de 2022 em Pernambuco</a>

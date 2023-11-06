@@ -75,7 +75,7 @@
         </div>
     </div>
 
-    <div class="container mt-5 pt-5">
+    <div class="container mt-5 pt-md-5">
         <div class="marco-result__listagem listagem col-10 mx-auto">
             <div class="row row-cols-1 row-cols-md-3 listagem__int">
                 <div class="listagem-post">

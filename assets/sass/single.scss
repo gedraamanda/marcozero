@@ -1,7 +1,10 @@
 .marco-single {
   header {
-    max-height: calc(100vh - 67px);
     background: var(--cat-color);
+
+    @media (min-width: 768px) {
+      max-height: calc(100vh - 67px);
+    }
 
     .texto {
       h1 {

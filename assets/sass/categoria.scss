@@ -94,12 +94,20 @@
     max-height: initial !important;
 
     .wrapper {
-      width: 870px;
+      width: 100%;
+
+      @media (min-width: 768px) {
+        width: 870px;
+      }
 
       .youtube {
         margin-bottom: 0;
-        height: 450px;
+        height: 150px;
         padding: inherit;
+
+        @media (min-width: 768px) {
+          height: 450px;
+        }
 
         img {
           width: 100%;
