@@ -163,6 +163,10 @@
             font-size: 24px;
             line-height: 115%;
           }
+          
+          &:hover {
+            color: #fff;
+          }
         }
       }
 
@@ -188,6 +192,10 @@
         font-size: 18px;
         line-height: 105%;
         display: block;
+
+        &:hover {
+          color: #000;
+        }
       }
     }
   }
@@ -225,6 +233,10 @@
           display: block;
           width: 75%;
           margin: 0 auto !important;
+
+          &:hover {
+            color: #000;
+          }
         }
       }
     }
@@ -266,11 +278,21 @@
           @media (min-width: 768px) {
             flex: 0 0 530px;
           }
+
+          &:hover {
+            color: #000;
+          }
         }
 
         .detalhe {
           @media (min-width: 768px) {
             flex: 0 0 350px;
+          }
+
+          a {
+            &:hover {
+              color: #000;
+            }
           }
         }
       }
@@ -311,6 +333,10 @@
               width: 42px;
               height: 43px;
             }
+
+            &:hover {
+              color: #fff;
+            }
           }
 
           a {
@@ -322,6 +348,10 @@
             @media (min-width: 768px) {
               font-size: 18px;
               line-height: 125%;
+            }
+
+            &:hover {
+              color: #fff;
             }
           }
         }
@@ -352,6 +382,18 @@
 
         @media (min-width: 768px) {
           font-size: 32px;
+        }
+
+        &:hover {
+          color: #000;
+        }
+      }
+
+      .detalhe {
+        a,span {
+          &:hover {
+            color: #000;
+          }
         }
       }
     }
@@ -393,6 +435,10 @@
             font-size: 18px;
             border-bottom: 1px solid #000;
             padding-bottom: 3px;
+
+            &:hover {
+              color: #000;
+            }
           }
 
           .titulo {
@@ -402,6 +448,10 @@
 
             @media (min-width: 768px) {
               font-size: 18px;
+            }
+
+            &:hover {
+              color: #000;
             }
           }
         }

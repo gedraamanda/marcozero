@@ -295,6 +295,10 @@
       @media (min-width: 768px) {
         font-size: 28px;
       }
+
+      &:hover {
+        color: #fff;
+      }
     }
   }
 
@@ -314,6 +318,11 @@
 
       &:last-child {
         margin-bottom: 0 !important;
+      }
+
+      &:hover {
+        font-weight: $bold;
+        color: #000;
       }
     }
   }

@@ -11,9 +11,9 @@
                         <p class="linha-fina m-0 linhaFinaPd">O agronegócio chegou em Tabuleiro do Norte, CE, ameaçando a comunidade local. Falta d’água, derrubada de mata nativa de Caatinga e agrotóxicos</p>
                     </a>
 
-                    <div class="detalhe d-flex aling-items-center mt-2 flex-wrap">
+                    <div class="detalhe d-flex flex-column flex-md-row aling-items-center mt-2 flex-wrap">
                         <a href="#" class="assina text-uppercase">Inês Campelo e Sérgio Miguel Buarque</a>
-                        <span class="mx-3">/</span>
+                        <span class="mx-3 d-none d-md-inline-block">/</span>
                         <span class="data">09/06/2023</span>
                     </div>
 
@@ -55,9 +55,9 @@
                                     <p class="linha-fina m-0 linhaFinaPd">a dificuldade de parir em uma cidade do interior de Pernambuco</p>
                                 </a>
 
-                                <div class="detalhe d-flex aling-items-center mt-2">
+                                <div class="detalhe d-flex flex-column flex-md-row aling-items-center mt-2">
                                     <a href="#" class="assina text-uppercase">Marco Zero Conteúdo</a>
-                                    <span class="mx-3">/</span>
+                                    <span class="mx-3 d-none d-md-inline-block">/</span>
                                     <span class="data">09/06/2023</span>
                                 </div>
 
@@ -86,9 +86,9 @@
                                     <p class="linha-fina m-0 linhaFinaPd">a dificuldade de parir em uma cidade do interior de Pernambuco</p>
                                 </a>
 
-                                <div class="detalhe d-flex aling-items-center mt-2">
+                                <div class="detalhe d-flex flex-column flex-md-row aling-items-center mt-2">
                                     <a href="#" class="assina text-uppercase">Marco Zero Conteúdo</a>
-                                    <span class="mx-3">/</span>
+                                    <span class="mx-3 d-none d-md-inline-block">/</span>
                                     <span class="data">09/06/2023</span>
                                 </div>
 
@@ -117,7 +117,7 @@
                                     <p class="linha-fina m-0 linhaFinaPd">a dificuldade de parir em uma cidade do interior de Pernambuco</p>
                                 </a>
 
-                                <div class="detalhe d-flex aling-items-center mt-2">
+                                <div class="detalhe d-flex flex-column flex-md-row aling-items-center mt-2">
                                     <a href="#" class="assina text-uppercase">Marco Zero Conteúdo</a>
                                     <span class="mx-3">/</span>
                                     <span class="data">09/06/2023</span>
@@ -161,7 +161,7 @@
         </div>
     </div>
 
-    <section class="stories container mt-5 position-relative">
+    <section class="stories container mt-md-5 position-relative">
         <div class="d-flex mx-md-5 align-items-center">
             <h2 class="tituloSessao text-uppercase">webstories</h2>
 
@@ -228,9 +228,9 @@
                                         <p class="m-0 linhaFinaPd">a dificuldade de parir em uma cidade do interior de Pernambuco</p>
                                     </a>
 
-                                    <div class="detalhe d-flex aling-items-center mt-2 flex-wrap">
+                                    <div class="detalhe d-flex flex-column flex-md-row aling-items-center mt-2 flex-wrap">
                                         <a href="#" class="assina text-uppercase">marco zero conteudo</a>
-                                        <span class="mx-3">/</span>
+                                        <span class="mx-3 d-none d-md-inline-block">/</span>
                                         <span class="data">09/06/2023</span>
                                     </div>
 
@@ -358,7 +358,7 @@
                 <div class="item d-flex flex-column flex-md-row align-items-md-center">
                     <a href="#" class="titulo me-5">Mãe, mulheres, o Bolsa família voltou!</a>
 
-                    <div class="detalhe d-flex aling-items-center mt-2 mt-md-2">
+                    <div class="detalhe d-flex flex-column flex-md-row aling-items-center mt-2 mt-md-2">
                         <a href="#" class="assina text-uppercase me-2">Inês Campelo e Sérgio Miguel Buarque</a>
                         <span class="data">09/06/2023</span>
                     </div>
@@ -371,7 +371,7 @@
                 <div class="item d-flex flex-column flex-md-row align-items-md-center">
                     <a href="#" class="titulo me-5">É proibido proibir: (des)caminhos da linguagem não-binária no Brasil</a>
 
-                    <div class="detalhe d-flex aling-items-center mt-2 mt-md-2">
+                    <div class="detalhe d-flex flex-column flex-md-row aling-items-center mt-2 mt-md-2">
                         <a href="#" class="assina text-uppercase me-2">por Iran Melo e Gustavo Paraíso</a>
                         <span class="data">09/06/2023</span>
                     </div>
@@ -384,7 +384,7 @@
                 <div class="item d-flex flex-column flex-md-row align-items-md-center">
                     <a href="#" class="titulo me-5">Um olhar sobre a constitucionalidade do PL das Fake News</a>
 
-                    <div class="detalhe d-flex aling-items-center mt-2 mt-md-2">
+                    <div class="detalhe d-flex flex-column flex-md-row aling-items-center mt-2 mt-md-2">
                         <a href="#" class="assina text-uppercase me-2">por Paulo Arthur Monteiro</a>
                         <span class="data">09/06/2023</span>
                     </div>
@@ -440,9 +440,9 @@
 
                         <a href="#" class="titulo text-uppercase mt-2">MarcoZero mapeia iniciativas de comunicacao popular no Grande Recife</a>
 
-                        <div class="detalhe d-flex aling-items-center mt-2">
+                        <div class="detalhe d-flex flex-column flex-md-row aling-items-center mt-2">
                             <a href="#" class="assina text-uppercase">marcozero conteudo</a>
-                            <span class="mx-3">/</span>
+                            <span class="mx-3 d-none d-md-inline-block">/</span>
                             <span class="data">09/06/2023</span>
                         </div>
                     </div>
@@ -533,9 +533,9 @@
 
                                 <a href="#" class="titulo text-uppercase tituloGrande my-2">O desmonte na educacAo e impacto sobre as CiEncias Humanas</a>
 
-                                <div class="detalhe d-flex aling-items-center mt-2">
+                                <div class="detalhe d-flex flex-column flex-md-row aling-items-center mt-2">
                                     <a href="#" class="assina text-uppercase">Carol monteiro</a>
-                                    <span class="mx-3">/</span>
+                                    <span class="mx-3 d-none d-md-inline-block">/</span>
                                     <span class="data">09/12/2022</span>
                                 </div>
 
@@ -560,9 +560,9 @@
 
                                 <a href="#" class="titulo text-uppercase tituloGrande my-2">2 O desmonte na educacAo e impacto sobre as CiEncias Humanas</a>
 
-                                <div class="detalhe d-flex aling-items-center mt-2">
+                                <div class="detalhe d-flex flex-column flex-md-row aling-items-center mt-2">
                                     <a href="#" class="assina text-uppercase">Carol monteiro</a>
-                                    <span class="mx-3">/</span>
+                                    <span class="mx-3 d-none d-md-inline-block">/</span>
                                     <span class="data">09/12/2022</span>
                                 </div>
 

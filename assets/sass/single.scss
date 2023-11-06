@@ -150,6 +150,10 @@
           text-decoration: underline;
           text-underline-offset: 3px;
           text-decoration-color: #828282;
+
+          &:hover {
+            color: $azul;
+          }
         }
 
         strong, b {
@@ -334,6 +338,12 @@
       bottom: 25px;
       width: 97%;;
     }
+
+    .titulo {
+      &:hover {
+        color: #000;
+      }
+    }
   }
 
   h3 {
@@ -369,6 +379,10 @@
 
       @media (min-width: 768px) {
         width: 80%;
+      }
+
+      &:hover {
+        color: #fff;
       }
 
     }
@@ -429,6 +443,10 @@
         letter-spacing: 0.32px;
         border-bottom: 1px solid;
         padding: 3px 0;
+
+        &:hover {
+          color: #fff;
+        }
       }
     }
 
