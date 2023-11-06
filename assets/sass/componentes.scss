@@ -501,6 +501,13 @@
   .coluna-2 {
     flex: 0 0 40%;
   }
+
+  .legenda-credito {
+    @media (max-width: 768px) {
+      border-top: 2px solid #000;
+      padding-top: 8px;
+    }
+  }
 }
 
 .lista {

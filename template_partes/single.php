@@ -19,9 +19,9 @@ $abertura = $_GET['abre'];
 
                     <p class="m-0 linha-fina linhaFinaPd">“É muito ruim olhar para os quatro cantos e não ver o que comer”</p>
 
-                    <div class="detalhe d-flex aling-items-center mt-2">
+                    <div class="detalhe d-flex flex-column flex-md-row aling-items-center mt-2">
                         <a href="#" class="assina text-uppercase">Por adriana amâncio</a>
-                        <span class="mx-3">/</span>
+                        <span class="mx-3 d-none d-md-inline-block">/</span>
                         <span class="data">09/06/2023</span>
                     </div>
 
@@ -41,9 +41,9 @@ $abertura = $_GET['abre'];
 
                         <p class="m-0 linha-fina linhaFinaPd">a dificuldade de parir em uma cidade do interior de Pernambuco</p>
 
-                        <div class="detalhe d-flex aling-items-center mt-2">
+                        <div class="detalhe d-flex flex-column flex-md-row aling-items-center mt-2">
                             <a href="#" class="assina text-uppercase">marcozero conteúdo</a>
-                            <span class="mx-3">/</span>
+                            <span class="mx-3 d-none d-md-inline-block">/</span>
                             <span class="data">09/06/2023</span>
                         </div>
 
@@ -70,9 +70,9 @@ $abertura = $_GET['abre'];
 
                             <p class="m-0 linha-fina linhaFinaPd mx-auto">a dificuldade de parir em uma cidade do interior de Pernambuco</p>
 
-                            <div class="detalhe d-flex aling-items-center mt-2 justify-content-center">
+                            <div class="detalhe d-flex flex-column flex-md-row aling-items-center mt-2 justify-content-center">
                                 <a href="#" class="assina text-uppercase">marcozero conteúdo</a>
-                                <span class="mx-3">/</span>
+                                <span class="mx-3 d-none d-md-inline-block">/</span>
                                 <span class="data">09/06/2023</span>
                             </div>
 
@@ -108,9 +108,9 @@ $abertura = $_GET['abre'];
                                 <h1 class="m-0 text-uppercase mb-2 titulo w-100">Medo de chuva: a saude mental de quem sobreviveu à tragédia
                                     de 2022 em Pernambuco</h1>
 
-                                <div class="detalhe d-flex aling-items-center mt-2 justify-content-center">
+                                <div class="detalhe d-flex flex-column flex-md-row aling-items-center mt-2 justify-content-center">
                                     <a href="#" class="assina text-uppercase">redação</a>
-                                    <span class="mx-3">/</span>
+                                    <span class="mx-3 d-none d-md-inline-block">/</span>
                                     <span class="data">09/06/2023</span>
                                 </div>
 
@@ -133,13 +133,13 @@ $abertura = $_GET['abre'];
 
                         <p class="m-0 linha-fina linhaFinaPd">Projeto cria hortas e quintais produtivos em terrenos baldios do Grande Recife</p>
 
-                        <div class="detalhe d-flex aling-items-center mt-2">
+                        <div class="detalhe d-flex flex-column flex-md-row aling-items-center mt-3 mt-md-2">
                             <a href="#" class="assina text-uppercase">marcozero conteúdo</a>
-                            <span class="mx-3">/</span>
+                            <span class="mx-3 d-none d-md-inline-block">/</span>
                             <span class="data">09/06/2023</span>
                         </div>
 
-                        <div class="tags d-flex mt-3 mt-md-5 flex-wrap">
+                        <div class="tags d-flex mt-4 mt-md-5 flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">socioambiental</a>
                             <a href="#" class="btn text-uppercase me-2">energia</a>
                             <a href="#" class="btn text-uppercase">agroecologia</a>
@@ -255,7 +255,7 @@ $abertura = $_GET['abre'];
                                 </div>
                             </div>
 
-                            <div class="legenda-credito mt-2">
+                            <div class="legenda-credito mt-3 mt-md-2 mx-5 mx-md-auto">
                                 <p class="m-0">Bombeiros resgataram corpo de um homem de 45 anos às 13:30min.</p>
                                 <span>Foto © acervo pessoal</span>
                             </div>
@@ -285,7 +285,7 @@ $abertura = $_GET['abre'];
                                 </div>
                             </div>
 
-                            <div class="legenda-credito mt-2">
+                            <div class="legenda-credito mt-3 mt-md-2 mx-5 mx-md-auto">
                                 <p class="m-0">Bombeiros resgataram corpo de um homem de 45 anos às 13:30min.</p>
                                 <span>Foto © acervo pessoal</span>
                             </div>
@@ -312,7 +312,7 @@ $abertura = $_GET['abre'];
                                 </div>
                             </div>
 
-                            <div class="legenda-credito mt-2">
+                            <div class="legenda-credito mt-3 mt-md-2 mx-5 mx-md-auto">
                                 <p class="m-0">Bombeiros resgataram corpo de um homem de 45 anos às 13:30min.</p>
                                 <span>Foto © acervo pessoal</span>
                             </div>
