@@ -33,10 +33,11 @@
             </div>
 
             <div class="menu-cat d-flex align-items-center flex-wrap mt-3 mt-md-0">
-                <a href="#" class="text-uppercase me-5"><span class="d-none d-md-inline-block opacity-0"></span>direitos humanos</a>
-                <a href="#" class="text-uppercase me-5"><span class="me-3"></span>socioambiental</a>
-                <a href="#" class="text-uppercase me-5"><span class="d-none d-md-inline-block me-3"></span>direito à cidade</a>
-                <a href="#" class="text-uppercase"><span class="me-3"></span>diversidade</a>
+                <a href="#" class="text-uppercase me-4 me-md-5"><span class="d-none d-md-inline-block opacity-0"></span>direitos humanos</a>
+                <a href="#" class="text-uppercase me-4 me-md-5"><span class="me-3"></span>socioambiental</a>
+                <a href="#" class="text-uppercase me-4 me-md-5"><span class="d-none d-md-inline-block me-3"></span>direito à cidade</a>
+                <a href="#" class="text-uppercase me-4 me-md-5"><span class="me-3"></span>diversidade</a>
+                <a href="#" class="text-uppercase"><span class="me-3 d-none d-md-inline-block"></span>institucional</a>
             </div>
         </div>
 

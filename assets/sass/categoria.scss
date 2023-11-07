@@ -90,8 +90,13 @@
 .marco-videos {
   header {
     background: var(--bg-color) !important;
-    padding: 40px 0;
+    padding: 20px 0;
     max-height: initial !important;
+
+    @media (min-width: 768px) {
+      padding: 40px 0;
+    }
+
 
     .wrapper {
       width: 100%;
@@ -102,7 +107,7 @@
 
       .youtube {
         margin-bottom: 0;
-        height: 150px;
+        height: 170px;
         padding: inherit;
 
         @media (min-width: 768px) {

@@ -2,7 +2,7 @@
     <header style="--bg-color: #000;">
         <div class="container">
             <div class="row">
-                <div class="col-10 mx-auto">
+                <div class="col-12 col-md-10 mx-auto">
                     <div class="wrapper mx-auto">
                         <div class="youtube" data-embed="dw7MUg59_E8">
                             <div class="play-button"></div>
@@ -13,18 +13,18 @@
 
 
             <div class="row">
-                <div class="col-8 col-md-6 mx-auto">
+                <div class="col-9 col-md-6 mx-auto">
                     <div class="texto d-flex flex-column text-center">
                         <a href="#" class="m-0 text-uppercase mb-2 titulo">Medo de chuva: a saude mental de quem sobreviveu à tragédia
                             de 2022 em Pernambuco</a>
 
-                        <div class="detalhe d-flex aling-items-center mt-2 justify-content-center">
+                        <div class="detalhe d-flex flex-column flex-md-row aling-items-center mt-2 justify-content-center">
                             <a href="#" class="assina text-uppercase">redação</a>
-                            <span class="mx-3">/</span>
+                            <span class="mx-3 d-none d-md-inline-block">/</span>
                             <span class="data">09/06/2023</span>
                         </div>
 
-                        <div class="tags d-flex mt-4 justify-content-center">
+                        <div class="tags d-flex mt-4 justify-content-center flex-wrap">
                             <a href="#" class="btn text-uppercase me-2">direitos humanos</a>
                             <a href="#" class="btn text-uppercase">maternidade</a>
                         </div>
@@ -35,12 +35,12 @@
     </header>
 
     <div class="container my-5">
-        <div class="marco-videos__listagem mx-5">
+        <div class="marco-videos__listagem mx-md-5">
             <div class="listagem-titulo text-center">
                 <span>OUTROS VIDEOS</span>
             </div>
 
-            <div class="row row-cols-3 int mt-3">
+            <div class="row row-cols-1 row-cols-md-3 int mt-3">
                 <div class="item">
                     <div class="wrapper">
                         <div class="youtube" data-embed="dw7MUg59_E8">

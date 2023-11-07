@@ -92,7 +92,7 @@ $abertura = $_GET['abre'];
             <header style="--bg-color: #FF5E30;">
                 <div class="container">
                     <div class="row">
-                        <div class="col-10 mx-auto">
+                        <div class="col-12 col-md-10 mx-auto">
                             <div class="wrapper mx-auto">
                                 <div class="youtube" data-embed="dw7MUg59_E8">
                                     <div class="play-button"></div>
@@ -103,7 +103,7 @@ $abertura = $_GET['abre'];
 
 
                     <div class="row">
-                        <div class="col-8 col-md-6 mx-auto">
+                        <div class="col-9 col-md-6 mx-auto">
                             <div class="texto d-flex flex-column text-center">
                                 <h1 class="m-0 text-uppercase mb-2 titulo w-100">Medo de chuva: a saude mental de quem sobreviveu à tragédia
                                     de 2022 em Pernambuco</h1>
@@ -205,6 +205,10 @@ $abertura = $_GET['abre'];
                                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/home3.png" alt="" class="mw-100">
                                             </picture>
                                         </div>
+
+                                        <figcaption class="legenda-credito mx-5 mt-2 px-3 px-md-0">
+                                            <p class="m-0"></p>
+                                        </figcaption>
                                     </div>
 
                                     <div class="sl">
@@ -394,7 +398,7 @@ $abertura = $_GET['abre'];
                         </div>
 
 	                    <?php if ( isset( $abertura ) && $abertura === 'podcast' ) { ?>
-                            <div class="end-podcast mb-5 pb-5">
+                            <div class="end-podcast mb-4 mb-md-5 pb-md-5">
                                 <div class="siga text-center mx-auto">
                                     <span class="siga-titulo m-0">SIGA E OUÇA NO SEU APLICATIVO PREFERIDO</span>
 

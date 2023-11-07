@@ -299,7 +299,7 @@
 
   .btn {
     @media (max-width: 768px) {
-      margin-bottom: 10px;
+      margin-bottom: 6px;
     }
   }
 }
@@ -414,6 +414,10 @@
 
 .legenda-credito {
   line-height: 1;
+
+  @media (max-width: 768px) {
+    min-height: 50px;
+  }
 
   p {
     font-size: 12px !important;
