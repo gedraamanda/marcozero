@@ -64,7 +64,7 @@ $abertura = $_GET['abre'];
         <header style="--cat-color: #EBEB01;" class="header-texto">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-5 mx-auto">
+                    <div class="col-9 col-md-5 mx-auto">
                         <div class="texto text-center">
                             <h1 class="tituloGrande m-0 text-uppercase mb-3 mx-auto">trf 5 decide se biologa negra serareintegrada ao servico publico</h1>
 
@@ -103,7 +103,7 @@ $abertura = $_GET['abre'];
 
 
                     <div class="row">
-                        <div class="col-6 mx-auto">
+                        <div class="col-8 col-md-6 mx-auto">
                             <div class="texto d-flex flex-column text-center">
                                 <h1 class="m-0 text-uppercase mb-2 titulo w-100">Medo de chuva: a saude mental de quem sobreviveu à tragédia
                                     de 2022 em Pernambuco</h1>
@@ -114,7 +114,7 @@ $abertura = $_GET['abre'];
                                     <span class="data">09/06/2023</span>
                                 </div>
 
-                                <div class="tags d-flex mt-4 justify-content-center">
+                                <div class="tags d-flex mt-4 justify-content-center flex-wrap">
                                     <a href="#" class="btn text-uppercase me-2">direitos humanos</a>
                                     <a href="#" class="btn text-uppercase">maternidade</a>
                                 </div>
