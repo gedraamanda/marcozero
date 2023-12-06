@@ -1,34 +1,12 @@
-<div class="barra-busca py-2" style="--cat-color: #EBEB01;">
-    <div class="container">
-        <div class="row row-cols-2">
-            <div class="item">
-                <a href="#" class="nome">TEMAS <i></i></a>
+<?php
+$postListagem = new WP_Query( array(
+	'post_type'      => 'web-story',
+	'posts_per_page' => 8,
+	'post_status'    => 'publish',
+) );
 
-                <div class="busca-abre"></div>
-            </div>
 
-            <div class="item">
-                <a href="#" class="nome open-formato">FORMATOS <i></i></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="busca-abre abre-formato">
-        <div class="int p-4">
-            <div class="d-flex flex-column ">
-                <a href="" class="text-uppercase">reportagem</a>
-                <a href="" class="text-uppercase">entrevista</a>
-                <a href="" class="text-uppercase">podcast</a>
-                <a href="" class="text-uppercase">vídeo</a>
-                <a href="" class="text-uppercase">opinião</a>
-                <a href="" class="text-uppercase">webstories</a>
-                <a href="" class="text-uppercase">narrativas visuais</a>
-                <a href="" class="text-uppercase">editorial</a>
-            </div>
-
-        </div>
-    </div>
-</div>
+get_template_part( 'componentes/barra-busca', ''); ?>
 
 <div class="marco-result container">
     <div class="marco-result__destaque position-relative">
@@ -39,104 +17,19 @@
             </div>
         </div>
 
-	    <div class="marco-result__listagem listagem mx-5 mt-3 mt-md-5">
-		    <div class="row row-cols-md-4 listagem__int">
-			    <div class="listagem-post">
-				    <a href="">
-					    <img src="<?php echo get_template_directory_uri() ?>/assets/images/stories1.png" alt="" class="w-100">
-				    </a>
-			    </div>
+	    <?php if ( ! empty( $postListagem->posts ) ) { ?>
+            <div class="marco-result__listagem listagem mx-5 mt-3 mt-md-5">
+                <div class="row row-cols-md-4 listagem__int">
+                    <?php foreach ( $postListagem->posts as $item ) { ?>
+                        <div class="listagem-post">
+                            <a href="<?php echo get_permalink($item->ID) ?>">
+	                            <?php mz_imgDestaque($item->ID, '', '', 'w-100'); ?>
+                            </a>
+                        </div>
+                    <?php } ?>
+                </div>
+            </div>
+        <?php } ?>
 
-			    <div class="listagem-post">
-				    <a href="">
-					    <img src="<?php echo get_template_directory_uri() ?>/assets/images/stories2.png" alt="" class="w-100">
-				    </a>
-			    </div>
-
-			    <div class="listagem-post">
-				    <a href="">
-					    <img src="<?php echo get_template_directory_uri() ?>/assets/images/stories1.png" alt="" class="w-100">
-				    </a>
-			    </div>
-
-			    <div class="listagem-post">
-				    <a href="">
-					    <img src="<?php echo get_template_directory_uri() ?>/assets/images/stories2.png" alt="" class="w-100">
-				    </a>
-			    </div>
-
-			    <div class="listagem-post">
-				    <a href="">
-					    <img src="<?php echo get_template_directory_uri() ?>/assets/images/stories1.png" alt="" class="w-100">
-				    </a>
-			    </div>
-
-			    <div class="listagem-post">
-				    <a href="">
-					    <img src="<?php echo get_template_directory_uri() ?>/assets/images/stories2.png" alt="" class="w-100">
-				    </a>
-			    </div>
-
-			    <div class="listagem-post">
-				    <a href="">
-					    <img src="<?php echo get_template_directory_uri() ?>/assets/images/stories1.png" alt="" class="w-100">
-				    </a>
-			    </div>
-
-			    <div class="listagem-post">
-				    <a href="">
-					    <img src="<?php echo get_template_directory_uri() ?>/assets/images/stories2.png" alt="" class="w-100">
-				    </a>
-			    </div>
-
-			    <div class="listagem-post">
-				    <a href="">
-					    <img src="<?php echo get_template_directory_uri() ?>/assets/images/stories1.png" alt="" class="w-100">
-				    </a>
-			    </div>
-
-			    <div class="listagem-post">
-				    <a href="">
-					    <img src="<?php echo get_template_directory_uri() ?>/assets/images/stories2.png" alt="" class="w-100">
-				    </a>
-			    </div>
-
-			    <div class="listagem-post">
-				    <a href="">
-					    <img src="<?php echo get_template_directory_uri() ?>/assets/images/stories1.png" alt="" class="w-100">
-				    </a>
-			    </div>
-
-			    <div class="listagem-post">
-				    <a href="">
-					    <img src="<?php echo get_template_directory_uri() ?>/assets/images/stories2.png" alt="" class="w-100">
-				    </a>
-			    </div>
-
-			    <div class="listagem-post">
-				    <a href="">
-					    <img src="<?php echo get_template_directory_uri() ?>/assets/images/stories1.png" alt="" class="w-100">
-				    </a>
-			    </div>
-
-			    <div class="listagem-post">
-				    <a href="">
-					    <img src="<?php echo get_template_directory_uri() ?>/assets/images/stories2.png" alt="" class="w-100">
-				    </a>
-			    </div>
-
-			    <div class="listagem-post">
-				    <a href="">
-					    <img src="<?php echo get_template_directory_uri() ?>/assets/images/stories1.png" alt="" class="w-100">
-				    </a>
-			    </div>
-
-			    <div class="listagem-post">
-				    <a href="">
-					    <img src="<?php echo get_template_directory_uri() ?>/assets/images/stories2.png" alt="" class="w-100">
-				    </a>
-			    </div>
-		    </div>
-	    </div>
     </div>
 </div>

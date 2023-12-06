@@ -1,4 +1,7 @@
-<?php if(is_home()) { ?>
+<?php
+$menus = wp_get_nav_menu_items('hamburguer');
+
+if(is_home()) { ?>
     <div class="menu-principal pt-3 pt-md-0 pb-3">
         <div class="container">
             <div class="d-flex align-items-center">
@@ -54,12 +57,18 @@
     </div>
 <?php }
 
+if ( is_single() ) {
+	$abertura    = get_field( 'post_abertura', get_the_ID() );
+	$abertura = !empty($abertura) ? $abertura : '';
 
-$abertura = $_GET['abre'];
+	$postCat = get_the_category(get_the_ID());
+	$keysEspeciais = array_keys( array_column( $postCat, 'slug' ), 'especiais' ); //keys de texto
+}
+
 ?>
 
 
-<div class="menu-default <?php echo is_home() ? 'menu-home' : '' ?> <?php echo isset($abertura) && $abertura === 'foto' ? 'menu-borda' : '' ?> <?php echo $_SERVER['REQUEST_URI'] === '/especial/' ? 'menu-especial esconde' : '' ?>">
+<div class="menu-default <?php echo is_home() ? 'menu-home' : '' ?> <?php echo isset($abertura) && $abertura === 'centro' ? 'menu-borda' : '' ?> <?php echo !empty($keysEspeciais) ? 'menu-especial esconde' : '' ?>">
     <div class="container">
         <div class="d-flex justify-content-between py-3 int">
             <div class="logo d-flex align-items-center">
@@ -90,11 +99,35 @@ $abertura = $_GET['abre'];
     <a href="javascript:;" class="close-menu"></a>
 
     <div class="d-flex flex-column menu-hide__principal">
-        <a href="#" class="m-0 text-uppercase">direitos humanos</a>
-        <a href="#" class="m-0 text-uppercase">direito à cidade</a>
-        <a href="#" class="m-0 text-uppercase">socioambiental</a>
-        <a href="#" class="m-0 text-uppercase">diversidade</a>
-        <a href="#" class="m-0 text-uppercase">institucional</a>
+	<?php
+	if ( ! empty( $menus ) ) {
+		foreach ( $menus as $menu ) {
+			$gtmName = '';
+
+			if ( $menu->type === 'taxonomy' || $menu->type === 'post_type' ) {
+				$nome = $menu->title;
+				$link = $menu->url;
+			} elseif ( $menu->type === 'custom' ) {
+				$nome = $menu->post_title;
+				$link = $menu->url;
+
+				$slug    = explode( '/', $link );
+				$gtmName = $slug[3];
+			}
+
+			if($menu->type === 'taxonomy') {
+				$gtmName = get_category($menu->object_id);
+				$gtmName = $gtmName->slug;
+			} elseif ($menu->type === 'post_type'){
+				$gtmName = get_post($menu->object_id);
+				$gtmName = $gtmName->post_name;
+			}
+			?>
+
+            <a href="<?php echo esc_url($link) ?>" class="text-uppercase m-0"><?php echo $nome ?></a>
+		<?php }
+	}
+	?>
     </div>
 
     <div class="d-flex flex-column menu-hide__sub mb-4 mt-3">

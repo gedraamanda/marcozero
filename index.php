@@ -13,8 +13,18 @@ if ( is_home() ) {
 	} else {
 		get_template_part( 'template_partes/categorias' );
 	}
+} elseif(is_post_type_archive('web-story')) {
+	get_template_part( 'template_partes/webstories' );
 } elseif ( is_single() ) {
-	get_template_part( 'template_partes/single' );
+	$postCat = get_the_category(get_the_ID());
+	$keysEspeciais = array_keys( array_column( $postCat, 'slug' ), 'especiais' );
+
+	if(empty($keysEspeciais)) {
+		get_template_part( 'template_partes/single' );
+	} else {
+		get_template_part( 'template_partes/single-especial' );
+	}
+
 } elseif ( is_page() ) {
 	get_template_part( 'template_partes/paginas' );
 } else {

@@ -42,6 +42,18 @@ function js() {
 }
 
 /**
+ * admin
+ */
+
+gulp.task('admin', function(done) {
+  return gulp.src('assets/sass/loadadmin.scss')
+      .pipe(sass().on('error', sass.logError))
+      .pipe(cleanCSS())
+      .pipe(rename('style_admin.css'))
+      .pipe(gulp.dest('./'));
+});
+
+/**
  * Watch Task
  */
 function watchFiles() {
