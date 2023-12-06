@@ -6,9 +6,9 @@ if(is_home()) { ?>
         <div class="container">
             <div class="d-flex align-items-center">
                 <div class="logo-grande d-flex align-items-center">
-                    <a href="#"><i></i></a>
+                    <a href="<?php echo get_bloginfo( 'wpurl' ) ?>"><i></i></a>
 
-                    <a href="">
+                    <a href="<?php echo get_bloginfo( 'wpurl' ) ?>">
                         <h1 class="m-0">MARCO<span>ZERO</span></h1>
                     </a>
                 </div>
@@ -72,7 +72,7 @@ if ( is_single() ) {
     <div class="container">
         <div class="d-flex justify-content-between py-3 int">
             <div class="logo d-flex align-items-center">
-                <a href="#"><i></i></a>
+                <a href="<?php echo get_bloginfo( 'wpurl' ) ?>"><i></i></a>
                 <h1 class="m-0">MARCO<span>ZERO</span></h1>
             </div>
 
