@@ -6,7 +6,7 @@ $corCat    = mz_catCores( $categoria[0]->slug );
 $linhaFina = get_field( 'post_linhafina', $postId );
 
 $video = get_field( 'post_videodestaque', $postId );
-preg_match( '%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=|live/)|youtu\.be/)([^"&?/ ]{11})%i', $video, $match );
+$videoId = mz_youtubeId($video);
 
 ?>
 
@@ -16,7 +16,7 @@ preg_match( '%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&
 			<div class="row">
 				<div class="col-12 col-md-10 mx-auto">
 					<div class="wrapper mx-auto">
-						<div class="youtube" data-embed="<?php echo $match[1] ?>">
+						<div class="youtube" data-embed="<?php echo $videoId ?>">
 							<div class="play-button"></div>
 						</div>
 					</div>

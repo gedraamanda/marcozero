@@ -26,6 +26,20 @@ function css() {
 }
 
 /**
+ * Flexible home
+ */
+function homeCss() {
+  return gulp
+      .src('assets/sass/loadFlex.scss')
+      .pipe(sourcemaps.init())
+      .pipe(sass({outputStyle: "expanded"}))
+      .pipe(cleanCSS())
+      .pipe(rename('flex.css'))
+      .pipe(sourcemaps.write('./assets/sourcemaps'))
+      .pipe(gulp.dest('./'));
+}
+
+/**
  * JavaScript
  */
 var jsFiles = [
@@ -59,9 +73,10 @@ gulp.task('admin', function(done) {
 function watchFiles() {
   gulp.watch('assets/sass/*.scss', gulp.series(css));
   gulp.watch(jsFiles, gulp.series(js));
+  gulp.watch('assets/sass/loadFlex.scss', gulp.series(homeCss));
 }
 
-const build = gulp.series(css, js);
+const build = gulp.series(css, js, homeCss);
 const watch = gulp.series(watchFiles);
 
 exports.default = build;

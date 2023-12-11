@@ -251,3 +251,17 @@ function my_body_classes( $classes ) {
     return $classes;
 }
 
+add_filter( 'acf/fields/post_object/query', 'change_posts_order' );
+function change_posts_order( $args ) {
+	$args['orderby'] = 'date';
+	$args['order'] = 'DESC';
+	return $args;
+}
+
+// get youtube video ID
+function mz_youtubeId($iframe) {
+	preg_match( '%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=|live/)|youtu\.be/)([^"&?/ ]{11})%i', $iframe, $match );
+
+	return $match[1];
+}
+
