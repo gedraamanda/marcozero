@@ -163,7 +163,7 @@
                     "acfe_flexible_modal_edit_size": "",
                     "acfe_flexible_settings": "",
                     "acfe_flexible_settings_size": "medium",
-                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_thumbnail": "57693",
                     "acfe_flexible_category": false
                 },
                 "layout_6176f16dea6b8": {
@@ -1674,5 +1674,5 @@
     "acfe_form": 1,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1702912595
+    "modified": 1702912899
 }
