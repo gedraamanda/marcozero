@@ -157,8 +157,8 @@
                     ],
                     "min": "",
                     "max": "",
-                    "acfe_flexible_render_template": "flexible\/home\/destaque.php",
-                    "acfe_flexible_render_style": "flex.css",
+                    "acfe_flexible_render_template": "",
+                    "acfe_flexible_render_style": "",
                     "acfe_flexible_render_script": "",
                     "acfe_flexible_modal_edit_size": "",
                     "acfe_flexible_settings": "",
@@ -1674,5 +1674,5 @@
     "acfe_form": 1,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1702316613
+    "modified": 1702912595
 }
