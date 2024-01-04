@@ -1,4 +1,6 @@
 <?php
+$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+
 if(is_tax('formatos') || is_tax('temas')) {
 	$tax   = get_queried_object();
 	$name  = $tax->name;
@@ -40,6 +42,7 @@ if ( is_tag() ) {
 		'posts_per_page' => 9,
 		'post_status' => 'publish',
 		'tag_id' => $tag->term_id,
+		'paged' => $paged
 	) );
 }
 
@@ -108,5 +111,21 @@ get_template_part( 'componentes/barra-busca', '');
 				</div>
 			</div>
 		</div>
-	<?php } ?>
+	<?php }
+	wp_pagenavi(array( 'query' => $postListagem ));
+    ?>
+</div>
+
+<div class="container">
+    <div class="page-load-status more">
+        <div class="infinite-scroll-request mt-3 mb-3 spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="infinite-scroll-last"></div>
+        <div class="infinite-scroll-error"></div>
+    </div>
 </div>

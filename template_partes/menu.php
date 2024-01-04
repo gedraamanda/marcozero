@@ -24,10 +24,10 @@ if(is_home()) { ?>
 
                 <div class="d-none d-md-flex flex-column ms-auto mt-3">
                     <div class="social d-flex align-items-center">
-                        <a href="" class="facebook"></a>
-                        <a href="" class="instagram"></a>
-                        <a href="" class="twitter"></a>
-                        <a href="" class="youtube-m"></a>
+                        <a href="https://www.facebook.com/mzconteudo" target="_blank" class="facebook"></a>
+                        <a href="https://www.instagram.com/marcozeroconteudo/" target="_blank" class="instagram"></a>
+                        <a href="https://twitter.com/mzconteudo" target="_blank" class="twitter"></a>
+                        <a href="https://www.youtube.com/channel/UCHUPTRXZkMiKP0o9xkb8_GQ" target="_blank" class="youtube-m"></a>
                     </div>
 
                     <div class="mt-4 text-center">
@@ -152,9 +152,35 @@ if ( is_single() ) {
     </div>
 
     <div class="social d-flex align-items-center">
-        <a href="" class="facebook"></a>
-        <a href="" class="instagram"></a>
-        <a href="" class="twitter"></a>
-        <a href="" class="youtube-m"></a>
+        <a href="https://www.facebook.com/mzconteudo" target="_blank" class="facebook"></a>
+        <a href="https://www.instagram.com/marcozeroconteudo/" target="_blank" class="instagram"></a>
+        <a href="https://twitter.com/mzconteudo" target="_blank" class="twitter"></a>
+        <a href="https://www.youtube.com/channel/UCHUPTRXZkMiKP0o9xkb8_GQ" target="_blank" class="youtube-m"></a>
+    </div>
+</div>
+
+<div class="apoiepop position-fixed px-5 py-4">
+    <div class="apoiepop__int">
+        <a href="javascript:;" class="close close-modal"><i></i></a>
+
+        <a href="" class="btn principal mb-2">APOIE O JORNALISMO QUE ESTÁ DO SEU LADO</a>
+
+        <p>Colocar em prática um projeto jornalístico ousado custa caro. Precisamos do apoio das nossas leitoras e leitores para realizar tudo que planejamos com um mínimo de tranquilidade.</p>
+
+        <h4 class="text-uppercase mb-0">doe para a marco zero é muito fácil</h4>
+
+        <p>Você pode acessar nossa página de doação ou, se preferir, usar nosso PIX (CNPJ: 28.660.021/0001-52)</p>
+
+        <div class="d-flex valores">
+            <a href="" class="btn text-uppercase">individual</a>
+            <a href="" class="btn text-uppercase">mensal</a>
+            <a href="" class="btn text-uppercase">anual</a>
+        </div>
+
+        <div class="d-flex valores">
+            <a href="" class="btn text-uppercase">R$ 10/Mês</a>
+            <a href="" class="btn text-uppercase">R$ 50/Mês</a>
+            <a href="" class="btn text-uppercase">OUTRAS OPÇÕES</a>
+        </div>
     </div>
 </div>

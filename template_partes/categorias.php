@@ -2,6 +2,8 @@
 $categoria   = get_queried_object();
 $catId = $categoria->term_id;
 
+$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+
 $postPrincipal = new WP_Query( array(
 	'post_type'      => 'post',
 	'posts_per_page' => 1,
@@ -14,7 +16,8 @@ $postListagem = new WP_Query( array(
 	'posts_per_page' => 6,
 	'post_status'    => 'publish',
 	'cat'            => $catId,
-	'post__not_in'   => array($postPrincipal->post->ID)
+	'post__not_in'   => array($postPrincipal->post->ID),
+    'paged' => $paged
 ) );
 
 $cor = mz_catCores($categoria->slug);
@@ -64,7 +67,7 @@ get_template_part( 'componentes/barra-busca', '', array('cor' => $cor));
 	<?php if ( ! empty( $postListagem->posts ) ) { ?>
         <div class="container mt-5 pt-md-5">
             <div class="marco-result__listagem listagem col-10 mx-auto">
-                <div class="row row-cols-1 row-cols-md-3 listagem__int">
+                <div class="row row-cols-1 row-cols-md-3 listagem__int pagination-infi">
                     <?php foreach ( $postListagem->posts as $item ) {  ?>
                         <div class="listagem-post">
                             <div class="d-flex flex-column">
@@ -82,5 +85,21 @@ get_template_part( 'componentes/barra-busca', '', array('cor' => $cor));
                 </div>
             </div>
         </div>
-	<?php } ?>
+	<?php }
+	wp_pagenavi(array( 'query' => $postListagem ));
+    ?>
+
+    <div class="container">
+        <div class="page-load-status more">
+            <div class="infinite-scroll-request mt-3 mb-3 spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="infinite-scroll-last"></div>
+            <div class="infinite-scroll-error"></div>
+        </div>
+    </div>
 </div>

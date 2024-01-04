@@ -12,10 +12,10 @@
                     <p class="m-0 me-3">VISITE NOSSAS REDES SOCIAIS</p>
 
                     <div class="social d-flex align-items-center">
-                        <a href="" class="facebook"></a>
-                        <a href="" class="instagram"></a>
-                        <a href="" class="twitter"></a>
-                        <a href="" class="youtube-m"></a>
+                        <a href="https://www.facebook.com/mzconteudo" target="_blank" class="facebook"></a>
+                        <a href="https://www.instagram.com/marcozeroconteudo/" target="_blank" class="instagram"></a>
+                        <a href="https://twitter.com/mzconteudo" target="_blank" class="twitter"></a>
+                        <a href="https://www.youtube.com/channel/UCHUPTRXZkMiKP0o9xkb8_GQ" target="_blank" class="youtube-m"></a>
                     </div>
                 </div>
 
@@ -82,14 +82,16 @@
             <p class="m-0 text-center text-md-start">Esta obra está licenciado com uma licença creative commons atribuição sem derivações 3.0 Brasil</p>
 
             <div class="social d-none d-md-flex align-items-center">
-                <a href="" class="facebook"></a>
-                <a href="" class="instagram"></a>
-                <a href="" class="twitter"></a>
-                <a href="" class="youtube-m"></a>
+                <a href="https://www.facebook.com/mzconteudo" target="_blank" class="facebook"></a>
+                <a href="https://www.instagram.com/marcozeroconteudo/" target="_blank" class="instagram"></a>
+                <a href="https://twitter.com/mzconteudo" target="_blank" class="twitter"></a>
+                <a href="https://www.youtube.com/channel/UCHUPTRXZkMiKP0o9xkb8_GQ" target="_blank" class="youtube-m"></a>
             </div>
         </div>
     </div>
 </div>
+
+
 
 </body>
 </html>

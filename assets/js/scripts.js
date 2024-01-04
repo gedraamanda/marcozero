@@ -4,6 +4,17 @@
 $(document).ready(function () {
     parallax();
 
+    //paginacoes
+    if ($(".pagination-infi").length > 0){
+        $('.pagination-infi').infiniteScroll({
+            path: '.nextpostslink',
+            append: '.listagem-post"',
+            status: '.page-load-status',
+            hideNav: '.wp-pagenavi',
+            history: true
+        });
+    }
+
     //slider home
     if($('.slider-sl').length > 0) {
         if($(window).width() >= 768) {
@@ -259,6 +270,19 @@ $(document).ready(function () {
 
 
     }
+
+    //modal apoie
+    $('.apoie').on('click', function (e) {
+        e.preventDefault();
+
+       $('.apoiepop').fadeIn();
+    });
+
+    $('.close-modal').on('click', function () {
+        $('.apoiepop').fadeOut();
+    });
+
+
 
 });
 
