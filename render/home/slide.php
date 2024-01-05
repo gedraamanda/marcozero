@@ -61,9 +61,9 @@ if ( ! empty( $bloco['posts'] ) ) { ?>
 <div class="menu-footer menu-footer-home w-100">
 	<div class="container">
 		<div class="d-flex justify-content-center justify-content-md-between position-relative">
-			<a href="#" class="apoie m-fade activehome">ASSINE NOSSA NEWSLETTER</a>
+			<a href="https://marcozero.us18.list-manage.com/subscribe/post?u=6903930ec168971e947bb728b&id=c1b8b74962" target="_blank" class="apoie m-fade activehome">ASSINE NOSSA NEWSLETTER</a>
 
-			<p class="m-0 m-fade"><a href="#" class="apoie">APOIE</a> O JORNALISMO INDEPENDENTE</p>
+			<p class="m-0 m-fade"><a href="#" class="apoie apoie-click">APOIE</a> O JORNALISMO INDEPENDENTE</p>
 
 			<div class="d-flex align-items-center m-fade">
 				<p class="m-0 me-3">VISITE NOSSAS REDES SOCIAIS</p>

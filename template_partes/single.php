@@ -8,7 +8,12 @@ $corCat    = mz_catCores( $categoria[0]->slug );
 $abertura    = get_field( 'post_abertura', $postId );
 $creditoPost = get_field( 'post_creditopost', $postId );
 
-
+//podcast
+if ( has_term( 'podcast', 'formatos' ) ) {
+	$capaPod = get_field( 'img_podcast', $postId );
+	$descPod = get_field( 'desc_podcast', $postId );
+	$epsPod  = get_field( 'ep_podcast', $postId );
+}
 ?>
 
 <div class="marco-single">
@@ -25,7 +30,17 @@ $creditoPost = get_field( 'post_creditopost', $postId );
             <div class="row">
                 <div class="col-12 col-md-7">
                     <div class="texto ms-md-5">
-	                    <?php
+	                    <?php if ( has_term( 'podcast', 'formatos' ) && !empty($capaPod) ) { ?>
+                            <div class="d-flex single-podcast align-items-md-center mb-4">
+                                <img src="<?php echo $capaPod['url'] ?>" alt="Capa do podcast" class="">
+
+                                <?php if ( ! empty( $descPod ) ) { ?>
+                                    <p class="m-0 ms-3 mx-md-5"><?php echo $descPod ?></p>
+                                <?php }?>
+                            </div>
+                        <?php }
+
+
 	                    if ( has_blocks( $postData->post_content ) ) {
 		                    $blocks = parse_blocks( $postData->post_content );
 
@@ -65,13 +80,7 @@ $creditoPost = get_field( 'post_creditopost', $postId );
                         </div>
 
 
-	                    <?php if ( isset( $abertura ) && $abertura === 'podcast' ) { ?>
-                            <div class="d-flex single-podcast align-items-md-center mb-4">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod1.png" alt="" class="">
-
-                                <p class="m-0 ms-3 mx-md-5">Podcast de análise e opinião sobre os fatos mais importantes da semana pela equipe de Marco Zero Conteúdo, coletivo de jornalismo independente e investigativo do Recife</p>
-                            </div>
-                        <?php }
+	                   <?php
 
                         if ( ! empty( $creditoPost ) ) { ?>
                             <div class="apoio my-5 pt-2">
@@ -79,34 +88,42 @@ $creditoPost = get_field( 'post_creditopost', $postId );
                             </div>
                         <?php }
 
-                        if ( isset( $abertura ) && $abertura === 'podcast' ) { ?>
+	                   if ( has_term( 'podcast', 'formatos' ) && ! empty( $epsPod ) ) { ?>
                             <div class="end-podcast mb-4 mb-md-5 pb-md-5">
                                 <div class="siga text-center mx-auto">
                                     <span class="siga-titulo m-0">SIGA E OUÇA NO SEU APLICATIVO PREFERIDO</span>
 
                                     <div class="d-flex agreg justify-content-between mt-3">
-                                        <div class="spot d-flex flex-column">
-                                            <a href=""><i></i></a>
+	                                    <?php if ( ! empty( $epsPod['spotify'] ) ) { ?>
+                                            <div class="spot d-flex flex-column">
+                                                <a href="<?php echo $epsPod['spotify'] ?>" target="_blank"><i></i></a>
 
-                                            <a href="" class="titulo mt-auto">Spotify</a>
-                                        </div>
+                                                <a href="<?php echo $epsPod['spotify'] ?>" target="_blank" class="titulo mt-auto">Spotify</a>
+                                            </div>
+	                                    <?php } ?>
 
-                                        <div class="google d-flex flex-column">
-                                            <a href=""><i></i></a>
+                                        <?php if ( ! empty( $epsPod['google'] ) ) { ?>
+                                            <div class="google d-flex flex-column">
+                                                <a href="<?php echo $epsPod['google'] ?>" target="_blank"><i></i></a>
 
-                                            <a href="" class="titulo mt-auto">Google Cast</a>
-                                        </div>
+                                                <a href="<?php echo $epsPod['google'] ?>" target="_blank" class="titulo mt-auto">Google Cast</a>
+                                            </div>
+	                                    <?php } ?>
 
-                                        <div class="you d-flex flex-column">
-                                            <a href=""><i></i></a>
+	                                    <?php if ( ! empty( $epsPod['youtube'] ) ) { ?>
+                                            <div class="you d-flex flex-column">
+                                                <a href="<?php echo $epsPod['youtube'] ?>" target="_blank"><i></i></a>
 
-                                            <a href="" class="titulo mt-auto">Youtube</a>
-                                        </div>
+                                                <a href="<?php echo $epsPod['youtube'] ?>" target="_blank" class="titulo mt-auto">Youtube</a>
+                                            </div>
+	                                    <?php } ?>
+
+
                                     </div>
                                 </div>
 
                                 <div class="outros mt-5 position-relative">
-                                    <span class="siga-titulo m-0 text-uppercase d-block text-center">ouça outros episódios do podcast arrumadinho</span>
+                                    <span class="siga-titulo m-0 text-uppercase d-block text-center">ouça outros episódios do podcast</span>
 
                                     <div class="slider-control-pod d-flex" aria-label="Carousel Navigation" tabindex="0">
                                         <a class="prev" data-controls="prev" aria-controls="customize" tabindex="-1"></a>
@@ -159,9 +176,9 @@ $creditoPost = get_field( 'post_creditopost', $postId );
 	                    <?php } ?>
 
                         <div class="social d-none d-md-flex align-items-center mt-4">
-                            <a href="" class="facebook"></a>
-                            <a href="" class="instagram"></a>
-                            <a href="" class="twitter"></a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink($postId) ?>" target="_blank" class="facebook"></a>
+<!--                            <a href="" class="instagram"></a>-->
+                            <a href="https://twitter.com/intent/tweet?text=<?php echo get_the_title($postId) ?> - <?php echo get_permalink($postId) ?>" target="_blank" class="twitter"></a>
                             <a href="" class="youtube-m"></a>
                         </div>
                     </div>
@@ -171,72 +188,67 @@ $creditoPost = get_field( 'post_creditopost', $postId );
                     <div class="d-flex flex-column ms-5" style="width: max-content;">
                         <div class="d-flex">
                             <div class="social d-flex align-items-center">
-                                <a href="" class="facebook"></a>
-                                <a href="" class="instagram"></a>
-                                <a href="" class="twitter"></a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink($postId) ?>" target="_blank" class="facebook"></a>
+<!--                                <a href="" class="instagram"></a>-->
+                                <a href="https://twitter.com/intent/tweet?text=<?php echo get_the_title($postId) ?> - <?php echo get_permalink($postId) ?>" target="_blank" class="twitter"></a>
                                 <a href="" class="youtube-m"></a>
                             </div>
 
-                            <a href="#" class="apoie less ms-auto">APOIE</a>
+                            <a href="#" class="apoie less ms-auto apoie-click">APOIE</a>
                         </div>
 
                         <div class="mt-3">
-                            <a href="" class="apoie less bg-blue text-light">ASSINE NOSSA NEWSLETTER</a>
+                            <a href="https://marcozero.us18.list-manage.com/subscribe/post?u=6903930ec168971e947bb728b&id=c1b8b74962" target="_blank" class="apoie less bg-blue text-light">ASSINE NOSSA NEWSLETTER</a>
                         </div>
                     </div>
 
-	                <?php if ( isset( $abertura ) && $abertura === 'podcast' ) { ?>
-                        <div class="mais-pod ms-auto me-5">
-                            <span class="mais-titulo m-0 text-uppercase">outros podcasts</span>
-
-                            <div class="d-flex flex-column mt-3">
-                                <div class="mais-pod__post d-flex flex-column">
-                                    <a href="">
-                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod1.png" alt="">
-                                    </a>
-
-                                    <div class="d-flex mt-2">
-                                        <a href="">
-                                            <i></i>
-                                        </a>
-
-                                        <a href="#" class="titulo">E na rua que se enfrenta o Bolsonarismo</a>
-                                    </div>
-                                </div>
-
-                                <div class="mais-pod__post d-flex flex-column">
-                                    <a href="">
-                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod2.png" alt="">
-                                    </a>
-
-                                    <div class="d-flex mt-2">
-                                        <a href="">
-                                            <i></i>
-                                        </a>
-
-                                        <a href="#" class="titulo">E na rua que se enfrenta o Bolsonarismo</a>
-                                    </div>
-
-                                </div>
-
-                                <div class="mais-pod__post d-flex flex-column">
-                                    <a href="">
-                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/pod1.png" alt="">
-                                    </a>
+	                <?php if ( has_term('podcast', 'formatos') ) {
+		                $postListagem = new WP_Query( array(
+			                'post_type'      => 'post',
+			                'posts_per_page' => 3,
+			                'post_status'    => 'publish',
+			                'tax_query' => array(
+				                array (
+					                'taxonomy' => 'formatos',
+					                'field' => 'slug',
+					                'terms' => 'podcast',
+				                ),
+			                ),
+			                'post__not_in'   => array( $postId )
+		                ) );
 
 
-                                    <div class="d-flex mt-2">
-                                        <a href="">
-                                            <i></i>
-                                        </a>
+		                if ( ! empty( $postListagem->posts ) ) { ?>
+                            <div class="mais-pod ms-auto me-5">
+                                <span class="mais-titulo m-0 text-uppercase">outros podcasts</span>
 
-                                        <a href="#" class="titulo">E na rua que se enfrenta o Bolsonarismo</a>
-                                    </div>
+                                <div class="d-flex flex-column mt-3">
+                                    <?php foreach ( $postListagem->posts as $postPod ) {
+	                                    $capaPod = get_field( 'img_podcast', $postPod->ID ); ?>
 
+                                        <div class="mais-pod__post d-flex flex-column">
+                                            <a href="<?php echo get_permalink($postPod->ID) ?>">
+	                                            <?php if ( ! empty( $capaPod ) ) { ?>
+                                                    <img src="<?php echo $capaPod['url'] ?>" alt="">
+	                                            <?php } else { ?>
+		                                            <?php mz_imgDestaque($postPod->ID, 'medium', 'small'); ?>
+	                                            <?php } ?>
+
+                                            </a>
+
+                                            <div class="d-flex mt-2">
+                                                <a href="<?php echo get_permalink($postPod->ID) ?>">
+                                                    <i></i>
+                                                </a>
+
+                                                <a href="<?php echo get_permalink($postPod->ID) ?>" class="titulo"><?php echo $postPod->post_title ?></a>
+                                            </div>
+                                        </div>
+                                    <?php } ?>
                                 </div>
                             </div>
-                        </div>
-                    <?php } else {
+                        <?php }
+	                } else {
 		                $postsRecentes = new WP_Query( array(
 			                'post_status'    => 'publish',
 			                'post_type'      => 'post',
@@ -275,7 +287,8 @@ $creditoPost = get_field( 'post_creditopost', $postId );
 	    'post_type'      => 'post',
 	    'posts_per_page' => 3,
 	    'post_status'    => 'publish',
-	    'cat'            => $categoria[0]->term_id
+	    'cat'            => $categoria[0]->term_id,
+	    'post__not_in'   => array( $postId )
     ) );
 
     if ( ! empty( $postsRelacionados->posts ) ) { ?>
@@ -312,67 +325,41 @@ $creditoPost = get_field( 'post_creditopost', $postId );
     <?php } ?>
 
 
-    <div class="relacionadas sugestao mt-5 py-4">
-        <div class="container">
-            <div class="mx-5 position-relative">
-                <h3 class="m-0 text-uppercase">sugestão do editor</h3>
+    <?php
+    $tituloSug = get_field( 'titulo', 'sugestoes' );
+    $postsSug  = get_field( 'posts', 'sugestoes' );
+    shuffle( $postsSug );
+    $outputSug = array_slice( $postsSug, 0, 3 );
 
-                <div class="slider-control slider-control-rel d-flex d-md-none" aria-label="Carousel Navigation" tabindex="0">
-                    <a class="prev" data-controls="prev" aria-controls="customize" tabindex="-1"></a>
+    if ( ! empty( $outputSug ) ) { ?>
+        <div class="relacionadas sugestao mt-5 py-4">
+            <div class="container">
+                <div class="mx-5 position-relative">
+                    <h3 class="m-0 text-uppercase"><?php echo ! empty( $tituloSug ) ? $tituloSug : 'sugestão do editor' ?></h3>
 
-                    <a class="next ms-auto" data-controls="next" aria-controls="customize" tabindex="-1"></a>
-                </div>
+                    <div class="slider-control slider-control-rel d-flex d-md-none" aria-label="Carousel Navigation" tabindex="0">
+                        <a class="prev" data-controls="prev" aria-controls="customize" tabindex="-1"></a>
 
-                <div class="<?php echo !wp_is_mobile() ? 'row row-cols-3' : '' ?> mt-3 int">
-                    <div class="relacionadas__post">
-                        <div class="d-flex flex-column">
-                            <a href="">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/rel1.png" alt="" class="w-100">
-                            </a>
-
-                            <a href="#" class="titulo mt-3">Eleição do Conselho de Moradores de Brasília Teimosa vira caso de polícia e vai parar na Justiça</a>
-
-                            <div class="tags d-flex mt-4">
-                                <a href="#" class="btn text-uppercase me-2">socioambiental</a>
-                                <a href="#" class="btn text-uppercase me-2">energia</a>
-                            </div>
-                        </div>
+                        <a class="next ms-auto" data-controls="next" aria-controls="customize" tabindex="-1"></a>
                     </div>
 
-                    <div class="relacionadas__post">
-                        <div class="d-flex flex-column">
-                            <a href="">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/rel2.png" alt="" class="w-100">
-                            </a>
+                    <div class="<?php echo !wp_is_mobile() ? 'row row-cols-3' : '' ?> mt-3 int">
+                        <?php foreach ( $outputSug as $item ) { ?>
+                            <div class="relacionadas__post">
+                                <div class="d-flex flex-column">
+                                    <a href="<?php echo get_permalink($item['item']->ID) ?>">
+	                                    <?php mz_imgDestaque($item['item']->ID, 'large', 'large', 'w-100'); ?>
+                                    </a>
 
-                            <a href="#" class="titulo mt-3">Eleição do Conselho de Moradores de Brasília Teimosa vira caso de polícia e vai parar na Justiça</a>
+                                    <a href="<?php echo get_permalink($item['item']->ID) ?>" class="titulo mt-3"><?php echo $item['item']->post_title ?></a>
 
-                            <div class="tags d-flex mt-4">
-                                <a href="#" class="btn text-uppercase me-2">socioambiental</a>
-                                <a href="#" class="btn text-uppercase me-2">energia</a>
+	                                <?php mz_tags($item->ID, 'd-flex mt-4', 2); ?>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="relacionadas__post">
-                        <div class="d-flex flex-column">
-                            <a href="">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/rel3.png" alt="" class="w-100">
-                            </a>
-
-                            <a href="#" class="titulo mt-3">Eleição do Conselho de Moradores de Brasília Teimosa vira caso de polícia e vai parar na Justiça</a>
-
-                            <div class="tags d-flex mt-4">
-                                <a href="#" class="btn text-uppercase me-2">socioambiental</a>
-                                <a href="#" class="btn text-uppercase me-2">energia</a>
-                            </div>
-                        </div>
+                        <?php } ?>
                     </div>
                 </div>
-
-
-            </div>
-
         </div>
-    </div>
+    <?php } ?>
+
 </div>

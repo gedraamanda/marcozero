@@ -272,7 +272,7 @@ $(document).ready(function () {
     }
 
     //modal apoie
-    $('.apoie').on('click', function (e) {
+    $('.apoie-click').on('click', function (e) {
         e.preventDefault();
 
        $('.apoiepop').fadeIn();
