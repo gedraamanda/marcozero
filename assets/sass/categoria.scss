@@ -41,6 +41,20 @@
         max-width: 100%;
       }
     }
+
+    .header-autor {
+      h1 {
+        font-family: $resReg;
+        font-size: 57px;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-family: $resReg;
+        font-size: 18px;
+        line-height: 125%;
+      }
+    }
   }
 
   .detalhe {

@@ -37,6 +37,33 @@ $creditoPost = get_field( 'post_creditopost', $postId );
 	                    }
 	                    ?>
 
+                        <!--autores-->
+                        <?php
+                        $autores = get_coauthors($postId);
+
+                        ?>
+                        <div class="single-autor py-3 my-4">
+                            <span class="mb-1 d-block"><?php echo count($autores) > 1 ? 'AUTORES' : 'AUTOR' ?></span>
+
+                            <?php foreach ( $autores as $i => $autor ) {
+	                            $user = get_user_meta( $autor->data->ID );
+	                            $usuarioAvatar  = get_avatar_url( $autor->data->ID, array( 'size' => 105 ) );  ?>
+                                <div class="single-autor__pessoa <?php echo $i != 0 ? 'mt-4' : '' ?>">
+                                    <div class="d-flex">
+                                        <img src="<?php echo $usuarioAvatar ?>" alt="Foto <?php echo $autor->data->display_name ?>">
+
+                                        <div class="d-flex flex-column ms-3">
+                                            <a href="<?php echo get_author_posts_url( $autor->data->ID ) ?>"><?php echo $autor->data->display_name ?></a>
+
+                                            <?php if(!empty($user['description'])) { ?>
+                                                <p class="m-0"><?php echo $user['description'][0] ?></p>
+                                            <?php }?>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php } ?>
+                        </div>
+
 
 	                    <?php if ( isset( $abertura ) && $abertura === 'podcast' ) { ?>
                             <div class="d-flex single-podcast align-items-md-center mb-4">

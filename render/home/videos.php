@@ -21,7 +21,9 @@ $bloco = $args;
 		<div class="position-relative mx-md-5 mt-4">
 			<div class="video-sl">
                 <?php foreach ( $bloco['posts'] as $item ) {
-	                $videoId = mz_youtubeId($item['video_alternativo']);  ?>
+	                $videoDestaque = get_field( 'post_videodestaque', $item['post']->ID );
+	                $video         = ! empty( $item['video_alternativo'] ) ? $item['video_alternativo'] : $videoDestaque;
+	                $videoId       = mz_youtubeId( $item['video_alternativo'] ); ?>
 
                     <div class="item">
                         <div class="wrapper">

@@ -214,6 +214,29 @@
         }
       }
     }
+
+    .single-autor {
+      border-top: 1px solid #000;
+
+      span {
+        font-family: $resMed;
+        font-size: 14px;
+      }
+
+      &__pessoa {
+        a {
+          font-family: $resMed;
+          font-size: 16px;
+          text-decoration: underline;
+        }
+
+        p {
+          font-family: $resReg;
+          font-size: 16px;
+          line-height: 135%;
+        }
+      }
+    }
   }
 
   .apoio {
@@ -480,6 +503,8 @@
     }
 
   }
+
+
 }
 
 .parallax {
