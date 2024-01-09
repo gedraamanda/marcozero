@@ -516,8 +516,12 @@
 .paginas {
   .header {
     h1 {
-      font-size: 89px;
+      font-size: 31px;
       font-family: $resMed;
+
+      @media (min-width: 768px) {
+        font-size: 74px;
+      }
     }
   }
 
