@@ -520,4 +520,38 @@
       font-family: $resMed;
     }
   }
+
+  //quem somos
+  .quem-somos {
+    .pessoa {
+      margin-bottom: 70px;
+
+      &__img {
+        background: $azul;
+
+        img {
+          width: 219px;
+          height: 219px;
+          object-fit: cover;
+          -webkit-border-radius: 100%;
+          -moz-border-radius: 100%;
+          border-radius: 100%;
+        }
+      }
+
+      &__txt {
+        .nome {
+          font-family: $resMed;
+          font-size: 21px;
+          line-height: 125%;
+        }
+
+        .desc {
+          font-size: 16px;
+          font-family: $resReg;
+          line-height: 125%;
+        }
+      }
+    }
+  }
 }
