@@ -29,7 +29,15 @@ $destaque = $bloco['destaque'];
 											<img src="<?php echo $img['url'] ?>" alt="<?php echo !empty($img['alt']) ? str_replace('"', '', $img['alt']) : '' ?>" class="w-100" loading="lazy">
 										</picture>
 									<?php } else {
-										mz_imgDestaque($post->ID, 'large', 'large', 'w-100');
+									    $capa = get_field('img_podcast', $post->ID);
+
+										if ( ! empty( $capa ) ) { ?>
+                                            <picture>
+                                                <img src="<?php echo $capa['url'] ?>" alt="<?php echo !empty($capa['alt']) ? str_replace('"', '', $capa['alt']) : '' ?>" class="w-100" loading="lazy">
+                                            </picture>
+									    <?php } else {
+									        mz_imgDestaque($post->ID, 'large', 'large', 'w-100');
+									    }
 									} ?>
 								</a>
 
