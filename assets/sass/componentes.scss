@@ -700,10 +700,11 @@
     line-height: 150%;
   }
 
-  h4 {
+  h4, h1, h2, h3 {
     font-family: $resBold;
     font-size: 16px;
     line-height: 150%;
+    margin-bottom: 0px;
   }
 
   .valores {

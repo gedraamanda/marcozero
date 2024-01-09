@@ -159,17 +159,19 @@ if ( is_single() ) {
     </div>
 </div>
 
+<?php
+$apoioTitulo = get_field( 'apoio_titulo', 'apoio' );
+$apoioTxt    = get_field( 'apoio_texto', 'apoio' );
+
+?>
+
 <div class="apoiepop position-fixed px-5 py-4">
     <div class="apoiepop__int">
         <a href="javascript:;" class="close close-modal"><i></i></a>
 
-        <a href="" class="btn principal mb-2">APOIE O JORNALISMO QUE ESTÁ DO SEU LADO</a>
+        <a href="" class="btn principal mb-2 text-uppercase"><?php echo !empty($apoioTitulo) ? $apoioTitulo : 'APOIE O JORNALISMO QUE ESTÁ DO SEU LADO' ?></a>
 
-        <p>Colocar em prática um projeto jornalístico ousado custa caro. Precisamos do apoio das nossas leitoras e leitores para realizar tudo que planejamos com um mínimo de tranquilidade.</p>
-
-        <h4 class="text-uppercase mb-0">doe para a marco zero é muito fácil</h4>
-
-        <p>Você pode acessar nossa página de doação ou, se preferir, usar nosso PIX (CNPJ: 28.660.021/0001-52)</p>
+        <?php echo $apoioTxt ?>
 
         <div class="d-flex valores">
             <a href="" class="btn text-uppercase">individual</a>
@@ -178,8 +180,9 @@ if ( is_single() ) {
         </div>
 
         <div class="d-flex valores">
-            <a href="" class="btn text-uppercase">R$ 10/Mês</a>
+            <a href="" class="btn text-uppercase">R$ 20/Mês</a>
             <a href="" class="btn text-uppercase">R$ 50/Mês</a>
+            <a href="" class="btn text-uppercase">R$ 100/Mês</a>
             <a href="" class="btn text-uppercase">OUTRAS OPÇÕES</a>
         </div>
     </div>
