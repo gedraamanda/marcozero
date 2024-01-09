@@ -424,6 +424,7 @@ function isVisible($el, $mg) {
 
         var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/maxresdefault.jpg";
 
+
         var image = new Image();
         image.src = source;
         image.addEventListener( "load", function() {
