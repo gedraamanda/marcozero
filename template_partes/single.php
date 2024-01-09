@@ -328,10 +328,12 @@ if ( has_term( 'podcast', 'formatos' ) ) {
     <?php
     $tituloSug = get_field( 'titulo', 'sugestoes' );
     $postsSug  = get_field( 'posts', 'sugestoes' );
+
+
+    if ( ! empty( $postsSug ) ) {
     shuffle( $postsSug );
     $outputSug = array_slice( $postsSug, 0, 3 );
-
-    if ( ! empty( $outputSug ) ) { ?>
+        ?>
         <div class="relacionadas sugestao mt-5 py-4">
             <div class="container">
                 <div class="mx-5 position-relative">
