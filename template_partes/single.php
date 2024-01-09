@@ -353,7 +353,7 @@ if ( has_term( 'podcast', 'formatos' ) ) {
 
                                     <a href="<?php echo get_permalink($item['item']->ID) ?>" class="titulo mt-3"><?php echo $item['item']->post_title ?></a>
 
-	                                <?php mz_tags($item->ID, 'd-flex mt-4', 2); ?>
+	                                <?php mz_tags($item['item']->ID, 'd-flex mt-4', 2); ?>
                                 </div>
                             </div>
                         <?php } ?>

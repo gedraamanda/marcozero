@@ -9,30 +9,14 @@ $img_destaqueDesk = get_image_prod( get_the_ID(), 'large' );
 
 
 ?>
-
-<header class="header-peq mt-4 mt-md-5">
-	<div class="container">
-		<div class="row">
-			<div class="col-12 col-md-6 offset-md-3 texto flex-column text-center padding-mobile">
-				<h1 class="m-0 mt-md-4 mt-3 mx-auto"><?php echo get_the_title(get_the_ID()) ?></h1>
-			</div>
-
-			<div class="col-12 col-md-6 offset-md-3 imagem mt-5 padding-mobile">
-				<picture>
-					<source media="(max-width: 799px)" srcset="<?php echo $img_destaquemobile ?>">
-					<source media="(min-width: 800px)" srcset="<?php echo $img_destaqueDesk ?>">
-					<img src="<?php echo $img_destaqueDesk ?>" alt="Image" class="w-100" loading="lazy">
-				</picture>
-			</div>
-		</div>
-	</div>
-</header>
-
-
 <div class="single paginas mb-5">
 	<div class="single__int container mt-5">
 		<div class="row conteudo">
-			<div class="col-12 col-md-9 padding-mobile mx-auto conteudo__texto">
+            <div class="col-4">
+                <h1 class="m-0"><?php the_title(); ?></h1>
+            </div>
+
+			<div class="col-12 col-md-7 conteudo__texto">
 				<?php
 				if ( has_blocks( $post->post_content ) ) {
 					$blocks = parse_blocks( $post->post_content );
