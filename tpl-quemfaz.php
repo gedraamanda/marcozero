@@ -20,7 +20,7 @@ $users = get_users( array(
 
             <div class="col-12 col-md-7 conteudo__texto marco-single__conteudo">
 
-                <div class="texto mt-5">
+                <div class="texto mt-2 mt-md-5">
                     <?php
                     if ( has_blocks( $post->post_content ) ) {
                         $blocks = parse_blocks( $post->post_content );
@@ -36,8 +36,8 @@ $users = get_users( array(
             </div>
         </div>
 
-        <div class="quem-somos my-5 pb-5">
-            <div class="row row-cols-3">
+        <div class="quem-somos my-3 my-md-5 pb-5">
+            <div class="row row-cols-md-3 row-cols-1">
                 <?php foreach ( $users as $user ) {
 	                $us = get_user_meta( $user->ID );
 	                $usuarioAvatar  = get_avatar_url( $user->ID, array( 'size' => 220 ) );

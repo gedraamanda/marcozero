@@ -21,7 +21,7 @@ $img_destaqueDesk = get_image_prod( get_the_ID(), 'large' );
 
         <div class="row conteudo">
             <div class="col-12 col-md-7 ms-auto conteudo__texto marco-single__conteudo">
-                <div class="texto mt-5">
+                <div class="texto mt-3 mt-md-5">
 			        <?php
 			        if ( has_blocks( $post->post_content ) ) {
 				        $blocks = parse_blocks( $post->post_content );
