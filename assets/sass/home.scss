@@ -5,6 +5,7 @@
 
     @media (min-width: 768px) {
       height: calc(100vh - 196px);
+      min-height: calc(100vh - 196px);
     }
 
     &__texto {
