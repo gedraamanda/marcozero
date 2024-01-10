@@ -112,6 +112,14 @@
       background-color: #fff;
     }
   }
+
+  .menu-cat {
+    a {
+      @media (min-width: 768px) {
+        font-size: 14px;
+      }
+    }
+  }
 }
 
 .single-especial {
