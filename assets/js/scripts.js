@@ -283,6 +283,13 @@ $(document).ready(function () {
     });
 
 
+    $('a.lupa').on('click', function () {
+        $('.search-flutuante').css('transform', 'none');
+    });
+
+    $('a.close-search').on('click', function () {
+        $('.search-flutuante').css('transform', 'translateY(-400px)');
+    });
 
 });
 

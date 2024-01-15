@@ -36,7 +36,7 @@ $bloco = $args;
 
                             <div class="imagem ms-md-auto order-1 order-md-2">
                                 <a href="<?php echo get_permalink($post->ID) ?>">
-	                                <?php if(!empty($img)) { ?>
+	                                <?php if ( ! empty( $img ) ) { ?>
                                         <picture>
                                             <source media="(max-width: 799px)" srcset="<?php echo $img['sizes']['large'] ?>">
                                             <source media="(min-width: 800px)" srcset="<?php echo $img['url'] ?>">
