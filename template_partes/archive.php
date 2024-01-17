@@ -1,7 +1,7 @@
 <?php
 $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 
-if(is_tax('formatos') || is_tax('temas')) {
+if(is_tax('formatos') ) {
 	$tax   = get_queried_object();
 	$name  = $tax->name;
 
@@ -25,6 +25,37 @@ if(is_tax('formatos') || is_tax('temas')) {
 		'tax_query' => array(
 			array (
 				'taxonomy' => 'formatos',
+				'field' => 'term_id',
+				'terms' => $tax->term_id,
+			)
+		),
+		'post__not_in'   => array($postPrincipal->post->ID)
+	) );
+
+} elseif(is_tax('temas')) {
+	$tax   = get_queried_object();
+	$name  = $tax->name;
+
+	$postPrincipal = new WP_Query( array(
+		'post_type'      => 'post',
+		'posts_per_page' => 1,
+		'post_status'    => 'publish',
+		'tax_query' => array(
+			array (
+				'taxonomy' => 'temas',
+				'field' => 'term_id',
+				'terms' => $tax->term_id,
+			)
+		),
+	) );
+
+	$postListagem = new WP_Query( array(
+		'post_type'      => 'post',
+		'posts_per_page' => 6,
+		'post_status'    => 'publish',
+		'tax_query' => array(
+			array (
+				'taxonomy' => 'temas',
 				'field' => 'term_id',
 				'terms' => $tax->term_id,
 			)
@@ -55,6 +86,18 @@ if(is_tax('formatos') || is_tax('temas')) {
 		'post_status' => 'publish',
 		'tag_id' => $tag->term_id,
 		'paged' => $paged
+	) );
+
+} elseif (is_search()) {
+	$pesquisa = $_GET['s'];
+	$name = $pesquisa;
+
+	$postListagem = new WP_Query( array(
+		'post_type'      => array( 'post'),
+		'post_status'    => 'publish',
+		's'              => $pesquisa,
+		'posts_per_page' => 9,
+		'paged'          => $paged
 	) );
 }
 

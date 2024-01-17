@@ -1,24 +1,109 @@
 <?php
+$formato    = get_query_var( 'mzformato' );
+$tema    = get_query_var( 'mztema' );
+
 $categoria   = get_queried_object();
 $catId = $categoria->term_id;
 
 $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 
-$postPrincipal = new WP_Query( array(
+$argsPrincipal = array(
 	'post_type'      => 'post',
 	'posts_per_page' => 1,
 	'post_status'    => 'publish',
-	'cat'            => $catId
-) );
+	'cat'            => $catId,
+	'paged' => $paged
+);
 
-$postListagem = new WP_Query( array(
+if(!empty($formato) || !empty($tema)) {
+	if ( $formato != 'null' && $tema == 'null' ) { //tem formato e nao tem tema
+		$argsPrincipal['tax_query'] = array(
+			array(
+				'taxonomy'     => 'formatos',
+				'field' => 'slug',
+				'terms' => $formato,
+			),
+		);
+	}
+
+	if ( $formato == 'null' && $tema != 'null' ) { //nao tem formato e tem tema
+		$argsPrincipal['tax_query'] = array(
+			array(
+				'taxonomy'     => 'temas',
+				'field' => 'slug',
+				'terms' => $tema,
+			),
+		);
+	}
+
+	if ( $formato != 'null' && $tema != 'null' ) { // tem formato e tem tema
+		$argsPrincipal['tax_query'] = array(
+			'relation' => 'AND',
+			array(
+				'taxonomy'     => 'formatos',
+				'field' => 'slug',
+				'terms' => $formato,
+			),
+			array(
+				'taxonomy'     => 'temas',
+				'field' => 'slug',
+				'terms' => $tema,
+			),
+		);
+	}
+}
+
+
+$postPrincipal = new WP_Query( $argsPrincipal );
+
+$argsList = array(
 	'post_type'      => 'post',
-	'posts_per_page' => 6,
+	'posts_per_page' => 12,
 	'post_status'    => 'publish',
 	'cat'            => $catId,
 	'post__not_in'   => array($postPrincipal->post->ID),
-    'paged' => $paged
-) );
+	'paged' => $paged
+);
+
+if(!empty($formato) || !empty($tema)) {
+	if ( $formato != 'null' && $tema == 'null' ) { //tem formato e nao tem tema
+		$argsList['tax_query'] = array(
+			array(
+				'taxonomy' => 'formatos',
+				'field'    => 'slug',
+				'terms'    => $formato,
+			),
+		);
+	}
+
+	if ( $formato == 'null' && $tema != 'null' ) { //nao tem formato e tem tema
+		$argsList['tax_query'] = array(
+			array(
+				'taxonomy' => 'temas',
+				'field'    => 'slug',
+				'terms'    => $tema,
+			),
+		);
+	}
+
+	if ( $formato != 'null' && $tema != 'null' ) { // tem formato e tem tema
+		$argsList['tax_query'] = array(
+			'relation' => 'AND',
+			array(
+				'taxonomy' => 'formatos',
+				'field'    => 'slug',
+				'terms'    => $formato,
+			),
+			array(
+				'taxonomy' => 'temas',
+				'field'    => 'slug',
+				'terms'    => $tema,
+			),
+		);
+	}
+}
+
+$postListagem = new WP_Query( $argsList );
 
 $cor = mz_catCores($categoria->slug);
 get_template_part( 'componentes/barra-busca', '', array('cor' => $cor));
@@ -86,20 +171,10 @@ get_template_part( 'componentes/barra-busca', '', array('cor' => $cor));
             </div>
         </div>
 	<?php }
-	wp_pagenavi(array( 'query' => $postListagem ));
+
     ?>
 
     <div class="container">
-        <div class="page-load-status more">
-            <div class="infinite-scroll-request mt-3 mb-3 spinner">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="infinite-scroll-last"></div>
-            <div class="infinite-scroll-error"></div>
-        </div>
+        <?php wp_pagenavi(array( 'query' => $postListagem )); ?>
     </div>
 </div>

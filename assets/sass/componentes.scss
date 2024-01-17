@@ -777,3 +777,60 @@
     }
   }
 }
+
+.wp-pagenavi {
+  text-align: center;
+  margin-bottom: 50px;
+
+  a {
+    font-family: $resMed;
+    font-size: 18px;
+
+    &.previouspostslink {
+      margin-right: 25px;
+    }
+
+    &.nextpostslink {
+      margin-left: 25px;
+    }
+
+    &.page {
+      position: relative;
+
+      &:nth-child(5) {
+        &:after {
+          display: none;
+        }
+      }
+
+      &:after {
+        content: '';
+        width: 5px;
+        height: 5px;
+        display: inline-block;
+        background: #000;
+        border-radius: 100%;
+        transform: translateY(-5px);
+        margin: 0 10px;
+      }
+    }
+  }
+
+  span {
+    font-family: $resMed;
+    font-size: 18px;
+    color: $azul;
+    position: relative;
+
+    &:after {
+      content: '';
+      width: 5px;
+      height: 5px;
+      display: inline-block;
+      background: #000;
+      border-radius: 100%;
+      transform: translateY(-5px);
+      margin: 0 10px;
+    }
+  }
+}

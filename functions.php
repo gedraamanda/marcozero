@@ -266,3 +266,41 @@ function mz_youtubeId($iframe) {
 	return $match[1];
 }
 
+// Friendly URI for Agenda and event
+add_filter('query_vars', function ($query_vars) {
+	//categorias
+	$query_vars[] = 'mzcategoria';
+	$query_vars[] = 'mzformato';
+	$query_vars[] = 'mztema';
+	//$query_vars[] = 'mzpaged';
+
+	return $query_vars;
+});
+
+add_action(
+	'init',
+	function () {
+		add_rewrite_rule(
+			'category/(.+?)/(.+?)/(.+?)/page/([0-9]{1,})/?',
+			'index.php?category_name=$matches[1]&mzformato=$matches[2]&mztema=$matches[3]&paged=$matches[4]',
+			'top'
+		);
+
+		add_rewrite_rule(
+			'category/(.+?)/page/([0-9]{1,})/?',
+			'index.php?category_name=$matches[1]&paged=$matches[2]',
+			'top'
+		);
+
+
+
+		add_rewrite_rule(
+			'category/(.+?)/(.+?)/(.+?)/?$',
+			'index.php?category_name=$matches[1]&mzformato=$matches[2]&mztema=$matches[3]',
+			'top'
+		);
+
+
+
+	}
+);

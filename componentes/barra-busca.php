@@ -16,13 +16,13 @@ $formatos = get_terms( array(
 	<div class="container">
 		<div class="row row-cols-2">
 			<div class="item">
-				<a href="#" class="nome open-temas">TEMAS <i></i></a>
+				<a href="javascript:;" class="nome open-temas">TEMAS <i></i></a>
 
 				<div class="busca-abre"></div>
 			</div>
 
 			<div class="item">
-				<a href="#" class="nome open-formato">FORMATOS <i></i></a>
+				<a href="javascript:;" class="nome open-formato">FORMATOS <i></i></a>
 			</div>
 		</div>
 	</div>
@@ -32,7 +32,7 @@ $formatos = get_terms( array(
 			<div class="int p-4">
 				<div class="d-flex flex-column ">
 					<?php foreach ( $temas as $tem ) { ?>
-						<a href="<?php echo get_term_link($tem->term_id, 'temas') ?>" class="text-uppercase"><?php echo $tem->name ?></a>
+						<a href="<?php echo get_term_link($tem->term_id, 'temas') ?>" class="text-uppercase filter-tema" data-href="<?php echo $tem->slug ?>"><?php echo $tem->name ?></a>
 					<?php } ?>
 
 				</div>
@@ -46,7 +46,7 @@ $formatos = get_terms( array(
 			<div class="int p-4">
 				<div class="d-flex flex-column ">
 					<?php foreach ( $formatos as $form ) { ?>
-						<a href="<?php echo get_term_link($form->term_id, 'formatos') ?>" class="text-uppercase"><?php echo $form->name ?></a>
+						<a href="<?php echo get_term_link($form->term_id, 'formatos') ?>" class="text-uppercase filter-formatos" data-href="<?php echo $form->slug ?>"><?php echo $form->name ?></a>
 					<?php } ?>
 				</div>
 

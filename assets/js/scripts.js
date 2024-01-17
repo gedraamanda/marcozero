@@ -4,17 +4,6 @@
 $(document).ready(function () {
     parallax();
 
-    //paginacoes
-    if ($(".pagination-infi").length > 0){
-        $('.pagination-infi').infiniteScroll({
-            path: '.nextpostslink',
-            append: '.listagem-post"',
-            status: '.page-load-status',
-            hideNav: '.wp-pagenavi',
-            history: true
-        });
-    }
-
     //slider home
     if($('.slider-sl').length > 0) {
         if($(window).width() >= 768) {
@@ -289,6 +278,42 @@ $(document).ready(function () {
 
     $('a.close-search').on('click', function () {
         $('.search-flutuante').css('transform', 'translateY(-400px)');
+    });
+
+    //acao dos filtros
+    $('.filter-formatos').on('click', function (e) {
+        e.preventDefault();
+
+        var formato = $(this).data('href');
+
+        var host = window.location.href;
+        var pathname = new URL(host).pathname;
+        const words = pathname.split('/');
+        const wordsAjust = words.length - 2
+
+        if (wordsAjust === 2) { //sem filtro nenhum
+            window.location.replace(host + '/' + formato + '/null/' );
+        } else {
+            window.location.replace(window.location.origin + '/'+ words[1] +'/' + words[2] + '/' + formato + '/'  + words[4] + '/');
+        }
+    });
+
+    $('.filter-tema').on('click', function (e) {
+        e.preventDefault();
+
+        var tema = $(this).data('href');
+
+        var host = window.location.href;
+        var pathname = new URL(host).pathname;
+        const words = pathname.split('/');
+        const wordsAjust = words.length - 2
+
+        if (wordsAjust === 2) { //sem filtro nenhum
+
+            window.location.replace(host + '/null/' + tema + '/');
+        } else {
+            window.location.replace(window.location.origin + '/'+ words[1] +'/' + words[2] + '/' + words[3] + '/'  + tema + '/');
+        }
     });
 
 });
