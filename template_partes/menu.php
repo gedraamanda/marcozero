@@ -38,10 +38,10 @@ if(is_home()) { ?>
 
             <div class="d-none d-md-flex">
                 <div class="menu-cat d-none d-md-flex align-items-center">
-                    <a href="#" class="text-uppercase me-5"><span class="opacity-0"></span>direitos humanos</a>
-                    <a href="#" class="text-uppercase me-5"><span class="me-3"></span>socioambiental</a>
-                    <a href="#" class="text-uppercase me-5"><span class="me-3"></span>direito à cidade</a>
-                    <a href="#" class="text-uppercase"><span class="me-3"></span>diversidade</a>
+                    <a href="/category/direitos-humanos/" class="text-uppercase me-5"><span class="opacity-0"></span>direitos humanos</a>
+                    <a href="/category/socioambiental/" class="text-uppercase me-5"><span class="me-3"></span>socioambiental</a>
+                    <a href="/category/direito-a-cidade/" class="text-uppercase me-5"><span class="me-3"></span>direito à cidade</a>
+                    <a href="/category/diversidade/" class="text-uppercase"><span class="me-3"></span>diversidade</a>
                 </div>
 
                 <div class="menu-hamburguer d-flex ms-auto align-items-center me-4">
@@ -77,10 +77,10 @@ if ( is_single() ) {
             </div>
 
             <div class="menu-cat d-none d-md-flex align-items-center ms-0">
-                <a href="#" class="text-uppercase me-3"><span class="opacity-0"></span>direitos humanos</a>
-                <a href="#" class="text-uppercase me-3"><span class="me-2"></span>socioambiental</a>
-                <a href="#" class="text-uppercase me-3"><span class="me-2"></span>direito à cidade</a>
-                <a href="#" class="text-uppercase"><span class="me-2"></span>diversidade</a>
+                <a href="/category/direitos-humanos/" class="text-uppercase me-3"><span class="opacity-0"></span>direitos humanos</a>
+                <a href="/category/socioambiental/" class="text-uppercase me-3"><span class="me-2"></span>socioambiental</a>
+                <a href="/category/direito-a-cidade/" class="text-uppercase me-3"><span class="me-2"></span>direito à cidade</a>
+                <a href="/category/diversidade/" class="text-uppercase"><span class="me-2"></span>diversidade</a>
             </div>
 
             <div class="menu-hamburguer d-flex align-items-center">

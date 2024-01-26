@@ -1,5 +1,5 @@
 <?php
-$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+$paged   = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 
 if(is_tax('formatos') ) {
 	$tax   = get_queried_object();
