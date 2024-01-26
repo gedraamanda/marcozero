@@ -131,16 +131,10 @@ if ( is_single() ) {
     </div>
 
     <div class="d-flex flex-column menu-hide__sub mb-4 mt-3">
-        <a href="#" class="m-0">Quem somos</a>
-        <a href="#" class="m-0">Missão e Visão</a>
-        <a href="#" class="m-0">Políticas de convivência</a>
-        <a href="#" class="m-0">Transparência</a>
-        <a href="#" class="m-0">História</a>
-        <a href="#" class="m-0">Expediente</a>
-        <a href="#" class="m-0">Doe</a>
-        <a href="#" class="m-0">Fale conosco</a>
-        <a href="#" class="m-0">Prêmios</a>
-        <a href="#" class="m-0">Parceiros</a>
+        <a href="/quem-faz/" class="m-0">Quem faz</a>
+        <a href="/sobre/" class="m-0">Sobre</a>
+        <a href="/transparencia/" class="m-0">Transparência</a>
+        <a href="/contato/" class="m-0">Contato</a>
     </div>
 
     <div class="mb-2">
