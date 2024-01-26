@@ -6,7 +6,7 @@ $postListagem = new WP_Query( array(
 ) );
 
 
-get_template_part( 'componentes/barra-busca', ''); ?>
+//get_template_part( 'componentes/barra-busca', ''); ?>
 
 <div class="marco-result container">
     <div class="marco-result__destaque position-relative">

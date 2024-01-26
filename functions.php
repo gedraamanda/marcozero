@@ -272,7 +272,10 @@ add_filter('query_vars', function ($query_vars) {
 	$query_vars[] = 'mzcategoria';
 	$query_vars[] = 'mzformato';
 	$query_vars[] = 'mztema';
-	
+
+	//author
+	$query_vars[] = 'authorformato';
+	$query_vars[] = 'authortema';
 
 	return $query_vars;
 });
@@ -296,6 +299,26 @@ add_action(
 		add_rewrite_rule(
 			'category/(.+?)/(.+?)/(.+?)/?$',
 			'index.php?category_name=$matches[1]&mzformato=$matches[2]&mztema=$matches[3]',
+			'top'
+		);
+
+		//author
+		//categoria
+		add_rewrite_rule(
+			'author/(.+?)/(.+?)/(.+?)/page/([0-9]{1,})/?',
+			'index.php?author_name=$matches[1]&authorformato=$matches[2]&authortema=$matches[3]&paged=$matches[4]',
+			'top'
+		);
+
+		add_rewrite_rule(
+			'author/(.+?)/page/([0-9]{1,})/?',
+			'index.php?author_name=$matches[1]&paged=$matches[2]',
+			'top'
+		);
+
+		add_rewrite_rule(
+			'author/(.+?)/(.+?)/(.+?)/?$',
+			'index.php?author_name=$matches[1]&authorformato=$matches[2]&authortema=$matches[3]',
 			'top'
 		);
 

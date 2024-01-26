@@ -67,14 +67,58 @@ if(is_tax('formatos') ) {
 	$userData = get_userdata( $autor_id );
 	$user     = get_user_meta( $autor_id );
 
+	$formato    = get_query_var( 'authorformato' );
+	$tema    = get_query_var( 'authortema' );
 
-	$postListagem = new WP_Query( array(
+	$argsPrincipal = array(
 		'post_type'      => array( 'post'),
 		'posts_per_page' => 9,
 		'post_status' => 'publish',
 		'author' => $autor_id,
 		'paged' => $paged
-	) );
+	) ;
+
+	if(!empty($formato) || !empty($tema)) {
+		if ( $formato != 'null' && $tema == 'null' ) { //tem formato e nao tem tema
+			$argsPrincipal['tax_query'] = array(
+				array(
+					'taxonomy'     => 'formatos',
+					'field' => 'slug',
+					'terms' => $formato,
+				),
+			);
+		}
+
+		if ( $formato == 'null' && $tema != 'null' ) { //nao tem formato e tem tema
+			$argsPrincipal['tax_query'] = array(
+				array(
+					'taxonomy'     => 'temas',
+					'field' => 'slug',
+					'terms' => $tema,
+				),
+			);
+		}
+
+		if ( $formato != 'null' && $tema != 'null' ) { // tem formato e tem tema
+			$argsPrincipal['tax_query'] = array(
+				'relation' => 'AND',
+				array(
+					'taxonomy'     => 'formatos',
+					'field' => 'slug',
+					'terms' => $formato,
+				),
+				array(
+					'taxonomy'     => 'temas',
+					'field' => 'slug',
+					'terms' => $tema,
+				),
+			);
+		}
+	}
+
+	$postListagem = new WP_Query($argsPrincipal);
+
+	get_template_part( 'componentes/barra-busca', '');
 
 } elseif ( is_tag() ) {
 	$tag   = get_queried_object();
@@ -101,8 +145,6 @@ if(is_tax('formatos') ) {
 	) );
 }
 
-
-get_template_part( 'componentes/barra-busca', '');
 ?>
 
 <div class="marco-result">
@@ -182,18 +224,4 @@ get_template_part( 'componentes/barra-busca', '');
 	<?php }
 	wp_pagenavi(array( 'query' => $postListagem ));
     ?>
-</div>
-
-<div class="container">
-    <div class="page-load-status more">
-        <div class="infinite-scroll-request mt-3 mb-3 spinner">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <div class="infinite-scroll-last"></div>
-        <div class="infinite-scroll-error"></div>
-    </div>
 </div>
