@@ -261,7 +261,7 @@
     left: calc(50% + 12px);
     width: calc(50% - 12px);
     display: none;
-    z-index: 2;
+    z-index: 999;
 
     &.abre-temas {
       left: 9.5%;

@@ -114,9 +114,9 @@ get_header(); ?>
                                 <a href="#" class="apoie less ms-auto">APOIE</a>
                             </div>
 
-                            <div class="mt-3">
-                                <a href="" class="apoie less bg-blue text-light">ASSINE NOSSA NEWSLETTER</a>
-                            </div>
+<!--                            <div class="mt-3">-->
+<!--                                <a href="" class="apoie less bg-blue text-light">ASSINE NOSSA NEWSLETTER</a>-->
+<!--                            </div>-->
                         </div>
                     </div>
                 </div>

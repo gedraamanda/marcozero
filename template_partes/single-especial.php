@@ -72,9 +72,9 @@ $imgDestaque = get_image_prod( $postId, 'full' );
 								<a href="#" class="apoie less ms-auto apoie-click">APOIE</a>
 							</div>
 
-							<div class="mt-3">
-								<a href="https://marcozero.us18.list-manage.com/subscribe/post?u=6903930ec168971e947bb728b&id=c1b8b74962" target="_blank" class="apoie less bg-blue text-light">ASSINE NOSSA NEWSLETTER</a>
-							</div>
+<!--							<div class="mt-3">-->
+<!--								<a href="https://marcozero.us18.list-manage.com/subscribe/post?u=6903930ec168971e947bb728b&id=c1b8b74962" target="_blank" class="apoie less bg-blue text-light">ASSINE NOSSA NEWSLETTER</a>-->
+<!--							</div>-->
 						</div>
 					</div>
 				</div>

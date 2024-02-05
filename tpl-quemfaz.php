@@ -43,7 +43,7 @@ $users = get_users( array(
 	                $usuarioAvatar  = get_avatar_url( $user->ID, array( 'size' => 220 ) );
                     $inativo = get_field('user_inativo', 'user_'.$user->ID);
 
-                    if(empty($inativo) || $inativo === false) { ?>
+	                if ( empty( $inativo ) || $inativo === false ) { ?>
                         <div class="pessoa">
                             <div class="pessoa__img text-center py-4">
                                 <picture>

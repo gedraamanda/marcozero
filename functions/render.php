@@ -25,7 +25,7 @@ function mz_renderImage( $block_content, $block ) {
 
 		$attachment_metadata = wp_get_attachment_metadata( $attr['id'] );
 
-		$size = $attr['width'];
+		$size = !empty($attr['width']) ? $attr['width'] : '';
 
 		$sizeNum = intval(str_replace('px', '', $size));
 

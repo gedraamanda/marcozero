@@ -4,7 +4,7 @@
     <div class="menu-footer menu-footer-default w-100 less">
         <div class="container">
             <div class="d-flex justify-content-center justify-content-md-between position-relative">
-                <a href="https://marcozero.us18.list-manage.com/subscribe/post?u=6903930ec168971e947bb728b&id=c1b8b74962" target="_blank" class="apoie m-fade activehome">ASSINE NOSSA NEWSLETTER</a>
+<!--                <a href="https://marcozero.us18.list-manage.com/subscribe/post?u=6903930ec168971e947bb728b&id=c1b8b74962" target="_blank" class="apoie m-fade activehome">ASSINE NOSSA NEWSLETTER</a><a href="https://marcozero.us18.list-manage.com/subscribe/post?u=6903930ec168971e947bb728b&id=c1b8b74962" target="_blank" class="apoie m-fade activehome">ASSINE NOSSA NEWSLETTER</a>-->
 
                 <p class="m-0 m-fade"><a href="#" class="apoie apoie-click">APOIE</a> O JORNALISMO INDEPENDENTE</p>
 
@@ -33,24 +33,24 @@
             </div>
 
             <div class="menu-cat d-flex align-items-center flex-wrap mt-3 mt-md-0">
-                <a href="#" class="text-uppercase me-4 me-md-5"><span class="d-none d-md-inline-block opacity-0"></span>direitos humanos</a>
-                <a href="#" class="text-uppercase me-4 me-md-5"><span class="me-3"></span>socioambiental</a>
-                <a href="#" class="text-uppercase me-4 me-md-5"><span class="d-none d-md-inline-block me-3"></span>direito à cidade</a>
-                <a href="#" class="text-uppercase me-4 me-md-5"><span class="me-3"></span>diversidade</a>
-                <a href="#" class="text-uppercase"><span class="me-3 d-none d-md-inline-block"></span>institucional</a>
+                <a href="/category/direitos-humanos/" class="text-uppercase me-4 me-md-5"><span class="d-none d-md-inline-block opacity-0"></span>direitos humanos</a>
+                <a href="/category/socioambiental/" class="text-uppercase me-4 me-md-5"><span class="me-3"></span>socioambiental</a>
+                <a href="/category/direito-a-cidade/" class="text-uppercase me-4 me-md-5"><span class="d-none d-md-inline-block me-3"></span>direito à cidade</a>
+                <a href="/category/diversidade/" class="text-uppercase me-4 me-md-5"><span class="me-3"></span>diversidade</a>
+                <a href="/category/institucional/" class="text-uppercase"><span class="me-3 d-none d-md-inline-block"></span>institucional</a>
             </div>
         </div>
 
         <div class="d-flex mt-4 mt-md-2">
             <div class="menu-lista ms-md-auto">
                 <div class="d-flex">
-                    <div class="d-flex flex-column me-4">
-                        <a href="">Quem somos</a>
-                        <a href="">Missão e visão</a>
-                        <a href="">Política de convivência</a>
-                        <a href="">Transparência</a>
-                        <a href="">História</a>
-                    </div>
+<!--                    <div class="d-flex flex-column me-4">-->
+<!--                        <a href="">Quem somos</a>-->
+<!--                        <a href="">Missão e visão</a>-->
+<!--                        <a href="">Política de convivência</a>-->
+<!--                        <a href="">Transparência</a>-->
+<!--                        <a href="">História</a>-->
+<!--                    </div>-->
 
                     <div class=" d-flex flex-column">
                         <a href="">Expediente</a>
@@ -68,13 +68,13 @@
                 <div class="ajor text-center">
                     <span>ASSOCIADO</span>
 
-                    <a href="#" class="mx-auto"></a>
+                    <a href="https://ajor.org.br/" target="_blank" class="mx-auto"></a>
                 </div>
 
                 <div class="apoio text-center">
                     <span>APOIO INSTITUCIONAL</span>
 
-                    <a href="#" class="mx-auto"></a>
+                    <a href="https://oakfnd.org/" target="_blank" class="mx-auto"></a>
                 </div>
             </div>
 

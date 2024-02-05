@@ -223,6 +223,12 @@
         font-size: 14px;
       }
 
+      img {
+        width: 105px;
+        height: 105px;
+        object-fit: cover;
+      }
+
       &__pessoa {
         a {
           font-family: $resMed;

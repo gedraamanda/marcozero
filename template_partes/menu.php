@@ -137,13 +137,13 @@ if ( is_single() ) {
         <a href="/contato/" class="m-0">Contato</a>
     </div>
 
-    <div class="mb-2">
+    <div class="mb-4">
         <a href="#" class="apoie text-uppercase apoie-click">APOIE</a>
     </div>
 
-    <div class="mb-4">
-        <a href="https://marcozero.us18.list-manage.com/subscribe/post?u=6903930ec168971e947bb728b&id=c1b8b74962" target="_blank" class="apoie news text-uppercase">assine nossa newsletter</a>
-    </div>
+<!--    <div class="mb-4">-->
+<!--        <a href="https://marcozero.us18.list-manage.com/subscribe/post?u=6903930ec168971e947bb728b&id=c1b8b74962" target="_blank" class="apoie news text-uppercase">assine nossa newsletter</a>-->
+<!--    </div>-->
 
     <div class="social d-flex align-items-center">
         <a href="https://www.facebook.com/mzconteudo" target="_blank" class="facebook"></a>
