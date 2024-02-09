@@ -15,8 +15,12 @@ $argsPrincipal = array(
 	'paged' => $paged
 );
 
+$subtitulo = '';
+
 if(!empty($formato) || !empty($tema)) {
 	if ( $formato != 'null' && $tema == 'null' ) { //tem formato e nao tem tema
+		$subtitulo = get_term_by('slug', $formato, 'formatos')->name;
+
 		$argsPrincipal['tax_query'] = array(
 			array(
 				'taxonomy'     => 'formatos',
@@ -27,6 +31,8 @@ if(!empty($formato) || !empty($tema)) {
 	}
 
 	if ( $formato == 'null' && $tema != 'null' ) { //nao tem formato e tem tema
+		$subtitulo = get_term_by('slug', $tema, 'temas')->name;
+
 		$argsPrincipal['tax_query'] = array(
 			array(
 				'taxonomy'     => 'temas',
@@ -37,6 +43,8 @@ if(!empty($formato) || !empty($tema)) {
 	}
 
 	if ( $formato != 'null' && $tema != 'null' ) { // tem formato e tem tema
+		$subtitulo = get_term_by('slug', $formato, 'formatos')->name.' + '.get_term_by('slug', $tema, 'temas')->name;
+
 		$argsPrincipal['tax_query'] = array(
 			'relation' => 'AND',
 			array(
@@ -61,7 +69,7 @@ $argsList = array(
 	'posts_per_page' => 12,
 	'post_status'    => 'publish',
 	'cat'            => $catId,
-	'post__not_in'   => array($postPrincipal->post->ID),
+	'post__not_in' => ! empty( $postPrincipal->post ) ? array( $postPrincipal->post->ID ) : '',
 	'paged' => $paged
 );
 
@@ -114,7 +122,11 @@ get_template_part( 'componentes/barra-busca', '', array('cor' => $cor));
         <div class="container">
             <div class="row row-cols-md-2">
                 <div class="d-flex flex-column texto">
-                    <h1 class="m-0 text-uppercase mt-3"><?php echo $categoria->name ?></h1>
+                    <?php if(!empty($subtitulo)) { ?>
+                        <p class="sub m-0 text-uppercase mt-3"><?php echo $subtitulo ?></p>
+                    <?php } ?>
+
+                    <h1 class="m-0 text-uppercase <?php echo !empty($subtitulo) ? 'mt-0' : 'mt-3' ?>"><?php echo $categoria->name ?></h1>
 
 	                <?php if ( ! empty( $postPrincipal->post ) ) { ?>
                         <div class="imagem d-md-none mt-3">
@@ -130,8 +142,10 @@ get_template_part( 'componentes/barra-busca', '', array('cor' => $cor));
 
                             <?php mz_detalhes($postPrincipal->post->ID, 'd-flex aling-items-center mt-2', 'mx-3'); ?>
 
-                            <?php mz_tags($postPrincipal->post->ID, 'd-flex mt-3 mt-md-5 flex-wrap'); ?>
+                            <?php mz_tags($postPrincipal->post->ID, 'd-flex mt-3 mt-md-5 flex-wrap', 2); ?>
                         </div>
+                    <?php } else { ?>
+
                     <?php } ?>
 
                 </div>
@@ -162,7 +176,7 @@ get_template_part( 'componentes/barra-busca', '', array('cor' => $cor));
 
                                 <a href="<?php echo get_permalink($item->ID) ?>" class="titulo mt-3"><?php echo $item->post_title ?></a>
 
-	                            <?php mz_tags($item->ID, 'd-flex mt-4 flex-wrap'); ?>
+	                            <?php mz_tags($item->ID, 'd-flex mt-4 flex-wrap', 2); ?>
                             </div>
 
                         </div>
@@ -170,9 +184,9 @@ get_template_part( 'componentes/barra-busca', '', array('cor' => $cor));
                 </div>
             </div>
         </div>
-	<?php }
-
-    ?>
+	<?php } else { ?>
+        <p class="not-found text-center my-5">Não foi encontrado nenhum post</p>
+    <?php } ?>
 
     <div class="container">
         <?php wp_pagenavi(array( 'query' => $postListagem )); ?>

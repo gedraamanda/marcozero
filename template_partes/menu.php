@@ -73,7 +73,7 @@ if ( is_single() ) {
         <div class="d-flex justify-content-between py-3 int">
             <div class="logo d-flex align-items-center">
                 <a href="<?php echo get_bloginfo( 'wpurl' ) ?>"><i></i></a>
-                <h1 class="m-0">MARCO<span>ZERO</span></h1>
+                <a href="<?php echo get_bloginfo( 'wpurl' ) ?>"><h1 class="m-0">MARCO<span>ZERO</span></h1></a>
             </div>
 
             <div class="menu-cat d-none d-md-flex align-items-center ms-0">

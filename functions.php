@@ -184,18 +184,34 @@ function mz_tags($postId, $class = null, $qtd = null) {
 		$qtd = 3;
     }
 
-	$tags = wp_get_post_tags($postId);
+	$categoria = get_the_category( $postId )[0];
+	$formato   = ! empty( get_the_terms( $postId, 'formatos' ) ) ? get_the_terms( $postId, 'formatos' )[0] : '';
+	$tema      = ! empty( get_the_terms( $postId, 'temas' ) ) ? get_the_terms( $postId, 'temas' )[0] : '';
 
-	if ( ! empty( $tags ) ) {
-		$output = array_slice( $tags, 0, $qtd ); ?>
-
+	if($qtd === 3) { ?>
         <div class="tags <?php echo !empty($class) ? $class : '' ?>">
-            <?php foreach ( $output as $tag ) { ?>
-                <a href="<?php echo get_tag_link($tag->term_id) ?>" class="btn text-uppercase me-2 mb-2"><?php echo $tag->name ?></a>
-            <?php } ?>
-        </div>
-    <?php }
+            <a href="<?php echo get_category_link($categoria->term_id) ?>" class="btn text-uppercase me-2 mb-2"><?php echo $categoria->name ?></a>
 
+	        <?php if ( ! empty( $formato ) ) { ?>
+                <a href="<?php echo get_term_link($formato->term_id, 'formatos') ?>" class="btn text-uppercase me-2 mb-2"><?php echo $formato->name ?></a>
+            <?php }?>
+
+
+		    <?php if ( ! empty( $tema ) ) { ?>
+                <a href="<?php echo get_term_link($tema->term_id, 'temas') ?>" class="btn text-uppercase me-2 mb-2"><?php echo $tema->name ?></a>
+			<?php } ?>
+        </div>
+    <?php } else { ?>
+        <div class="tags <?php echo !empty($class) ? $class : '' ?>">
+            <?php if(!empty($formato)) { ?>
+                <a href="<?php echo get_term_link($formato->term_id, 'formatos') ?>" class="btn text-uppercase me-2 mb-2"><?php echo $formato->name ?></a>
+            <?php } ?>
+
+		    <?php if ( ! empty( $tema ) ) { ?>
+                <a href="<?php echo get_term_link($tema->term_id, 'temas') ?>" class="btn text-uppercase me-2 mb-2"><?php echo $tema->name ?></a>
+			<?php } ?>
+        </div>
+	<?php }
 }
 
 //cores das categorias - recebe o slug da categoria

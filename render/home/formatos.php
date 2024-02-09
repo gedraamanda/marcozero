@@ -104,10 +104,13 @@ if ( $automatico ) {
 								</div>
 							</div>
 
-							<div class="destaque__imagem ms-auto order-1 order-md-2">
+                            <?php
+                                $img = !empty($destaque['imagem_alternativa']) ? $destaque['imagem_alternativa'] : '';
+                                $full = isset($destaque['full_img']) ? $destaque['full_img'] : true;
+                                ?>
+							<div class="destaque__imagem ms-auto order-1 order-md-2 <?php echo $full === true ? 'full' : 'not-full' ?>">
 								<a href="<?php echo get_permalink( $destaque['post']->ID ) ?>">
 									<?php
-									$img = $destaque['imagem_alternativa'];
 
 									if(!empty($img)) { ?>
 										<picture>

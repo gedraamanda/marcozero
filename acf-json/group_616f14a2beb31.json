@@ -230,26 +230,27 @@
                                     "parent_repeater": "field_6571c8dc6f86b"
                                 },
                                 {
-                                    "key": "field_6571c90b6f86d",
-                                    "label": "Título alternativo",
-                                    "name": "titulo_alternativo",
+                                    "key": "field_65c668ec7650e",
+                                    "label": "Imagem 100%?",
+                                    "name": "full_img",
                                     "aria-label": "",
-                                    "type": "text",
+                                    "type": "true_false",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
-                                        "width": "60",
+                                        "width": "50",
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "",
+                                    "acfe_permissions": "",
+                                    "message": "",
+                                    "default_value": 1,
                                     "acfe_settings": "",
                                     "acfe_validate": "",
-                                    "maxlength": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
+                                    "ui_on_text": "",
+                                    "ui_off_text": "",
+                                    "ui": 1,
                                     "parent_repeater": "field_6571c8dc6f86b"
                                 },
                                 {
@@ -262,10 +263,11 @@
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
-                                        "width": "40",
+                                        "width": "50",
                                         "class": "",
                                         "id": ""
                                     },
+                                    "acfe_permissions": "",
                                     "uploader": "wp",
                                     "return_format": "array",
                                     "library": "all",
@@ -283,6 +285,30 @@
                                     "parent_repeater": "field_6571c8dc6f86b"
                                 },
                                 {
+                                    "key": "field_6571c90b6f86d",
+                                    "label": "Título alternativo",
+                                    "name": "titulo_alternativo",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_permissions": "",
+                                    "default_value": "",
+                                    "acfe_settings": "",
+                                    "acfe_validate": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_6571c8dc6f86b"
+                                },
+                                {
                                     "key": "field_6571c92f6f86f",
                                     "label": "Linha fina alternativa",
                                     "name": "linhafina_alternativa",
@@ -292,10 +318,11 @@
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
-                                        "width": "",
+                                        "width": "50",
                                         "class": "",
                                         "id": ""
                                     },
+                                    "acfe_permissions": "",
                                     "default_value": "",
                                     "acfe_settings": "",
                                     "acfe_validate": "",
@@ -568,26 +595,27 @@
                                     "save_post_type": ""
                                 },
                                 {
-                                    "key": "field_65720f89d961b",
-                                    "label": "Título alternativo",
-                                    "name": "titulo_alternativo",
+                                    "key": "field_65c66b495808b",
+                                    "label": "Imagem 100%?",
+                                    "name": "full_img",
                                     "aria-label": "",
-                                    "type": "text",
+                                    "type": "true_false",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
-                                        "width": "60",
+                                        "width": "50",
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "",
+                                    "acfe_permissions": "",
+                                    "message": "",
+                                    "default_value": 1,
                                     "acfe_settings": "",
                                     "acfe_validate": "",
-                                    "maxlength": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": ""
+                                    "ui_on_text": "",
+                                    "ui_off_text": "",
+                                    "ui": 1
                                 },
                                 {
                                     "key": "field_65720f9dd961c",
@@ -599,10 +627,11 @@
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
-                                        "width": "40",
+                                        "width": "50",
                                         "class": "",
                                         "id": ""
                                     },
+                                    "acfe_permissions": "",
                                     "uploader": "wp",
                                     "return_format": "array",
                                     "library": "all",
@@ -619,6 +648,29 @@
                                     "preview_size": "medium"
                                 },
                                 {
+                                    "key": "field_65720f89d961b",
+                                    "label": "Título alternativo",
+                                    "name": "titulo_alternativo",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_permissions": "",
+                                    "default_value": "",
+                                    "acfe_settings": "",
+                                    "acfe_validate": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                },
+                                {
                                     "key": "field_65720faed961d",
                                     "label": "Linha fina alternativa",
                                     "name": "linhafina_alternativa",
@@ -628,10 +680,11 @@
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
-                                        "width": "",
+                                        "width": "50",
                                         "class": "",
                                         "id": ""
                                     },
+                                    "acfe_permissions": "",
                                     "default_value": "",
                                     "acfe_settings": "",
                                     "acfe_validate": "",
@@ -1674,5 +1727,5 @@
     "acfe_form": 1,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1702912899
+    "modified": 1707502464
 }

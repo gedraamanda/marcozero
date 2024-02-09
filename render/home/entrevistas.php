@@ -26,7 +26,7 @@ $formato = $bloco['formato'];
 						$postId       = $item['post'];
 						$entrevistado = ! empty( $item['entrevistado'] ) ? $item['entrevistado'] : get_field( 'post_entrevistado', $postId );
 						$titulo       = ! empty( $item['titulo_alternativo'] ) ? $item['entrevistado'] : get_the_title( $postId );
-						$img          = $bloco['imagem_alternativa'];
+						$img          = !empty($bloco['imagem_alternativa']) ? $bloco['imagem_alternativa'] : '';
 						?>
 						<div class="item  <?php echo !wp_is_mobile() ? 'd-flex flex-column' : '' ?>">
 							<a href="<?php echo get_permalink($postId) ?>">

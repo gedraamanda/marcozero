@@ -142,15 +142,22 @@
       transform: translateY(1px);
     }
 
-    h1 {
-      font-family: $resBold;
-      font-size: 35px;
-      line-height: 1;
+    a {
+      h1 {
+        font-family: $resBold;
+        font-size: 35px;
+        line-height: 1;
 
-      span {
-        color: #fff;
+        span {
+          color: #fff;
+        }
+      }
+
+      &:hover {
+        color: #000;
       }
     }
+
   }
 
   .menu-cat {

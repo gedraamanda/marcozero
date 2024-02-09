@@ -14,12 +14,14 @@ if ( ! empty( $bloco['posts'] ) ) { ?>
 				<?php foreach ( $bloco['posts'] as $item ) {
 					$titulo    = ! empty( $item['titulo_alternativo'] ) ? $item['titulo_alternativo'] : $item['post']->post_title;
 					$linhaFina = ! empty( $item['linhafina_alternativa'] ) ? $item['linhafina_alternativa'] : get_field( 'post_linhafina', $item['post']->ID );
-					$img       = $item['imagem_alternativa'];
+					$img       = !empty($item['imagem_alternativa']) ? $item['imagem_alternativa'] : '';
+
+					$full = isset( $item['full_img'] ) ? $item['full_img'] : true;
 					?>
 
 					<div class="item">
 						<div class="d-flex flex-column flex-md-row position-relative">
-							<div class="item__imagem">
+							<div class="item__imagem <?php echo $full === true ? 'full' : 'not-full' ?>">
 								<?php if(!empty($img)) { ?>
 									<picture>
 										<source media="(max-width: 799px)" srcset="<?php echo $img['sizes']['large'] ?>">
