@@ -8,7 +8,7 @@
             "name": "post_abertura",
             "aria-label": "",
             "type": "radio",
-            "instructions": "",
+            "instructions": "Foto vertical\/quadrada: usar esse layout para as fotos quadradas ou verticais que aparecerão á direita da tela num tamanho médio",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
@@ -17,7 +17,7 @@
                 "id": ""
             },
             "choices": {
-                "vertical": "Foto média",
+                "vertical": "Foto vertical\/quadrada",
                 "horizontal": "Foto pequena\/horizontal",
                 "centro": "Foto no grande\/centro",
                 "texto": "Sem foto",
@@ -121,5 +121,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1708110962
+    "modified": 1708111600
 }

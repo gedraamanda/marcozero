@@ -342,7 +342,7 @@ add_action(
 );
 
 //esconde opcoes wordpress
-add_filter( 'allowed_block_types', 'rn_allowed_block_types' );
+add_filter( 'allowed_block_types_all', 'rn_allowed_block_types' );
 function rn_allowed_block_types( $allowed_blocks ) {
 	return array(
 		'core/image',
