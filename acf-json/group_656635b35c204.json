@@ -17,9 +17,9 @@
                 "id": ""
             },
             "choices": {
-                "vertical": "Foto vertical",
-                "horizontal": "Foto horizontal",
-                "centro": "Foto no centro",
+                "vertical": "Foto média",
+                "horizontal": "Foto pequena\/horizontal",
+                "centro": "Foto no grande\/centro",
                 "texto": "Sem foto",
                 "video": "Vídeo"
             },
@@ -121,5 +121,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1701348433
+    "modified": 1708110962
 }
