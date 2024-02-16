@@ -25,7 +25,7 @@ $linhaFina = get_field('post_linhafina', $postId);
 
 			<?php mz_detalhes($postId, 'd-flex flex-column flex-md-row aling-items-center mt-2', 'mx-3 d-none d-md-inline-block'); ?>
 
-			<?php mz_tags($postId, 'd-flex mt-4 flex-wrap', 2); ?>
+			<?php mz_tags($postId, 'd-flex mt-4 flex-wrap', 3); ?>
 
 		</div>
 	</div>
