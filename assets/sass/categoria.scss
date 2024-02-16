@@ -71,6 +71,8 @@
   }
 
   .tituloGrande {
+    font-family: $resReg !important;
+
     &:hover {
       color: #000;
     }
