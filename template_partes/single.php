@@ -185,7 +185,7 @@ if ( has_term( 'podcast', 'formatos' ) ) {
                 </div>
 
                 <div class="col-12 col-md-5 sidebar d-none d-md-block">
-                    <div class="d-flex flex-column ms-5" style="width: max-content;">
+                    <div class="d-flex flex-column ms-auto">
                         <div class="d-flex">
                             <div class="social d-flex align-items-center">
                                 <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink($postId) ?>" target="_blank" class="facebook"></a>
@@ -194,7 +194,7 @@ if ( has_term( 'podcast', 'formatos' ) ) {
                                 <a href="" class="youtube-m"></a>
                             </div>
 
-                            <a href="#" class="apoie less ms-auto apoie-click">APOIE</a>
+                            <a href="#" class="apoie less apoie-click">APOIE</a>
                         </div>
 
 <!--                        <div class="mt-3">-->
