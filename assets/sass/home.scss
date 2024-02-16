@@ -203,7 +203,7 @@
         }
 
         &.not-full {
-          text-align: end;
+
           img {
             width: auto !important;
             height: 455px;
@@ -470,6 +470,11 @@
     &__posts {
       .item {
         flex: 0 0 30%;
+
+        img {
+          max-height: 250px;
+          object-fit: cover;
+        }
 
         .texto {
           .ent {
