@@ -190,7 +190,7 @@ function mz_tags($postId, $class = null, $qtd = null) {
 
 	if($qtd === 3) { ?>
         <div class="tags <?php echo !empty($class) ? $class : '' ?>">
-            <a href="<?php echo get_category_link($categoria->term_id) ?>" class="btn text-uppercase me-2 mb-2"><?php echo $categoria->name ?></a>
+            <a href="<?php echo get_category_link($categoria->term_id) ?>" class="btn btn-black text-uppercase me-2 mb-2"><?php echo $categoria->name ?></a>
 
 	        <?php if ( ! empty( $formato ) ) { ?>
                 <a href="<?php echo get_term_link($formato->term_id, 'formatos') ?>" class="btn text-uppercase me-2 mb-2"><?php echo $formato->name ?></a>
