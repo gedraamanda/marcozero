@@ -129,3 +129,31 @@ function mz_renderGaleria($block_content, $block ) {
         </div>
 <?php }
 }
+
+//leia tambem
+add_filter( 'render_block_core/embed', 'mz_leiaTbmRender', 10, 2 );
+function mz_leiaTbmRender($block_content, $block) {
+	if (strpos($block_content, 'marcozero.org') !== false) {
+		$post_id = url_to_postid($block['attrs']['url']);
+
+		remove_filter('the_content', 'wpautop');
+
+		ob_start(); ?>
+
+        <div class="leia-tambem d-flex flex-column py-2 my-4 my-md-5">
+            <span class=" d-block mb-2">MAIS SOBRE ESSE ASSUNTO:</span>
+
+            <div class="d-flex flex-column">
+                <a href="<?php echo get_permalink( $post_id ) ?>" class="titulo"><?php echo strip_tags( get_the_title( $post_id ) ) ?></a>
+	            <?php mz_tags($post_id, 'd-flex mt-3 flex-wrap', 2); ?>
+            </div>
+        </div>
+
+		<?php
+
+		return ob_get_clean();
+
+	} else {
+		return $block_content;
+	}
+}
