@@ -204,7 +204,8 @@ $tema = get_the_terms( $postId, 'temas' );
 <!--                        </div>-->
                     </div>
 
-	                <?php if ( has_term('podcast', 'formatos') ) {
+
+                    <?php if ( has_term('podcast', 'formatos') ) {
 		                $postListagem = new WP_Query( array(
 			                'post_type'      => 'post',
 			                'posts_per_page' => 3,
@@ -279,6 +280,22 @@ $tema = get_the_terms( $postId, 'temas' );
                             </div>
                         <?php }
 	                } ?>
+
+                    <div class="caixa-apoie ms-auto">
+                        <div class="d-flex flex-column text-center">
+                            <div>
+                                <a href="/assine/" class="btn titulo">APOIE</a>
+                            </div>
+
+                            <h4 class="m-0 mt-3 mb-2 pb-2">O JORNALISMO QUE ESTÁ DO SEU LADO</h4>
+
+                            <p class="m-0 mb-3">DOAR PARA A MARCO ZERO É MUITO FÁCIL.</p>
+
+                            <div>
+                                <a href="/assine/" class="btn saiba">SAIBA MAIS</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

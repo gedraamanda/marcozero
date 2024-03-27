@@ -349,6 +349,10 @@ $(window).scroll(function () {
                 $('.menu-especial').addClass('esconde');
             }
 
+            if($('.caixa-apoie').length > 0 && $(window).width() >= 768) {
+                $('.caixa-apoie').css('top', 30);
+            }
+
             $('.menu-footer-home').addClass('hiden');
         }
 
@@ -361,6 +365,10 @@ $(window).scroll(function () {
         if($('.menu-home').length == 0 && scrollY > altura) {
             if($('.menu-default').hasClass('esconde')) {
                 $('.menu-default').removeClass('esconde');
+            }
+
+            if($('.caixa-apoie').length > 0 && $(window).width() >= 768) {
+                $('.caixa-apoie').css('top', 80);
             }
         }
 
@@ -389,6 +397,10 @@ $(window).scroll(function () {
         if(scrollY >= altura && $('.menu-home').length == 0) {
             if(!$('.menu-default').hasClass('esconde')) {
                 $('.menu-default').addClass('esconde');
+            }
+
+            if($('.caixa-apoie').length > 0 && $(window).width() >= 768) {
+                $('.caixa-apoie').css('top', 30);
             }
         }
 

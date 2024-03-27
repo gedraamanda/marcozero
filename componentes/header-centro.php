@@ -20,7 +20,7 @@ $credito = get_field( 'img_credito', $imgData->ID );
 			</div>
 
 			<?php if ( ! empty( $legenda ) || ! empty( $credito ) ) { ?>
-                    <div class="col-12 col-md-1 align-self-end">
+                    <div class="col-12 col-md-1 align-self-end d-none d-md-block">
                         <figcaption class="legenda-credito mt-2 px-3 px-md-0 text-start">
                             <p class="m-0 mb-1"><?php echo $legenda ?></p>
 
@@ -48,3 +48,17 @@ $credito = get_field( 'img_credito', $imgData->ID );
 		</div>
 	</div>
 </header>
+
+<?php if ( ! empty( $legenda ) || ! empty( $credito ) ) { ?>
+    <div class="container header-foto-leg d-md-none">
+        <figcaption class="legenda-credito mt-2">
+            <p class="m-0 mb-1"><?php echo $legenda ?></p>
+
+			<?php if ( ! empty( $credito ) ) { ?>
+                <span><?php echo $credito ?></span>
+			<?php }?>
+
+        </figcaption>
+    </div>
+
+<?php } ?>

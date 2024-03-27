@@ -862,3 +862,47 @@
     }
   }
 }
+
+.caixa-apoie {
+  background: $verdeFlor;
+  width: 265px;
+  padding: 25px 35px;
+  margin-top: 50%;
+  transition: top 0.5s ease 0s;
+
+  @media (min-width: 768px) {
+    position: sticky;
+    top: 30px;
+  }
+
+  .titulo {
+    font-family: $resMed;
+    background: $azul;
+    color: $verdeFlor;
+    font-size: 18px;
+    letter-spacing: 0.36px;
+    border: none;
+  }
+
+  h4 {
+    color: $azul;
+    font-family: $resMed;
+    font-size: 19px;
+    line-height: 140%;
+    letter-spacing: 0.38px;
+    border-bottom: 1px solid $azul;
+  }
+
+  p {
+    color: $azul;
+    font-family: $resBold;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .saiba {
+    color: $azul;
+    border-color: $azul;
+    background: $verdeFlor;
+  }
+}
