@@ -285,55 +285,56 @@ $tema = get_the_terms( $postId, 'temas' );
     </div>
 
     <?php
-    $postsRelacionados = new WP_Query( array(
-	    'post_type'      => 'post',
-	    'posts_per_page' => 3,
-	    'post_status'    => 'publish',
-	    'tax_query' => array(
-		    array (
-			    'taxonomy' => 'temas',
-			    'field' => 'term_id',
-			    'terms' => $tema[0]->term_id,
-		    )
-	    ),
-	    'post__not_in'   => array( $postId )
-    ) );
+    if(!empty($tema)) {
+        $postsRelacionados = new WP_Query( array(
+            'post_type'      => 'post',
+            'posts_per_page' => 3,
+            'post_status'    => 'publish',
+            'tax_query' => array(
+                array (
+                    'taxonomy' => 'temas',
+                    'field' => 'term_id',
+                    'terms' => $tema[0]->term_id,
+                )
+            ),
+            'post__not_in'   => array( $postId )
+        ) );
 
-    if ( ! empty( $postsRelacionados->posts ) ) { ?>
-        <div class="relacionadas py-4">
-            <div class="container">
-                <div class="mx-md-5">
-                    <h3 class="m-0 text-uppercase">publicações relacionadas</h3>
+        if ( ! empty( $postsRelacionados->posts ) ) { ?>
+            <div class="relacionadas py-4">
+                <div class="container">
+                    <div class="mx-md-5">
+                        <h3 class="m-0 text-uppercase">publicações relacionadas</h3>
 
-                    <div class="<?php echo !wp_is_mobile() ? 'row row-cols-3' : '' ?> mt-3 int">
-                        <?php foreach ( $postsRelacionados->posts as $rel ) { ?>
-                            <div class="relacionadas__post">
-                                <div class="d-flex flex-column">
-                                    <a href="<?php echo get_permalink($rel->ID) ?>">
-                                        <?php mz_imgDestaque($rel->ID, 'large', 'medium', 'w-100') ?>
-                                    </a>
+                        <div class="<?php echo !wp_is_mobile() ? 'row row-cols-3' : '' ?> mt-3 int">
+                            <?php foreach ( $postsRelacionados->posts as $rel ) { ?>
+                                <div class="relacionadas__post">
+                                    <div class="d-flex flex-column">
+                                        <a href="<?php echo get_permalink($rel->ID) ?>">
+                                            <?php mz_imgDestaque($rel->ID, 'large', 'medium', 'w-100') ?>
+                                        </a>
 
-                                    <a href="<?php echo get_permalink($rel->ID) ?>" class="titulo mt-3"><?php echo $rel->post_title ?></a>
+                                        <a href="<?php echo get_permalink($rel->ID) ?>" class="titulo mt-3"><?php echo $rel->post_title ?></a>
 
-                                    <?php mz_tags($rel->ID, 'd-flex mt-4', 2) ?>
+                                        <?php mz_tags($rel->ID, 'd-flex mt-4', 2) ?>
+                                    </div>
                                 </div>
-                            </div>
-                        <?php } ?>
+                            <?php } ?>
+                        </div>
+
+                        <div class="slider-control slider-control-rel d-flex d-md-none" aria-label="Carousel Navigation" tabindex="0">
+                            <a class="prev" data-controls="prev" aria-controls="customize" tabindex="-1"></a>
+
+                            <a class="next ms-auto" data-controls="next" aria-controls="customize" tabindex="-1"></a>
+                        </div>
                     </div>
 
-                    <div class="slider-control slider-control-rel d-flex d-md-none" aria-label="Carousel Navigation" tabindex="0">
-                        <a class="prev" data-controls="prev" aria-controls="customize" tabindex="-1"></a>
-
-                        <a class="next ms-auto" data-controls="next" aria-controls="customize" tabindex="-1"></a>
-                    </div>
                 </div>
-
             </div>
-        </div>
-    <?php } ?>
+        <?php }
+    }
 
 
-    <?php
     $tituloSug = get_field( 'titulo', 'sugestoes' );
     $postsSug  = get_field( 'posts', 'sugestoes' );
 

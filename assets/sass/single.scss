@@ -92,6 +92,13 @@
           width: 83%;
         }
       }
+
+      .legenda-credito {
+        @media (min-width: 768px) {
+          width: 150%;
+          transform: translateX(-55px);
+        }
+      }
     }
 
     &.header-texto {
@@ -102,6 +109,20 @@
       }
     }
 
+    .legenda-credito {
+      p {
+        font-family: $tris;
+        font-weight: 500 !important;
+        line-height: 115% !important;
+      }
+
+      span {
+        font-family: $resReg;
+        font-size: 11px;
+        line-height: 115% !important;
+        letter-spacing: 0.33px;
+      }
+    }
   }
 
   .marco-videos {
