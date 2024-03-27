@@ -30,6 +30,12 @@
           width: 500px;
         }
       }
+      
+      .cat {
+        &:hover {
+          color: #fff;
+        }
+      }
     }
 
     &__imagem {
