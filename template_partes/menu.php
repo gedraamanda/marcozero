@@ -163,21 +163,21 @@ $apoioTxt    = get_field( 'apoio_texto', 'apoio' );
     <div class="apoiepop__int">
         <a href="javascript:;" class="close close-modal"><i></i></a>
 
-        <a href="" class="btn principal mb-2 text-uppercase"><?php echo !empty($apoioTitulo) ? $apoioTitulo : 'APOIE O JORNALISMO QUE ESTÁ DO SEU LADO' ?></a>
+        <a href="/assine/" class="btn principal mb-2 text-uppercase"><?php echo !empty($apoioTitulo) ? $apoioTitulo : 'APOIE O JORNALISMO QUE ESTÁ DO SEU LADO' ?></a>
 
         <?php echo $apoioTxt ?>
 
         <div class="d-flex valores">
-            <a href="" class="btn text-uppercase">individual</a>
-            <a href="" class="btn text-uppercase">mensal</a>
-            <a href="" class="btn text-uppercase">anual</a>
+            <a href="/assine/" class="btn text-uppercase">individual</a>
+            <a href="/assine/" class="btn text-uppercase">mensal</a>
+            <a href="/assine/" class="btn text-uppercase">anual</a>
         </div>
 
         <div class="d-flex valores">
-            <a href="" class="btn text-uppercase">R$ 20/Mês</a>
-            <a href="" class="btn text-uppercase">R$ 50/Mês</a>
-            <a href="" class="btn text-uppercase">R$ 100/Mês</a>
-            <a href="" class="btn text-uppercase">OUTRAS OPÇÕES</a>
+            <a href="/assine/" class="btn text-uppercase">R$ 20/Mês</a>
+            <a href="/assine/" class="btn text-uppercase">R$ 50/Mês</a>
+            <a href="/assine/" class="btn text-uppercase">R$ 100/Mês</a>
+            <a href="/assine/" class="btn text-uppercase">OUTRAS OPÇÕES</a>
         </div>
     </div>
 </div>

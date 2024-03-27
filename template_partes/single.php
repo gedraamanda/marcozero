@@ -14,6 +14,8 @@ if ( has_term( 'podcast', 'formatos' ) ) {
 	$descPod = get_field( 'desc_podcast', $postId );
 	$epsPod  = get_field( 'ep_podcast', $postId );
 }
+
+$tema = get_the_terms( $postId, 'temas' );
 ?>
 
 <div class="marco-single">
@@ -287,7 +289,13 @@ if ( has_term( 'podcast', 'formatos' ) ) {
 	    'post_type'      => 'post',
 	    'posts_per_page' => 3,
 	    'post_status'    => 'publish',
-	    'cat'            => $categoria[0]->term_id,
+	    'tax_query' => array(
+		    array (
+			    'taxonomy' => 'temas',
+			    'field' => 'term_id',
+			    'terms' => $tema[0]->term_id,
+		    )
+	    ),
 	    'post__not_in'   => array( $postId )
     ) );
 

@@ -166,7 +166,7 @@ function mz_detalhes( $postId, $class = null, $barraClass = null, $barra = true 
 	$dataPublicacao = esc_html( get_the_date( 'd/m/Y', $postId ) );
     ?>
 
-    <div class="detalhe <?php echo !empty($class) ? $class : '' ?>">
+    <div class="detalhe flex-wrap <?php echo !empty($class) ? $class : '' ?>">
         <?php foreach ( $autores as $auto ) { ?>
             <a href="<?php echo get_author_posts_url($auto->data->ID) ?>" class="assina text-uppercase me-3"><?php echo $auto->data->display_name ?></a>
         <?php } ?>
