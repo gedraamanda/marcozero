@@ -5,7 +5,7 @@ $posts    = $bloco['posts'];
 $destaque = $bloco['destaque'];
 ?>
 
-<section class="midia mt-5 mt-md-0">
+<section class="midia mt-5 mt-md-0 my-5">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-md-6 pe-md-5 bg">

@@ -9,7 +9,7 @@ if ( $bloco['automatico'] ) {
 }
 ?>
 
-<section class="stories container mt-md-5 position-relative">
+<section class="stories container mt-md-5 position-relative my-5">
 	<div class="d-flex mx-md-5 align-items-center">
 		<h2 class="tituloSessao text-uppercase">webstories</h2>
 

@@ -249,18 +249,18 @@ if ( has_term( 'podcast', 'formatos' ) ) {
                             </div>
                         <?php }
 	                } else {
-		                $postsRecentes = new WP_Query( array(
-			                'post_status'    => 'publish',
-			                'post_type'      => 'post',
-			                'posts_per_page' => 1 ,
-		                ) );
 
-		                if ( ! empty( $postsRecentes->posts ) ) { ?>
+
+		                $postsR = get_posts( array( 'numberposts' => 3,'orderby'          => 'date',
+		                                           'order'            => 'DESC', ) );
+
+
+		                if ( ! empty( $postsR ) ) { ?>
                             <div class="mais-recentes ms-auto">
                                 <span class="mais-titulo m-0 text-uppercase">AS MAIS RECENTES</span>
 
                                 <div class="d-flex flex-column mt-3">
-                                    <?php foreach ( $postsRecentes->posts as $rec ) { ?>
+                                    <?php foreach ( $postsR as $rec ) { ?>
                                         <div class="mais-recentes__post d-flex flex-column mb-5">
                                             <a href="<?php echo get_permalink($rec->ID) ?>">
 	                                            <?php mz_imgDestaque($rec->ID, 'large', 'medium', '') ?>

@@ -3,7 +3,7 @@ $bloco = $args;
 
 ?>
 
-<section class="slider-horiz py-md-5 pb-4">
+<section class="slider-horiz py-md-5 pb-4 my-5">
 	<div class="container position-relative p-mobile-0">
 		<div class="slider-control slider-control-horiz d-flex" aria-label="Carousel Navigation" tabindex="0">
 			<a class="prev" data-controls="prev" aria-controls="customize" tabindex="-1"></a>

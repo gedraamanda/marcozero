@@ -5,13 +5,13 @@ $formato = $bloco['formato'];
 
 ?>
 
-<section class="entrevista py-4 py-md-5 mt-5 mt-md-0">
+<section class="entrevista py-4 py-md-5 mt-5 mt-md-0 my-5">
 	<div class="container">
 		<div class="position-relative mx-md-5">
 			<div class="d-flex align-items-center">
-				<h2 class="tituloSessao text-uppercase"><?php echo $formato->name ?></h2>
+				<h2 class="tituloSessao text-uppercase">entrevistas</h2>
 
-				<a href="<?php echo get_term_link($formato->term_id, 'formatos') ?>" class="apoie reg ms-auto text-uppercase">ver mais</a>
+				<a href="/formato/entrevista/" class="apoie reg ms-auto text-uppercase">ver mais</a>
 			</div>
 
 			<div class="slider-control slider-control-entrevista d-flex d-md-none" aria-label="Carousel Navigation" tabindex="0">
@@ -25,7 +25,7 @@ $formato = $bloco['formato'];
 					<?php foreach ( $bloco['posts'] as $item ) {
 						$postId       = $item['post'];
 						$entrevistado = ! empty( $item['entrevistado'] ) ? $item['entrevistado'] : get_field( 'post_entrevistado', $postId );
-						$titulo       = ! empty( $item['titulo_alternativo'] ) ? $item['entrevistado'] : get_the_title( $postId );
+						$titulo       = ! empty( $item['titulo_alternativo'] ) ? $item['titulo_alternativo'] : get_the_title( $postId );
 						$img          = !empty($bloco['imagem_alternativa']) ? $bloco['imagem_alternativa'] : '';
 						?>
 						<div class="item  <?php echo !wp_is_mobile() ? 'd-flex flex-column' : '' ?>">

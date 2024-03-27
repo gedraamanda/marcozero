@@ -200,24 +200,13 @@
   }
 
   &.menu-footer-home {
+    bottom: 0;
+    top: auto !important;
+    
     @media (max-width: 768px) {
       height: 47px;
       padding: 10px 0;
       top: calc(100vh - 47px);
-    }
-
-    .m-fade {
-      @media (max-width: 768px) {
-        position: absolute;
-        opacity: 0;
-      }
-
-      &.activehome {
-        @media (max-width: 768px) {
-          opacity: 1;
-          z-index: 99;
-        }
-      }
     }
   }
 

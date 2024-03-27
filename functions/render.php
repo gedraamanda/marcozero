@@ -2,13 +2,16 @@
 //render os iframes do conteudo
 add_filter( 'render_block_core/shortcode', 'mz_renderIframe', 10, 2 );
 function mz_renderIframe( $block_content, $block ) {
-	$str = preg_replace('!<p>(.*?)</p>!Uis', '$1', $block_content); ?>
+	$str = preg_replace('!<p>(.*?)</p>!Uis', '$1', $block_content);
+
+	if ( ! is_feed() && ! is_admin() && ! wp_is_json_request() ) {
+	?>
 
 	<div class="ratio ratio-16x9 my-4">
 		<?php echo $str ?>
 	</div>
 
-<?php }
+<?php } }
 
 //novas imagens
 add_filter( 'render_block_core/image', 'mz_renderImage', 10, 2 );
@@ -42,14 +45,14 @@ function mz_renderImage( $block_content, $block ) {
 
 		$imgAlt    = get_post_meta( $attr['id'], '_wp_attachment_image_alt', true );
 
-
+		if ( ! is_feed() && ! is_admin() && ! wp_is_json_request() ) {
 		?>
 
         <figure class="wp-block-image my-5 <?php echo $sizeNum < 690 ? 'img-center text-center' : '' ?>">
             <picture>
-                <source media="(max-width: 799px)" srcset="<?php echo changeurl($img_srcMobile) ?>">
-                <source media="(min-width: 800px)" srcset="<?php echo changeurl($img_destaqueDesk) ?>">
-                <img src="<?php echo changeurl($img_destaqueDesk) ?>" alt="<?php echo !empty($imgAlt) ? str_replace('"', '', $imgAlt) : '' ?>" class="<?php echo $sizeNum > 690 ? 'w-100' : '' ?>" loading="lazy" <?php echo $sizeNum < 690 && $sizeNum != 0 ? 'width="'.$sizeNum.'"' : '' ?>>
+                <source media="(max-width: 799px)" srcset="<?php echo ($img_srcMobile) ?>">
+                <source media="(min-width: 800px)" srcset="<?php echo ($img_destaqueDesk) ?>">
+                <img src="<?php echo ($img_destaqueDesk) ?>" alt="<?php echo !empty($imgAlt) ? str_replace('"', '', $imgAlt) : '' ?>" class="<?php echo $sizeNum > 690 ? 'w-100' : '' ?>" loading="lazy" <?php echo $sizeNum < 690 && $sizeNum != 0 ? 'width="'.$sizeNum.'"' : '' ?>>
             </picture>
 
 	        <?php if ( ! empty( $legenda ) || ! empty( $credito ) ) { ?>
@@ -65,7 +68,7 @@ function mz_renderImage( $block_content, $block ) {
             <?php } ?>
         </figure>
 
-	<?php }
+	<?php } }
 }
 
 //galeria de fotos
@@ -114,7 +117,7 @@ function mz_renderGaleria($block_content, $block ) {
                                 <p class="m-0"><?php echo $legenda ?></p>
 
 	                            <?php if ( ! empty( $credito ) ) { ?>
-                                    <span>Foto © Arnaldo Sete.Projeto Colabora</span>
+                                    <span><?php echo $credito ?></span>
                                 <?php }?>
 
                             </figcaption>

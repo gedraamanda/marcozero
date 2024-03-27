@@ -175,7 +175,7 @@ if(is_tax('formatos') ) {
                                 </a>
                             </div>
 
-                            <div class="d-flex flex-column mx-md-4 mt-3 mt-md-auto">
+                            <div class="d-flex flex-column ms-md-0 me-md-4 mt-3 mt-md-auto">
                                 <a href="<?php echo get_permalink( $postPrincipal->post->ID ) ?>" class="text-uppercase tituloGrande mb-2"><?php echo $postPrincipal->post->post_title; ?></a>
 
 					            <?php mz_linhaFina($postPrincipal->post->ID, '', 'linha-fina m-0'); ?>

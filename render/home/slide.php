@@ -2,13 +2,16 @@
 $bloco = $args;
 
 if ( ! empty( $bloco['posts'] ) ) { ?>
-	<section class="slider pb-5">
+	<section class="slider pb-5 ">
 		<div class="container position-relative p-mobile-0">
-			<div class="slider-control slider-control-homeslide d-flex" aria-label="Carousel Navigation" tabindex="0">
-				<a class="prev me-4" data-controls="prev" aria-controls="customize" tabindex="-1"></a>
+            <?php if(count($bloco['posts']) > 1) { ?>
+                <div class="slider-control slider-control-homeslide d-flex" aria-label="Carousel Navigation" tabindex="0">
+                    <a class="prev me-4" data-controls="prev" aria-controls="customize" tabindex="-1"></a>
 
-				<a class="next ms-auto ms-md-0" data-controls="next" aria-controls="customize" tabindex="-1"></a>
-			</div>
+                    <a class="next ms-auto ms-md-0" data-controls="next" aria-controls="customize" tabindex="-1"></a>
+                </div>
+            <?php }?>
+
 
 			<div class="slider-sl">
 				<?php foreach ( $bloco['posts'] as $item ) {
@@ -59,25 +62,3 @@ if ( ! empty( $bloco['posts'] ) ) { ?>
 	</section>
 <?php } ?>
 
-
-<div class="menu-footer menu-footer-home w-100">
-	<div class="container">
-		<div class="d-flex justify-content-center justify-content-md-between position-relative">
-<!--			<a href="https://marcozero.us18.list-manage.com/subscribe/post?u=6903930ec168971e947bb728b&id=c1b8b74962" target="_blank" class="apoie m-fade activehome">ASSINE NOSSA NEWSLETTER</a>-->
-
-			<p class="m-0 m-fade"><a href="#" class="apoie apoie-click">APOIE</a> O JORNALISMO INDEPENDENTE</p>
-
-			<div class="d-flex align-items-center m-fade">
-				<p class="m-0 me-3">VISITE NOSSAS REDES SOCIAIS</p>
-
-				<div class="social d-flex align-items-center">
-					<a href="" class="facebook"></a>
-					<a href="" class="instagram"></a>
-					<a href="" class="twitter"></a>
-					<a href="" class="youtube-m"></a>
-				</div>
-			</div>
-
-		</div>
-	</div>
-</div>

@@ -3,7 +3,7 @@ $bloco = $args;
 
 ?>
 
-<section class="opiniao container">
+<section class="opiniao container my-5">
 	<div class="opiniao__int mx-2 mx-md-5">
 		<div class="d-flex align-items-center mt-4">
 			<h2 class="tituloSessao text-uppercase"><?php echo $bloco['titulo'] ?></h2>

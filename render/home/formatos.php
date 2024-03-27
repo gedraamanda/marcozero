@@ -24,7 +24,7 @@ if ( $automatico ) {
 }
 ?>
 
-<section class="reportagens mt-5">
+<section class="reportagens my-5">
 	<div class="container pt-4 pt-md-5">
 		<div class="d-flex mx-md-5 align-items-center">
 			<h2 class="tituloSessao text-uppercase"><?php echo $formato->name ?></h2>

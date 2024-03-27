@@ -1,28 +1,28 @@
 <?php wp_footer(); ?>
 
-<?php if(!is_home()) { ?>
-    <div class="menu-footer menu-footer-default w-100 less">
-        <div class="container">
-            <div class="d-flex justify-content-center justify-content-md-between position-relative">
+
+<div class="menu-footer <?php echo is_home() ? 'menu-footer-home hiden' : 'menu-footer-default' ?> w-100 less">
+    <div class="container">
+        <div class="d-flex justify-content-center justify-content-md-between position-relative">
 <!--                <a href="https://marcozero.us18.list-manage.com/subscribe/post?u=6903930ec168971e947bb728b&id=c1b8b74962" target="_blank" class="apoie m-fade activehome">ASSINE NOSSA NEWSLETTER</a><a href="https://marcozero.us18.list-manage.com/subscribe/post?u=6903930ec168971e947bb728b&id=c1b8b74962" target="_blank" class="apoie m-fade activehome">ASSINE NOSSA NEWSLETTER</a>-->
 
-                <p class="m-0 m-fade"><a href="#" class="apoie apoie-click">APOIE</a> O JORNALISMO INDEPENDENTE</p>
+            <p class="m-0 m-fade"><a href="#" class="apoie apoie-click">APOIE</a> O JORNALISMO INDEPENDENTE</p>
 
-                <div class="d-flex align-items-center m-fade">
-                    <p class="m-0 me-3">VISITE NOSSAS REDES SOCIAIS</p>
+            <div class="d-flex align-items-center m-fade">
+                <p class="m-0 me-3">VISITE NOSSAS REDES SOCIAIS</p>
 
-                    <div class="social d-flex align-items-center">
-                        <a href="https://www.facebook.com/mzconteudo" target="_blank" class="facebook"></a>
-                        <a href="https://www.instagram.com/marcozeroconteudo/" target="_blank" class="instagram"></a>
-                        <a href="https://twitter.com/mzconteudo" target="_blank" class="twitter"></a>
-                        <a href="https://www.youtube.com/channel/UCHUPTRXZkMiKP0o9xkb8_GQ" target="_blank" class="youtube-m"></a>
-                    </div>
+                <div class="social d-flex align-items-center">
+                    <a href="https://www.facebook.com/mzconteudo" target="_blank" class="facebook"></a>
+                    <a href="https://www.instagram.com/marcozeroconteudo/" target="_blank" class="instagram"></a>
+                    <a href="https://twitter.com/mzconteudo" target="_blank" class="twitter"></a>
+                    <a href="https://www.youtube.com/channel/UCHUPTRXZkMiKP0o9xkb8_GQ" target="_blank" class="youtube-m"></a>
                 </div>
-
             </div>
+
         </div>
     </div>
-<?php } ?>
+</div>
+
 
 <div class="marco-footer py-4">
     <div class="container">

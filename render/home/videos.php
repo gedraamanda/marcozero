@@ -4,7 +4,7 @@ $bloco = $args;
 
 ?>
 
-<section class="videos py-4">
+<section class="videos py-4 my-5">
 	<div class="container position-relative">
 		<div class="d-flex mx-md-5 align-items-center">
 			<h2 class="tituloSessao text-uppercase"><?php echo $bloco['titulo'] ?></h2>

@@ -190,7 +190,7 @@
                             "layout": "block",
                             "acfe_settings": "",
                             "min": 0,
-                            "max": 0,
+                            "max": 3,
                             "acfe_permissions": "",
                             "collapsed": "",
                             "button_label": "Adicionar linha",
@@ -235,7 +235,7 @@
                                     "name": "full_img",
                                     "aria-label": "",
                                     "type": "true_false",
-                                    "instructions": "",
+                                    "instructions": "qualquer coisa hbasbaiksainsini",
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
@@ -1582,7 +1582,7 @@
                             "layout": "block",
                             "acfe_settings": "",
                             "min": 0,
-                            "max": 6,
+                            "max": 3,
                             "acfe_permissions": "",
                             "collapsed": "",
                             "button_label": "Adicionar linha",
@@ -1727,5 +1727,5 @@
     "acfe_form": 1,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1707502464
+    "modified": 1708370388
 }

@@ -340,20 +340,3 @@ add_action(
 
 	}
 );
-
-//esconde opcoes wordpress
-add_filter( 'allowed_block_types_all', 'rn_allowed_block_types' );
-function rn_allowed_block_types( $allowed_blocks ) {
-	return array(
-		'core/image',
-		'core/paragraph',
-		'core/heading',
-		'core/embed',
-		'core/gallery',
-		'core/list',
-		'acf/caixas',
-		'acf/citacao',
-		'acf/parallax',
-		'acf/quadro',
-	);
-}
