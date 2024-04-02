@@ -23,17 +23,20 @@ $categoria = get_the_category($post->ID);
 
 					<?php mz_detalhes($post->ID, 'd-flex flex-column flex-md-row aling-items-center mt-2 flex-wrap', 'mx-3 d-none d-md-inline-block'); ?>
 
-
-					<div class="tags d-flex mt-5 pt-md-4 flex-wrap">
-						<a href="#" class="btn text-uppercase me-2">direitos humanos</a>
-						<a href="#" class="btn text-uppercase me-2">maternidade</a>
-						<a href="#" class="btn text-uppercase">pernambuco</a>
-					</div>
+					<?php mz_tags($post->ID, 'd-flex mt-5 pt-md-4 flex-wrap'); ?>
 				</div>
 			</div>
 
 			<div class="especial__imagem ms-auto">
-				<img src="<?php echo get_template_directory_uri() ?>/assets/images/home1.png" alt="home1">
+				<?php if(!empty($img)) { ?>
+                    <picture>
+                        <source media="(max-width: 799px)" srcset="<?php echo $img['sizes']['large'] ?>">
+                        <source media="(min-width: 800px)" srcset="<?php echo $img['url'] ?>">
+                        <img src="<?php echo $img['url'] ?>" alt="<?php echo !empty($img['alt']) ? str_replace('"', '', $img['alt']) : '' ?>" class="w-100">
+                    </picture>
+				<?php } else {
+					mz_imgDestaque($post->ID, 'large', 'large', 'w-100');
+				} ?>
 			</div>
 		</div>
 

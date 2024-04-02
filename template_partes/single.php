@@ -302,7 +302,7 @@ $tema = get_the_terms( $postId, 'temas' );
     </div>
 
     <?php
-    if(!empty($tema)) {
+    if ( ! empty( $tema[0] ) ) {
         $postsRelacionados = new WP_Query( array(
             'post_type'      => 'post',
             'posts_per_page' => 3,
@@ -323,7 +323,7 @@ $tema = get_the_terms( $postId, 'temas' );
                     <div class="mx-md-5">
                         <h3 class="m-0 text-uppercase">publicações relacionadas</h3>
 
-                        <div class="<?php echo !wp_is_mobile() ? 'row row-cols-3' : '' ?> mt-3 int">
+                        <div class="row row-cols-3 mt-3 int">
                             <?php foreach ( $postsRelacionados->posts as $rel ) { ?>
                                 <div class="relacionadas__post">
                                     <div class="d-flex flex-column">
@@ -371,7 +371,7 @@ $tema = get_the_terms( $postId, 'temas' );
                         <a class="next ms-auto" data-controls="next" aria-controls="customize" tabindex="-1"></a>
                     </div>
 
-                    <div class="<?php echo !wp_is_mobile() ? 'row row-cols-3' : '' ?> mt-3 int">
+                    <div class="row row-cols-3 mt-3 int">
                         <?php foreach ( $outputSug as $item ) { ?>
                             <div class="relacionadas__post">
                                 <div class="d-flex flex-column">
